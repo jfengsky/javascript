@@ -9,7 +9,7 @@
 	src="../backbone.js"
 
 ##model
-####1.创建最简单的一个对象
+###1.创建最简单的一个对象
 直接通过<code>initialize</code>方法
 
 	Man = Backbone.Model.extend({
@@ -19,8 +19,8 @@
     });
 	var man = new Man;	// -> Hey,you creae me!
 	
-####2.对象赋值
-第一种：直接定义
+###2.对象赋值
+#####第一种：直接定义
 
 通过<code>defaults</code>方法设置默认值：
 
@@ -33,7 +33,7 @@
     var man = new Man;
     console.log(man.get('name')); // -> myname
     
-第二种：赋值时再定义
+#####第二种：赋值时再定义
 
 通过<code>set</code>方法赋值，再通过<code>get</code>方法和
 <code>escape</code>方法获取
@@ -50,7 +50,7 @@
 
 	console.dir(man.attributes);
 
-####3.对象中的方法
+###3.对象中的方法
 
 	Man = Backbone.Model.extend({
     	defaults: {
@@ -64,7 +64,7 @@
   	var man = new Man;
   	console.log(man.aboutMe()); // -> my name is jfeng, and 18 years old! 
   	
-####4.监听对象中属性的变化
+###4.监听对象中属性的变化
 
 	Man = Backbone.Model.extend({
 	    initialize: function(){
@@ -145,7 +145,7 @@
 
 需要注意的是，previous()和previousAttributes()方法只能在数据修改过程中调用（即在模型的change事件和属性事件中调用）
 
-####5.数据验证
+###5.数据验证
 通过<code>validate</code>方法，该方法会在模型中的数据发生改变之前被自动调用
 
 	// 定义Book模型类
@@ -218,7 +218,7 @@ Backbone提供了另一种方式对error事件进行覆盖，来看看这个例�
 
 　　使用silent配置设置数据时，模型也不会触发change事件，这这意味着数据在业务层面并没有真正被设置到模型中，这有利于我们及时对错误的数据进行恢复和回滚。
 　　
-####6.删除数据
+###6.删除数据
 * unset()方法用于删除对象中指定的属性和数据
 * clear()方法用于删除模型中所有的属性和数据
 
@@ -265,4 +265,37 @@ Backbone提供了另一种方式对error事件进行覆盖，来看看这个例�
 
 在调用unset()和clear()方法清除模型数据时，会触发change事件，我们也同样可以在change事件的监听函数中通过previous()和previousAttributes()方法获取数据的上一个状态。
 
-####7.把模型数据同步到服务器
+###7.把模型数据同步到服务器
+如果我们希望让Backbone自动与服务器接口进行交互，首先应该配置模型的URL，Backbone支持3种方式的URL配置：
+
+#####第一种是urlRoot方式：
+
+	// 定义Book模型类
+	var Book = Backbone.Model.extend({
+	    urlRoot : '/service'
+	});
+	
+	// 创建实例
+	var javabook = new Book({
+	    id : 1001,
+	    name : 'Thinking in Java',
+	    author : 'Bruce Eckel',
+	    price : 395.70
+	});
+	
+	// 保存数据
+	javabook.save();
+	
+你可以抓包查看请求记录，你能看到请求的接口地址为：http://localhost/service/1001
+
+其中localhost是我的主机名，因为我在本地搭建了一个Web服务器环境。
+
+service是该模型的接口地址，是我们在定义Book类时设置的urlRoot。
+
+1001是模型的唯一标识（id），我们之前说过，模型的id应该是由服务器返回的，对应到数据库中的某一条记录，但这里为了能直观的测试，我们假设已经从服务器端拿到了数据，且它的id为1001。
+
+接下来，我们将save()方法换成destroy()方法（该方法用于将模型中的数据从服务器删除）：
+
+你能看到请求的接口地址仍然为：http://localhost/service/1001。这并不奇怪，如果你细心观察，会发现两次请求头中的Request Method参数分别为PUT和DELETE，服务器接口会根据它来判断你所做的操作。
+
+如果你的浏览器不支持REST发送方式，你可能会看到Request Method始终是POST类型，且在Form Data中会多出一个_method参数，PUT和DELETE操作名被放在了这个_method参数中。这是Backbone为了适配低版本浏览器而设计的另一种方法，你的服务器接口也必须同时支持这种方式。
