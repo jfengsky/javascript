@@ -38,15 +38,13 @@
 通过<code>set</code>方法赋值，再通过<code>get</code>方法和
 <code>escape</code>方法获取
 
-	Man = Backbone.Model.extend({
-	
-	});
+	Man = Backbone.Model.extend();
   	var man = new Man;
   	man.set({name:'the5fire',age:'10'});
   	console.log(man.get('name')); // -> the5fire
   
-* get(): 用于直接返回数据
-* escape(): 先将数据中包含的HTML字符转换为实体形式（例如它会将双引号转换为& quot;形式）再返回，用于避免XSS攻击。
+* get()方法用于直接返回数据
+* escape()方法先将数据中包含的HTML字符转换为实体形式（例如它会将双引号转换为& quot;形式）再返回，用于避免XSS攻击。
 
 模型将原始数据存放在对象的attributes属性中，因此我们也可以通过javabook.attributes属性直接读取和操作这些数据:
 
@@ -146,3 +144,125 @@
 * previousAttributes()方法返回一个对象，该对象包含上一个状态的所有数据。
 
 需要注意的是，previous()和previousAttributes()方法只能在数据修改过程中调用（即在模型的change事件和属性事件中调用）
+
+####5.数据验证
+通过<code>validate</code>方法，该方法会在模型中的数据发生改变之前被自动调用
+
+	// 定义Book模型类
+	var Book = Backbone.Model.extend({
+	    validate : function(data) {
+	        if(data.price < 1) {
+	            return '书籍价格不应低于1元.';
+	        }
+	    }
+	});
+	
+	var javabook = new Book();
+	
+	// 监听error事件，当验证失败时触发
+	javabook.on('error', function(model, error) {
+	    console.log(error);
+	});
+	
+	javabook.set('price', 0);
+	
+validate方法接收一个参数，表示需要进行验证的数据集合，如果validate方法没有任何返回值（即undefined），则表示验证通过；如果验证不通过，我们常常会返回一个错误字符串或自定义对象。但实际上，当你返回一个false也会被认为验证通过，因为Backbone内部会将validate的返回值转换为布尔类型，如果为false则认为验证通过，反之则认为不通过（虽然这听起来有些别扭）。
+
+当validate验证不通过时，会触发error事件，并将模型对象和validate方法的返回值传递给error事件的监听函数
+
+Backbone提供了另一种方式对error事件进行覆盖，来看看这个例子：
+
+	var Book = Backbone.Model.extend({
+	  validate: function(attributes){
+	    if(attributes.price < 1){
+	      return 'too low';
+	    }
+	  },
+	  initialize: function(){
+	    this.bind('error', function(model, error){
+	      console.log(error);
+	    })
+	  }
+	});
+	var book = new Book();
+	
+	// 在调用set()方法时，传递了一个配置对象，包含自定义的error处理方法
+	book.set({price:0},{
+	  error: function(model, error){
+	    console.log('new error ' + error);
+	  }
+	});
+	
+在这段代码中，我们在调用set()方法时，传递了第三个参数，它是一个用于描述配置信息的对象，我们设定了一个error函数。当validate方法验证失败时，会优先调用配置中传递的error函数，如果没有传递error函数，则会触发error事件。
+
+如果我们不希望对数据进行验证，可以在调用set()方法时传递一个silent配置，silent配置用于忽略验证规则，并且它不会触发change和error等事件。
+
+在上面例子的基础上，我们修改一下set()方法的调用方式：
+
+	book.set('price', 0, {
+	    silent : true
+	});
+	
+我们设置了一个非法的数据，同时指定了silent配置，结果并没有触发error事件，因为它并没有调用validate方法对数据进行验证。
+
+我们再将set()方法的调用代码修改一下：
+
+	book.set('price', 0, {  
+	    silent : true  
+	});  
+	  
+	book.set(price, -1); 
+
+执行这段代码，控制会再次输出“书籍价格不应低于1元.”。
+　　从结果中可以看出，silent配置仅仅是忽略对本次数据的验证，而在下一次数据发生变化时，会重新执行validate方法进行验证。
+
+　　使用silent配置设置数据时，模型也不会触发change事件，这这意味着数据在业务层面并没有真正被设置到模型中，这有利于我们及时对错误的数据进行恢复和回滚。
+　　
+####6.删除数据
+* unset()方法用于删除对象中指定的属性和数据
+* clear()方法用于删除模型中所有的属性和数据
+
+下面是例子:
+
+	// 定义Book模型类
+	var Book = Backbone.Model.extend();
+	
+	// 实例化模型对象
+	var javabook = new Book({
+	    name : 'Java7入门经典',
+	    author : 'Ivor Horton',
+	    price : 88.50
+	});
+	
+	// 输出: Java7入门经典
+	console.log(javabook.get('name'));
+	
+	// 删除对象name属性
+	javabook.unset('name');
+	
+	// 输出: undefined
+	console.log(javabook.get('name'));
+	当我们对模型的name属性执行unset()方法后，模型内部会使用delete关键字将name属性从对象中删除。
+	
+	clear()方法与unset()方法执行过程类似，但clear()方法会删除模型中的所有数据，例如：
+	// 定义Book模型类
+	var Book = Backbone.Model.extend();
+	
+	// 实例化模型对象
+	var javabook = new Book({
+	    name : 'Java7入门经典',
+	    author : 'Ivor Horton',
+	    price : 88.50
+	});
+	
+	// 删除对象name属性
+	javabook.clear();
+	
+	// 以下均输出: undefined
+	console.log(javabook.get('name'));
+	console.log(javabook.get('author'));
+	console.log(javabook.get('price'));
+
+在调用unset()和clear()方法清除模型数据时，会触发change事件，我们也同样可以在change事件的监听函数中通过previous()和previousAttributes()方法获取数据的上一个状态。
+
+####7.把模型数据同步到服务器
