@@ -1,6 +1,6 @@
 #backbone 学习整理笔记
 一个新项目要用到backbone，赶紧学习一下:
-]原文引自CSDN[]】the5fire](http://blog.csdn.net/column/details/backbone-js-tutorial.htm 和 [yujianshenbingl(http://yujianshenbing.iteye.com/))]
+]原文引自CSDN[]】the5fire](http://blog.csdn.net/column/details/backbone-js-tutorial.htm) 和 [yujianshenbingl](http://yujianshenbing.iteye.com/)
 
 它是基于jquery和underscore的一个js框架,所以引用顺序为:
 
