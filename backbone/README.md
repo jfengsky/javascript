@@ -299,3 +299,21 @@ service是该模型的接口地址，是我们在定义Book类时设置的urlRoo
 你能看到请求的接口地址仍然为：http://localhost/service/1001。这并不奇怪，如果你细心观察，会发现两次请求头中的Request Method参数分别为PUT和DELETE，服务器接口会根据它来判断你所做的操作。
 
 如果你的浏览器不支持REST发送方式，你可能会看到Request Method始终是POST类型，且在Form Data中会多出一个_method参数，PUT和DELETE操作名被放在了这个_method参数中。这是Backbone为了适配低版本浏览器而设计的另一种方法，你的服务器接口也必须同时支持这种方式。
+#####另一种是url方式:
+
+	// 定义Book模型类
+	var Book = Backbone.Model.extend({
+	urlRoot : '/service',
+	url : '/javaservice'
+	});
+	
+	// 创建实例
+	var javabook = new Book({
+	    id : 1001,
+	    name : 'Thinking in Java',
+	    author : 'Bruce Eckel',
+	    price : 395.70
+	});
+	
+	// 保存数据
+	javabook.save();
