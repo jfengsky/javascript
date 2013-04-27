@@ -1,0 +1,41 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="http://lib.sinaapp.com/js/jquery/1.8.1/jquery.js"></script>
+  <style>
+  #cnt{
+    border:1px solid #ccc;
+    background-color:#f6f7f8;
+    padding:10px;
+  }
+  #demo{
+    border:1px solid #f60;
+    background-color: #fff;
+    padding:10px;
+  }
+  </style>
+</head>
+<body>
+
+<div id="cnt">
+  <p>cnt1</p>
+  <div id="demo">
+    cnt2
+  </div>
+</div>
+
+<script>
+(function($){
+  $('#cnt').click(function(ev){
+    console.log('click cnt');
+  });
+  $('#demo').click(function(ev){
+    console.log('click demo');
+    ev.stopPropagation();
+  });
+})(jQuery);
+</script>
+</body>
+</html>
