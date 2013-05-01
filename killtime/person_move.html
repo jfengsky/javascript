@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8"/>
+  <title>signal fight</title>
+  <script src="libs/jquery-2.0.0.js"></script>
+  <link rel="stylesheet" type="text/css" href="assets/css/style.css"/>
+  <style>
+  @-webkit-keyframes partner_attack{
+    0%{
+      bottom:5px;
+    }
+    25%{
+      bottom:5px;
+      -webkit-transform: rotate(-5deg);
+    }
+    50%{
+      bottom:5px;
+      -webkit-transform: rotate(0deg);
+    }
+    75%{
+      bottom:5px;
+      -webkit-transform: rotate(5deg);
+    }
+    100%{
+      bottom:5px;
+    }
+  }
+  @-webkit-keyframes enemy_attack{
+    0%{
+      top:5px;
+    }
+    25%{
+      top:5px;
+      -webkit-transform: rotate(-5deg);
+    }
+    50%{
+      top:5px;
+      -webkit-transform: rotate(0deg);
+    }
+    75%{
+      top:5px;
+      -webkit-transform: rotate(5deg);
+    }
+    100%{
+      top:5px;
+    }
+  }
+  /* partner attack animate */
+  .paa{
+    -webkit-animation: partner_attack 0.15s;
+  }
+  .eaa{
+    -webkit-animation: enemy_attack 0.15s;
+  }
+  </style>
+</head>
+<body>
+<div class="main">
+  <div class="enemy">
+    <ul>
+      <li id="em1">
+        <div class="role eaa">
+          敌人1
+        </div>
+      </li>
+    </ul>
+  </div>
+  <div class="partner">
+    <ul>
+      <li id="tm1">
+        <div class="role paa">
+          队友1
+        </div>
+      </li>
+    </ul>
+  </div>
+</div>
+</body>
+</html>
