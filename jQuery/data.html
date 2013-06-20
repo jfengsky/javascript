@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+  <script src="http://lib.sinaapp.com/js/jquery/1.4.4/jquery.js"></script>
+</head>
+<body>
+  <div id="demo">abcd</div>
+<script>
+(function($){
+  console.log( $('#demo').data('data-id') );
+  $('#demo').data('data-id', 1234);
+  console.log( $('#demo').data('data-id') );
+  $('#demo').data('data-json', {first:16, last:"false"});
+  console.log($('#demo').data('data-json').first);
+  console.log($('#demo').data('data-json').last);
+  $('#demo').removeData('data-id');
+  console.log( $('#demo').data('data-id') );
+})(jQuery);
+</script>
+</body>
+</html>

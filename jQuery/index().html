@@ -1,0 +1,24 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+  <script src="http://lib.sinaapp.com/js/jquery/1.4.4/jquery.js"></script>
+</head>
+<body>
+  <ul>
+    <li id="foo">fo1</li>
+    <li id="bar">bar2</li>
+    <li id="baz">baz3</li>
+    <li class="four">four4</li>
+    <li class="four"></li>
+  </ul>
+<script>
+(function($){
+  console.log( $('li').index($('#baz')) );
+
+  console.log( $('#bar').index('li') );
+})(jQuery);
+</script>
+</body>
+</html>
