@@ -1,0 +1,26 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>index</title>
+  <script src="http://lib.sinaapp.com/js/jquery/1.4.4/jquery.js"></script>
+</head>
+<body>
+  <form action="">
+    <label for="">name:</label>
+    <input type="text" name="name">
+    <fieldset>
+      <label for="">newsletter:</label>
+      <input type="text" name="newsletter">
+    </fieldset>
+  </form>
+  <input type="text" name="none">
+
+<script>
+(function($){
+  console.log( $("label + input").size() );
+  console.log( $("form ~ input").attr('name') );
+})(jQuery);
+</script>
+</body>
+</html>
