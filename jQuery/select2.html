@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>:has</title>
+  <script src="http://lib.sinaapp.com/js/jquery/1.4.4/jquery.js"></script>
+</head>
+<body>
+  <div id="test">
+    <div class="">
+      <a href="">111</a>
+    </div>
+    <div class="">
+      <span>222</span>
+    </div>
+    <div class="">
+      <em>333</em>
+    </div>
+    <div class="">
+      <em>555</em>
+    </div>
+    <div class="">
+      <em>666</em>
+    </div>
+    <div class="">
+      <span class="abc">777</span>
+    </div>
+    <div class="">
+      <span>888</span>
+    </div>
+    <div class="">
+      <span >999</span>
+    </div>
+    <div class="">
+      1212 
+      <span></span>
+    </div>
+    <div class="">
+     34566
+      <span style="display:none">hidden</span>
+    </div>
+  </div>
+  <a href="">a</a>
+  <input type="hidden" name="" value="abcd">
+<script>
+(function($){
+  $('#test :has(a)').css('background','#f00');
+
+  $('#test :has(.abc)').css('background','#06f');
+
+  $('#test span:parent').css('background','#f60');
+
+  $('#test :hidden').show();
+
+  console.log($(':hidden').val());
+})(jQuery);
+</script>
+</body>
+</html>

@@ -1,0 +1,23 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>:has</title>
+  <script src="http://lib.sinaapp.com/js/jquery/1.4.4/jquery.js"></script>
+</head>
+<body>
+  <div id="test">abc</div>
+  <img src="http://pic2.ule.com/item/user_0102/desc20130531/a6504411b77c540b_-1x-1.jpg" alt="def">
+<script>
+(function($){
+  $('#test').attr({
+    title:"this",
+    alt:"boy"
+  });
+  $('img').attr('title',function(){
+    return this.src;
+  })
+})(jQuery);
+</script>
+</body>
+</html>

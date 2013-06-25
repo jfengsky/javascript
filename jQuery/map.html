@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>:has</title>
+  <script src="http://lib.sinaapp.com/js/jquery/1.4.4/jquery.js"></script>
+</head>
+<body>
+  <input type="text" name="name" value="John"/>
+  <input type="text" name="password" value="password"/>
+  <input type="text" name="url" value="http://ejohn.org/"/>
+
+<div id="test">
+  <p>111</p>
+  <p class="demo">222</p>
+  <p>333</p>
+</div>
+<script>
+(function($){
+  
+  $('input').map(function(){
+    console.log($(this).val());
+  });
+
+  $('#test p').not('.demo').css('background','#f00');
+
+  $("#test p").slice(2, 3).css('color','#fff');
+
+})(jQuery);
+</script>
+</body>
+</html>

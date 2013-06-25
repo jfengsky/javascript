@@ -1,0 +1,25 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>:has</title>
+  <!-- <script src="http://lib.sinaapp.com/js/jquery/1.4.4/jquery.js"></script> -->
+  <script src="http://lib.sinaapp.com/js/jquery/1.8.2/jquery.js"></script>
+</head>
+<body>
+  <input type="checkbox" name="checkname" id="J_check" value="1">
+  <input type="checkbox" name="checkname" id="J_check1" value="2" checked>
+  <input type="checkbox" name="checkname" id="J_check2" value="3">
+<script>
+(function($){
+  console.log($('input').prop('name'));
+
+  console.log($('#J_check1').prop('checked'));
+
+  $('#J_check1').prop('checked',function(val){
+    return !val;
+  })
+})(jQuery);
+</script>
+</body>
+</html>

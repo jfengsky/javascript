@@ -1,0 +1,22 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>:has</title>
+  <script src="http://lib.sinaapp.com/js/jquery/1.4.4/jquery.js"></script>
+</head>
+<body>
+  <p>Hello</p>
+  <div>
+    <span>Hello Again</span>
+  </div>
+  <p>And Again</p>
+<script>
+(function($){
+  
+  $("div").siblings().css('background','#f00');
+
+})(jQuery);
+</script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>:not(select)</title>
+  <script src="http://lib.sinaapp.com/js/jquery/1.4.4/jquery.js"></script>
+</head>
+<body>
+  <ul></ul>
+  <div id="demo">
+    <input type="checkbox" name="" id="" checked="checked">
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="" checked="checked">
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+    <input type="checkbox" name="" id="">
+  </div>
+  <div id="test">
+    <div class="">
+      <a href="">111</a>
+    </div>
+    <div class="">
+      <span>222</span>
+    </div>
+    <div class="">
+      <em>333</em>
+    </div>
+    <div class="">
+      <em>555</em>
+    </div>
+    <div class="">
+      <em>666</em>
+    </div>
+    <div class="">
+      <span>777</span>
+    </div>
+    <div class="">
+      <span>888</span>
+    </div>
+    <div class="">
+      <span>999</span>
+    </div>
+    <div class="">
+      <span></span>
+    </div>
+  </div>
+<script>
+(function($){
+  console.log($('#demo input:checked').length);
+  // $('#test :not(div em)').css('background','#f00');
+  $('#test div:eq(2)').css('color','#06f');
+  $('#test div:gt(5)').css('font-weight','bold');
+  $('#test div:contains("999")').css('text-decoration','underline');
+  $('#test div span:empty').text(1111111);
+})(jQuery);
+</script>
+</body>
+</html>
