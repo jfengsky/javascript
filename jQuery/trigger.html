@@ -13,12 +13,12 @@
 <script>
 (function($){
   
-  $('#J_click').click(function(event, a, b){
-    console.log(event);
+  $('#J_click').bind('myclick', function(event, a, b){
     console.log(a);
     console.log(b);
   });
-  $('#J_click').trigger('click');
+
+  $('#J_click').trigger('myclick', ['事件1', '事件2']);
 })(jQuery);
 </script>
 </body>

@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>get</title>
+  <script src="http://lib.sinaapp.com/js/jquery/1.4.4/jquery.js"></script>
+  <style>
+  .red{
+    background-color:#f00;
+  }
+  .blue{
+    background-color:#06f;
+  }
+  .demo{
+    height:100px;
+    width:100px;
+    border:1px solid #ccc;
+  }
+  </style>
+</head>
+<body>
+  <div class="demo" id="J_demo">
+    
+  </div>
+<script>
+(function($){
+  $('#J_demo').hover(function(){
+    $(this).addClass('red');
+  },function(){
+    $(this).removeClass('red');
+  });
+})(jQuery);
+</script>
+</body>
+</html>
