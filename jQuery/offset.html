@@ -1,0 +1,40 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>offset position</title>
+  <script src="http://lib.sinaapp.com/js/jquery/1.4.4/jquery.js"></script>
+  <style>
+    #demo{
+      border:1px solid #000;
+      background-color:#f6f7f8;
+      height:400px;
+      width:400px;
+    }
+  </style>
+</head>
+<body>
+  <div id="demo">
+    111
+  </div>
+  <input type="button" value="click" id="J_click">
+<script>
+(function($){
+  
+  console.log( $('#demo').offset() );
+  $('#demo').offset({
+    top: 20,
+    left: 20
+  })
+  console.log( $('#demo').offset() );
+
+  console.log( $('#demo').position() );
+  $('#demo').offset({
+    top: 20,
+    left: 20
+  })
+  console.log( $('#demo').position() );
+})(jQuery);
+</script>
+</body>
+</html>

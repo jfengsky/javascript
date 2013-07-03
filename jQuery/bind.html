@@ -1,0 +1,32 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>event - bind</title>
+  <script src="http://lib.sinaapp.com/js/jquery/1.4.4/jquery.js"></script>
+</head>
+<body>
+<input type="button" value="click" id="J_click">
+<script>
+(function($){
+
+  // $('#J_click').bind('mouseenter mouseleave', function(ev){
+  //   console.log(ev.type);
+  // });
+  
+  $('#J_click').bind({
+    mouseenter: function(ev){
+      console.log( ev.target )
+    },
+    mouseleave: function(ev){
+      console.log( ev.target )
+    }
+  });
+
+  $('#J_click').bind('click');
+
+
+})(jQuery);
+</script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>event - on</title>
+  <script src="http://lib.sinaapp.com/js/jquery/1.8.2/jquery.js"></script>
+</head>
+<body>
+  <form action="">
+    <input type="submit" value="submit">
+  </form>
+  <input type="button" value="click" id="J_click">
+<script>
+(function($){
+  function myHandler(event) {
+    console.log(event.data);
+  }
+  $('#J_click').on("click", {foo: "bar"}, myHandler);
+  
+
+  $("form").on("submit", function(event) {
+
+    // 去除默认时间
+    event.preventDefault();
+
+    // 阻止冒泡
+    event.stopPropagation();
+
+  });
+
+})(jQuery);
+</script>
+</body>
+</html>
