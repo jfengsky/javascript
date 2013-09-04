@@ -32,28 +32,28 @@ coffee命令如下:
 示例：
   * 将 src 目录中的coffee文件编译为 lib 目录中的js文件：
     
-      coffee --compile --output lib/ src/
-      coffee -c -o lib/ src/
+        coffee --compile --output lib/ src/
+        coffee -c -o lib/ src/
 
   * 监视文件，并在每次文件变更时重新编译之：
   
-      coffee --watch --compile experimental.coffee
-      coffee -w -c experimental.coffee
+        coffee --watch --compile experimental.coffee
+        coffee -w -c experimental.coffee
 
   * 将 src 目录下的一堆coffee文件编译为一个js文件：
   
-      coffee --join project.js --compile src/*.coffee
+        coffee --join project.js --compile src/*.coffee
 
   * 将一行CoffeeScript的编译结果打印到标准输出：
   
-      coffee -bpe "alert i for i in [0..10]"
+        coffee -bpe "alert i for i in [0..10]"
 
   * 监视并自动编译整个工程：
 
-      coffee -o lib/ -cw src/
+        coffee -o lib/ -cw src/
 
   * 启动CoffeeScript的REPL（Ctrl-D退出，Ctrl-V切换多行模式，单行模式中“\”为续行符）
   
-      coffee
+        coffee
 
 
