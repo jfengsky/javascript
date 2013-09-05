@@ -31,5 +31,49 @@ this.clickHandler = ->
 
 dlement.addEventListener 'click', (e) => this.clickHandler(e)
 
+if true
+  return true
 
-obj1 =
+if true == true
+  "ok"
+
+if true then "ok" else "back"
+
+if true != true then a = 3 else a = 54
+
+if true != true
+  a = 3
+else
+  a = 4
+
+alert "it's good" if abc is true
+
+unless abc
+  "abc"
+
+if abc isnt true
+  "bcd"
+
+txt = "text demo"
+
+insertText = "insert #{txt}"
+
+for name in ["abc", "def", 'bhi']
+  alert "name is: #{name}"
+
+
+for name,i in ["abc", "def"]
+  alert "#{i} - #{name}"
+
+
+rang = [1..5]
+
+firstTwo = ['one', 'tow', 'three'][0..1]
+
+numbers = [0..9]
+numbers[3..5] = [-3, -4, -5]
+
+mystring = "myString"[0..2]
+
+words = ['rattled', 'roude', 'rebbles', 'ranks']
+alert "stop is " if 'roude' in words
