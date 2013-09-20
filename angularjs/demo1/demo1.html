@@ -1,0 +1,43 @@
+
+<!doctype html>
+<html ng-app ng-controller="PhoneListCtrl">
+<head>
+  <meta charset="UTF-8">
+  <title ng-bind-template="Google Phone Gallery: {{query}}">Google Phone Gallery</title>
+  <script src="../angular/angular.min.js"></script>
+  <script>
+function PhoneListCtrl($scope) {
+  $scope.phones = [
+    {"name": "Nexus S",
+     "snippet": "Fast just got faster with Nexus S.",
+     "age": 0},
+    {"name": "Motorola XOOM™ with Wi-Fi",
+     "snippet": "The Next, Next Generation tablet.",
+     "age": 1},
+    {"name": "MOTOROLA XOOM™",
+     "snippet": "The Next, Next Generation tablet.",
+     "age": 2}
+  ];
+
+  $scope.orderProp = 'age';
+}
+  </script>
+</head>
+<body>
+
+  Search: <input ng-model="query">
+Sort by:
+<select ng-model="orderProp">
+  <option value="name">Alphabetical</option>
+  <option value="age">Newest</option>
+</select>
+
+
+<ul class="phones">
+  <li ng-repeat="phone in phones | filter:query | orderBy:orderProp">
+    {{phone.name}}
+    <p>{{phone.snippet}}</p>
+  </li>
+</ul>
+</body>
+</html>
