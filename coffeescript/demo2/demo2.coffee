@@ -23,14 +23,25 @@
 #   return add: add, sub:sub
 
 
-foo = ->
-  @.add = (x, y) ->
-    x + y
-  return
+# foo = ->
+#   @.add = (x, y) ->
+#     x + y
+#   return
 
-foo::.add = (x, y) ->
-  x + y + 10
+# foo::.add = (x, y) ->
+#   x + y + 10
 
 
-f = new foo
-console.log f.add(1,2)
+# f = new foo
+# console.log f.add(1,2)
+
+
+Object::.bar = 1
+foo = 
+  goo: undefined
+
+
+
+# console.log(foo.bar)
+
+# console.log foo.hasOwnProperty 'bar'
