@@ -1,0 +1,102 @@
+body {
+  background: url(../images/bg.png) repeat; }
+
+.clearfix:after {
+  visibility: hidden;
+  display: block;
+  font-size: 0;
+  content: " ";
+  clear: both;
+  height: 0; }
+
+.clearfix {
+  display: inline-block; }
+
+html[xmlns] .clearfix {
+  display: block; }
+
+* html .clearfix {
+  height: 1%; }
+
+.main {
+  width: 100%;
+  height: 100%;
+  background: url(../images/top-bg.jpg) no-repeat top center; }
+
+.content {
+  width: 1000px;
+  margin: auto;
+  color: #535352; }
+
+.view {
+  width: 259px;
+  height: 72px;
+  background: url(../images/view.png) no-repeat;
+  margin: 195px 0 0 640px; }
+  .view a {
+    height: 50px;
+    width: 259px;
+    display: block;
+    line-height: 150px;
+    overflow: hidden; }
+
+.info {
+  background-color: #f9f4e5;
+  margin-top: -2px; }
+  .info h3 {
+    font-size: 29px;
+    font-weight: bold; }
+  .info .box {
+    border-top: 8px solid #f0e3c2;
+    overflow: hidden; }
+
+.totle.box {
+  padding-top: 31px; }
+.totle h3 {
+  padding: 0 0 0 25px;
+  float: left; }
+  .totle h3 span {
+    float: left; }
+  .totle h3 i {
+    width: 65px;
+    height: 23px;
+    margin-left: 10px;
+    float: left;
+    background: url(../images/feng.png) no-repeat; }
+.totle a.share {
+  width: 116px;
+  height: 23px;
+  line-height: 70px;
+  background: url(../images/share.png) no-repeat;
+  margin-right: 25px;
+  float: right;
+  overflow: hidden; }
+  .totle a.share:hover {
+    opacity: 0.8;
+    filter: alpha(opacity=80); }
+.totle p {
+  width: 744px;
+  height: 54px;
+  margin: 116px auto 28px;
+  background: url(../images/line.png) no-repeat 0 30px;
+  text-align: center; }
+  .totle p b {
+    color: #dd4a4a;
+    font-size: 36px;
+    font-weight: bold;
+    font-family: arial; }
+  .totle p span {
+    height: 20px;
+    line-height: 58px; }
+.totle ul {
+  border-top: 1px solid #f0e3c2;
+  width: 1002px; }
+.totle li {
+  float: left;
+  padding: 25px 0 0 25px;
+  width: 500px;
+  border-right: 1px solid #f0e3c2; }
+  .totle li em {
+    font-size: 20px; }
+    .totle li em span {
+      color: #dd4a4a; }
