@@ -1,4 +1,4 @@
-### HTML5 fileApi 实现图片上传
+### HTML5 fileAPI 获取显示图片
 
 input选取多文件<code>multiple</code>
 
