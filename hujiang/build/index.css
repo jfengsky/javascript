@@ -26,12 +26,16 @@ html {
 ol, ul {
   list-style: none;
 }
-
+em{
+  font-style: normal;
+}
 table {
   border-collapse: collapse;
   border-spacing: 0;
 }
-
+h1, h2, h3, h4, h5, h6{
+  font-weight: normal;
+}
 caption, th, td {
   text-align: left;
   font-weight: normal;
@@ -69,9 +73,6 @@ body {
 
 html[xmlns] .clearfix {
   display: block; }
-
-* html .clearfix {
-  height: 1%; }
 
 .main {
   width: 100%;
@@ -117,13 +118,15 @@ html[xmlns] .clearfix {
     height: 23px;
     margin-left: 10px;
     float: left;
-    background: url(../images/icons.png) no-repeat 0 -27px; }
+    background: url(../images/icons.png) no-repeat 0 -27px;
+    _overflow: hidden; }
 .totle a.share {
   width: 116px;
   height: 23px;
   line-height: 70px;
   background: url(../images/icons.png) no-repeat -66px -27px;
   margin-right: 25px;
+  margin-top: -17px;
   float: right;
   overflow: hidden; }
   .totle a.share:hover {
@@ -134,7 +137,8 @@ html[xmlns] .clearfix {
   height: 54px;
   margin: 116px auto 28px;
   background: url(../images/icons.png) no-repeat 0 30px;
-  text-align: center; }
+  text-align: center;
+  _overflow: hidden; }
   .totle p b {
     color: #dd4a4a;
     font-size: 36px;
@@ -167,14 +171,18 @@ html[xmlns] .clearfix {
 
 .pay-box {
   float: left;
-  width: 500px; }
+  width: 500px;
+  overflow: hidden; }
   .pay-box h4 {
-    margin: 27px 0 20px 32px; }
+    margin: 27px 0 20px 32px;
+    line-height: 28px; }
     .pay-box h4 b {
       height: 28px;
       font-size: 18px;
       line-height: 28px;
       font-weight: normal; }
+      .pay-box h4 b em {
+        float: left; }
     .pay-box h4 i {
       height: 28px;
       width: 27px;
@@ -203,7 +211,8 @@ html[xmlns] .clearfix {
       bottom: 0;
       color: #beb18f;
       font-size: 14px;
-      line-height: 29px; }
+      line-height: 29px;
+      *font-weight: normal; }
     .pay-box li i {
       display: block; }
       .pay-box li i.space {
@@ -212,7 +221,8 @@ html[xmlns] .clearfix {
         width: 29px;
         height: 16px;
         display: none;
-        background: url(../images/icons.png) no-repeat; }
+        background: url(../images/icons.png) no-repeat;
+        overflow: hidden; }
       .pay-box li i.conico {
         margin-left: 1px;
         height: 28px;
