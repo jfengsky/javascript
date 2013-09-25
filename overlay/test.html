@@ -1,0 +1,25 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>overlay</title>
+  <script src="http://lib.sinaapp.com/js/jquery/1.8.2/jquery.min.js"></script>
+  <script src="overlay.js"></script>
+  <link rel="stylesheet" href="overlay.css">
+</head>
+<body>
+  <select name="" id="">
+    <option value="">ie6表单遮盖</option>
+  </select>
+  <input type="button" id="J_demo1" value="普通弹出层">
+  <input type="button" value="iframe弹出层">
+  <input type="button" value="异步加载弹出层">
+  <div style="height: 1200px"></div>
+<script>
+  $('#J_demo1').click(function(){
+    new $.fn.Overlay().show();
+  });
+</script>
+
+</body>
+</html>
