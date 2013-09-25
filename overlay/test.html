@@ -8,16 +8,45 @@
   <link rel="stylesheet" href="overlay.css">
 </head>
 <body>
-  <select name="" id="">
-    <option value="">ie6表单遮盖</option>
-  </select>
-  <input type="button" id="J_demo1" value="普通弹出层">
-  <input type="button" value="iframe弹出层">
-  <input type="button" value="异步加载弹出层">
+  <input type="button" id="J_text" value="普通弹出层">
+  <input type="button" id="J_iframe" value="iframe弹出层">
+  <input type="button" id="J_ajax" value="异步加载弹出层">
   <div style="height: 1200px"></div>
 <script>
-  $('#J_demo1').click(function(){
-    new $.fn.Overlay().show();
+  $('#J_text').click(function(){
+    new $.fn.Overlay().show({
+      type: 'text',
+      content: '普通文本和html<a href="#" id="textclose">close</a>',
+      close: 'textclose'
+    });
+  });
+
+  $('#J_iframe').click(function(){
+    new $.fn.Overlay().show({
+      type: 'iframe',
+      width: 1000,
+      height: 600,
+      content: '<iframe src="http://www.taobao.com/" scrolling="no" frameborder="0" width="1000" height="600"></iframe><a href="javascript:void(0)" id="J_close">关闭</a>',
+      close: 'J_close'
+    });
+  });
+
+  function getData(){
+    $.ajax({
+      type: 'post',
+      url: 'demo.json',
+      dataType: 'json',
+      success: function(data){
+        $('#J_layer').append(data.text + '<a href="javascript:void(0)" id="J_close">关闭</a>');
+      }
+    });
+  }
+  $('#J_ajax').click(function(){
+    new $.fn.Overlay().show({
+      type: 'ajax',
+      callback: getData,
+      close: 'J_close'
+    });
   });
 </script>
 

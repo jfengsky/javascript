@@ -10,8 +10,6 @@
   _filter:alpha(opacity = 60);
 }
 .layer{
-  width: 240px;
-  height: 100px;
   background-color: #fff;
   position: fixed;
   left: 50%;

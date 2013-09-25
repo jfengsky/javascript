@@ -39,11 +39,13 @@
      * 销毁弹层
      * 
      */
-    this.destory = function(){
-      $('body').delegate('#J_close', 'click', function(){
-        $('#J_mask').hide();
-        $("#J_layer").remove();
-      })
+    this.destory = function(el){
+      if(el){
+        $('body').delegate('#' + el, 'click', function(){
+          $('#J_mask').hide();
+          $("#J_layer").remove();
+        });
+      }
     };
 
     /**
@@ -55,29 +57,21 @@
      *   {String} close [关闭弹层按钮id]
      */
     this.show = function(obj){
+      /**
+       * 弹层默认参数
+       * 
+       */
       var obj = obj || {
         type: 'text',
-        // width: 400,
-        // height: 200,
-        iframe: 'http://www.taobao.com/',
         close: 'J_close'
       },
-      layer = '';
-      switch (obj.type){
-        case 'iframe':
-          layer = '<div class="layer" id="J_layer" style="display: none"><iframe></iframe><a href="javascript:void(0)" id="J_close"">关闭</a></div>';
-          break;
-        case 'ajax':
-          layer = '';
-          break;
-        default:
-          layer = '<div class="layer" id="J_layer" style="display: none"><a href="javascript:void(0)" id="J_close"">关闭</a></div>';
-          break;
-      }
+      layer = '<div class="layer" id="J_layer" style="display: none"></div>',
+      layerWidth;
       self._mask();
+      layerWidth = (0 - obj.width / 2) || (0 - $('#J_layer').width() / 2);
       if($('#J_layer').length === 0){
         $('body').append(layer);
-        $("#J_layer").css('margin-left', 0 - $('#J_layer').width() / 2);
+        $("#J_layer").css('margin-left', layerWidth);
       }
       if(obj.width){
         $("#J_layer").css('width', obj.width);
@@ -85,14 +79,12 @@
       if(obj.height){
         $("#J_layer").css('height', obj.height);
       }
-      if(obj.iframe) {
-        $("J_layer iframe").attr('src', obj.iframe);
+      $("#J_layer").append(obj.content);
+      if(obj.callback) {
+        obj.callback();
       }
       $("#J_layer").show();
-      self.destory();
+      self.destory(obj.close);
     };
-
-    
-
   }
 })(jQuery);
