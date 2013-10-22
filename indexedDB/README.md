@@ -1,5 +1,7 @@
 ##indexedDB知识
 
+#####原文地址：[Indexed DB入门导学](http://developer.51cto.com/art/201310/412224.htm)
+
 ####判断浏览器是否支持indexedDB
 
 	document.addEventListener('DOMContentLoaded', function(){

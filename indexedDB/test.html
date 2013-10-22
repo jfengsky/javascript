@@ -1,0 +1,74 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>indexedDB</title>
+</head>
+<body>
+<script>
+var db;
+
+function indexedDBok(){
+  return 'indexedDB' in window;
+}
+
+document.addEventListener('DOMContentLoaded', function(){
+
+  if(!indexedDBok) return;
+
+  var openRequest = indexedDB.open('idarticle_perple', 1);
+
+  openRequest.onupgradeneeded = function(e){
+    var thisDB = e.target.result;
+
+    if(!thisDB.objectStoreNames.contains('perple')){
+      thisDB.createObjectStore('people')
+    }
+  };
+
+  openRequest.onsuccess = function(e){
+    console.log('running onsuccess');
+    db = e.target.result;
+    document.querySelector("#addButton").addEventListener("click", addPerson, false);
+  };
+
+  openRequest.onerror = function(e) { 
+      //Do something for the error 
+  } 
+
+}, false);
+
+function addPerson(e) { 
+  var name = document.querySelector("#name").value; 
+  var email = document.querySelector("#email").value; 
+
+  console.log("About to add "+name+"/"+email); 
+
+  var transaction = db.transaction(["people"],"readwrite"); 
+  var store = transaction.objectStore("people"); 
+
+  var person = { 
+    name:name, 
+    email:email, 
+    created:new Date() 
+  } 
+
+  var request = store.add(person,1); 
+
+  request.onerror = function(e) { 
+      console.log("Error:",e.target.error.name); 
+      //some type of error handler 
+  } 
+
+  request.onsuccess = function(e) { 
+      console.log("Woot! Did it"); 
+  } 
+} 
+
+</script>
+
+<input type="text" id="name" placeholder="Name"><br/> 
+<input type="email" id="email" placeholder="Email"><br/> 
+<button id="addButton">Add Data</button>
+</body>
+</html>

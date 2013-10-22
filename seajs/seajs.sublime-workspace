@@ -1,0 +1,665 @@
+{
+	"auto_complete":
+	{
+		"selected_items":
+		[
+			[
+				"inle",
+				"inline-block"
+			],
+			[
+				"inlie",
+				"inline-block"
+			],
+			[
+				"_ul",
+				"_ulHide"
+			],
+			[
+				"background",
+				"background-color"
+			],
+			[
+				"back",
+				"background-position"
+			],
+			[
+				"backgrond",
+				"background-position"
+			],
+			[
+				"textt",
+				"text-decoration"
+			],
+			[
+				"inline",
+				"inline-block"
+			],
+			[
+				"text-ali",
+				"text-align"
+			],
+			[
+				"text",
+				"text-shadow"
+			],
+			[
+				"bak",
+				"background-position"
+			],
+			[
+				"backr",
+				"background"
+			],
+			[
+				"button-",
+				"button-prev"
+			],
+			[
+				"file",
+				"fileInfo"
+			]
+		]
+	},
+	"buffers":
+	[
+		{
+			"file": "test/test.html",
+			"settings":
+			{
+				"buffer_size": 721,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/assets/mods/main.js",
+			"settings":
+			{
+				"buffer_size": 274,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"contents": "define(function(require, exports, module) {\n  var $ = require('jquery');\n  // require('jquery-easing');\n  $('#J_button').click(function(){\n    $('#demo').animate({\n      left: 400\n    }, 200, 'swing');\n  });\n  \n});\n",
+			"file": "test/assets/mods/demo.js",
+			"file_size": 241,
+			"file_write_time": 1382325286000000,
+			"settings":
+			{
+				"buffer_size": 215,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "exp/sea-modules/examples/hello/1.0.0/main-debug.js",
+			"settings":
+			{
+				"buffer_size": 1837,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "exp/static/hello/src/main.js",
+			"settings":
+			{
+				"buffer_size": 127,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "exp/static/hello/src/spinning.js",
+			"settings":
+			{
+				"buffer_size": 1445,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "exp/app/lucky.html",
+			"settings":
+			{
+				"buffer_size": 841,
+				"line_ending": "Unix"
+			}
+		},
+		{
+			"file": "test/assets/jquery/easing/1.3.0/easing-debug.js",
+			"settings":
+			{
+				"buffer_size": 6782,
+				"line_ending": "Unix"
+			}
+		}
+	],
+	"build_system": "Packages/YUI Compressor/YUI Compressor.sublime-build",
+	"command_palette":
+	{
+		"height": 223.0,
+		"selected_items":
+		[
+			[
+				"set sass",
+				"Set Syntax: Sass"
+			],
+			[
+				"install",
+				"Package Control: Install Package"
+			],
+			[
+				"remove",
+				"Package Control: Remove Package"
+			],
+			[
+				"instal",
+				"Package Control: Install Package"
+			]
+		],
+		"width": 435.0
+	},
+	"console":
+	{
+		"height": 125.0
+	},
+	"distraction_free":
+	{
+		"menu_visible": true,
+		"show_minimap": false,
+		"show_open_files": false,
+		"show_tabs": false,
+		"side_bar_visible": false,
+		"status_bar_visible": false
+	},
+	"file_history":
+	[
+		"/Users/jiangfeng/www/git/javascript/seajs/test/assets/demo.js",
+		"/Users/jiangfeng/www/git/javascript/seajs/test/assets/main.js",
+		"/Users/jiangfeng/www/git/javascript/seajs/test/main.js",
+		"/Users/jiangfeng/www/git/javascript/seajs/exp/sea-modules/examples/todo/1.0.0/main-debug.js",
+		"/Users/jiangfeng/www/git/javascript/seajs/exp/sea-modules/examples/ng-todo/1.0.0/main-debug.js",
+		"/Users/jiangfeng/www/git/javascript/seajs/exp/sea-modules/examples/lucky/1.0.0/main-debug.js",
+		"/Users/jiangfeng/www/git/javascript/seajs/exp/sea-modules/examples/hello/1.0.0/main.js",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/reset.scss",
+		"/Users/jiangfeng/www/arvato/w12/php/member_detail.php",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/member/member.sass",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/title/title.sass",
+		"/Users/jiangfeng/www/arvato/w12/php/title/title11.php",
+		"/Users/jiangfeng/www/arvato/w12/php/title/demo.php",
+		"/Users/jiangfeng/www/arvato/w12/assets/css/member/member.css",
+		"/Users/jiangfeng/www/arvato/w12/php/title/title8.php",
+		"/Users/jiangfeng/www/arvato/w12/php/title/title10.php",
+		"/Users/jiangfeng/www/arvato/w12/php/title/title9.php",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/table/table.sass",
+		"/Users/jiangfeng/www/arvato/w12/assets/css/title/title.css",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/header/header.sass",
+		"/Users/jiangfeng/www/arvato/w12/php/header/header.php",
+		"/Users/jiangfeng/www/arvato/w12/php/header/demo.php",
+		"/Users/jiangfeng/www/arvato/w12/php/title/title7.php",
+		"/Users/jiangfeng/www/arvato/w12/php/overlay/demo.php",
+		"/Users/jiangfeng/www/arvato/w12/php/overlay/overlay1.php",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/overlay/order_search.sass",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/overlay/overlay.sass",
+		"/Users/jiangfeng/www/arvato/w12/php/member_manage.php",
+		"/Users/jiangfeng/www/arvato/w12/php/member_manage(card).php",
+		"/Users/jiangfeng/www/arvato/w12/assets/js/plug/select.js",
+		"/Users/jiangfeng/www/arvato/w12/php/plug/demo.html",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/overlay/new_member.sass",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/plug/plug.sass",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/style.sass",
+		"/Users/jiangfeng/www/arvato/w12/demo/sideInout.html",
+		"/Users/jiangfeng/www/arvato/w12/assets/js/libs/jquery-2.0.3.min.js",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/overlay/new_comment.sass",
+		"/Users/jiangfeng/Documents/xunlei.txt",
+		"/Users/jiangfeng/www/arvato/w12/php/right/member_info.php",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/right/right.sass",
+		"/Users/jiangfeng/www/arvato/w12/php/button/demo.html",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/button/button.sass",
+		"/Users/jiangfeng/www/arvato/w12/php/title/title6.php",
+		"/Users/jiangfeng/www/arvato/w12/php/title/title5.php",
+		"/Users/jiangfeng/www/arvato/w12/php/table/demo.php",
+		"/Users/jiangfeng/www/arvato/w12/php/table/table3.php",
+		"/Users/jiangfeng/www/arvato/w12/php/godown_enter.php",
+		"/Users/jiangfeng/www/arvato/w12/php/complete_inventory.php",
+		"/Users/jiangfeng/www/arvato/w12/php/right/cmp_info.php",
+		"/Users/jiangfeng/www/arvato/w12/php/title/title4.php",
+		"/Users/jiangfeng/www/arvato/w12/php/table/table2.php",
+		"/Users/jiangfeng/www/arvato/w12/assets/css/table/table.css",
+		"/Users/jiangfeng/www/arvato/w12/php/leftnav/leftnav.php",
+		"/Users/jiangfeng/www/arvato/w12/php/right/godown_info.php",
+		"/Users/jiangfeng/www/arvato/w12/php/title/title3.php",
+		"/Users/jiangfeng/www/arvato/w12/php/right/demo.php",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/itemcode/itemcode.sass",
+		"/Users/jiangfeng/www/arvato/w12/php/title/title2.php",
+		"/Users/jiangfeng/www/arvato/w12/php/right/godown infomation",
+		"/Users/jiangfeng/www/arvato/w12/php/itemcode/itemcode.php",
+		"/Users/jiangfeng/www/arvato/w12/php/itemcode/demo.php",
+		"/Users/jiangfeng/www/arvato/w12/php/itemcode/itemcode2.php",
+		"/Users/jiangfeng/www/arvato/w12/php/title/title1.php",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/leftnav/leftnav.sass",
+		"/Users/jiangfeng/www/arvato/w12/php/title/demo.html",
+		"/Users/jiangfeng/www/arvato/w12/php/leftnav/demo.php",
+		"/Users/jiangfeng/www/arvato/w12/php/table/table1.php",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/leftnav.sass/leftnav.sass",
+		"/Users/jiangfeng/www/arvato/w12/php/table/demo.html",
+		"/Users/jiangfeng/www/arvato/w12/assets/css/reset.css",
+		"/Users/jiangfeng/www/arvato/w12/assets/sass/reset.sass",
+		"/Users/jiangfeng/Downloads/最后一个道士.txt",
+		"/Users/jiangfeng/www/git/idea/Fui/sass/bar.sass",
+		"/Users/jiangfeng/www/git/idea/Fui/sass/base.sass",
+		"/Users/jiangfeng/www/git/idea/Fui/test/bar/bar3.html",
+		"/Users/jiangfeng/www/git/idea/Fui/test/bar/bar2.html",
+		"/Users/jiangfeng/www/git/idea/Fui/test/bar/bar.html",
+		"/Users/jiangfeng/www/git/idea/Fui/test/bar.html",
+		"/Users/jiangfeng/www/git/idea/.gitignore",
+		"/Users/jiangfeng/www/git/idea/Fui/docs/index.html",
+		"/Users/jiangfeng/www/git/idea/Fui/build/base.css",
+		"/Users/jiangfeng/www/git/idea/Fui/watch.sh",
+		"/Users/jiangfeng/www/git/idea/Fui/Gruntfile.js",
+		"/Users/jiangfeng/www/git/idea/Fui/package.json",
+		"/Users/jiangfeng/www/git/idea/Fui/base.sass",
+		"/Users/jiangfeng/www/git/javascript/upload/demo1/demo.js",
+		"/Users/jiangfeng/www/git/javascript/upload/demo1/images/demo.coffee",
+		"/Users/jiangfeng/www/git/javascript/upload/demo1/README.md",
+		"/Users/jiangfeng/www/git/javascript/angularjs/README.md",
+		"/Users/jiangfeng/www/git/javascript/angularjs/demo2/ngclick.html",
+		"/Users/jiangfeng/www/git/javascript/angularjs/demo2/ngclick.js",
+		"/Users/jiangfeng/www/git/javascript/angularjs/demo2/demo.js",
+		"/Users/jiangfeng/www/git/javascript/angularjs/demo2/ngrepeat.html",
+		"/Users/jiangfeng/www/git/javascript/angularjs/demo2/ngshowhide.html",
+		"/Users/jiangfeng/www/git/javascript/angularjs/demo2/demo.html",
+		"/Users/jiangfeng/www/git/javascript/angularjs/demo1/demo1.html",
+		"/Users/jiangfeng/Library/Application Support/Sublime Text 2/Packages/SideBarEnhancements/messages/11.13.2012.1305.0.txt",
+		"/Users/jiangfeng/Downloads/242757.MX_497S/セックスの向こう側 AV男優という生き方.sub",
+		"/Users/jiangfeng/Downloads/242757.MX_497S/セックスの向こう側 AV男優という生き方.idx",
+		"/Users/jiangfeng/www/git/javascript/coffeescript/demo2/demo.html",
+		"/Users/jiangfeng/www/git/javascript/coffeescript/demo2/demo2.coffee",
+		"/Users/jiangfeng/www/git/blog/index.html",
+		"/Users/jiangfeng/www/git/HTML5/resume/assets/global.css",
+		"/Users/jiangfeng/www/git/HTML5/resume/assets/style.css",
+		"/Users/jiangfeng/www/git/HTML5/resume/assets/grid.css",
+		"/Users/jiangfeng/www/git/HTML5/resume/assets/js.js",
+		"/Users/jiangfeng/www/git/HTML5/resume/assets/prettyPhoto.css",
+		"/private/etc/apache2/httpd.conf",
+		"/private/etc/php.ini",
+		"/private/etc/apache2/users/jiangfeng.conf",
+		"/private/etc/apache2/extra/httpd-vhosts.conf",
+		"/Library/WebServer/Documents/info.php",
+		"/Users/jiangfeng/Library/Application Support/Sublime Text 2/Packages/Default/Preferences.sublime-settings",
+		"/Users/jiangfeng/Library/Application Support/Sublime Text 2/Packages/User/Preferences.sublime-settings"
+	],
+	"find":
+	{
+		"height": 36.0
+	},
+	"find_in_files":
+	{
+		"height": 0.0,
+		"where_history":
+		[
+			""
+		]
+	},
+	"find_state":
+	{
+		"case_sensitive": false,
+		"find_history":
+		[
+			"img",
+			"chat",
+			"value",
+			"line",
+			"liner",
+			"swing",
+			"animate",
+			"ease",
+			"easeIn",
+			"$img-member_1x",
+			"$img-menber_1x",
+			")\n",
+			"memCard@1x.png",
+			">\n",
+			"title_1x",
+			"\n      ",
+			"14",
+			"href=\"\"",
+			"ul",
+			"from",
+			"form",
+			"file",
+			"on",
+			"form",
+			"progress",
+			"../images/",
+			"img_block",
+			"httpd-vhosts.conf",
+			"Include /private/etc/apache2/extra/httpd-vhosts.conf",
+			"post_max_size",
+			"upload_max_filesize",
+			"display_errors"
+		],
+		"highlight": true,
+		"in_selection": false,
+		"preserve_case": false,
+		"regex": false,
+		"replace_history":
+		[
+			"href=\"javascript:void(0)\"",
+			""
+		],
+		"reverse": true,
+		"show_context": true,
+		"use_buffer2": true,
+		"whole_word": false,
+		"wrap": true
+	},
+	"groups":
+	[
+		{
+			"sheets":
+			[
+				{
+					"buffer": 0,
+					"file": "test/test.html",
+					"settings":
+					{
+						"buffer_size": 721,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								529,
+								577
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 1,
+					"file": "test/assets/mods/main.js",
+					"settings":
+					{
+						"buffer_size": 274,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								111,
+								111
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 2,
+					"file": "test/assets/mods/demo.js",
+					"settings":
+					{
+						"buffer_size": 215,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								210,
+								210
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 3,
+					"file": "exp/sea-modules/examples/hello/1.0.0/main-debug.js",
+					"settings":
+					{
+						"buffer_size": 1837,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								27,
+								27
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 4,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 4,
+					"file": "exp/static/hello/src/main.js",
+					"settings":
+					{
+						"buffer_size": 127,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								83,
+								91
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage"
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 5,
+					"file": "exp/static/hello/src/spinning.js",
+					"settings":
+					{
+						"buffer_size": 1445,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								219,
+								245
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 0.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 6,
+					"file": "exp/app/lucky.html",
+					"settings":
+					{
+						"buffer_size": 841,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								426,
+								426
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/HTML/HTML.tmLanguage",
+							"tab_size": 2,
+							"translate_tabs_to_spaces": true
+						},
+						"translation.x": 0.0,
+						"translation.y": 107.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				},
+				{
+					"buffer": 7,
+					"file": "test/assets/jquery/easing/1.3.0/easing-debug.js",
+					"settings":
+					{
+						"buffer_size": 6782,
+						"regions":
+						{
+						},
+						"selection":
+						[
+							[
+								666,
+								671
+							]
+						],
+						"settings":
+						{
+							"syntax": "Packages/JavaScript/JavaScript.tmLanguage",
+							"translate_tabs_to_spaces": false
+						},
+						"translation.x": 0.0,
+						"translation.y": 6.0,
+						"zoom_level": 1.0
+					},
+					"type": "text"
+				}
+			]
+		}
+	],
+	"incremental_find":
+	{
+		"height": 36.0
+	},
+	"input":
+	{
+		"height": 36.0
+	},
+	"layout":
+	{
+		"cells":
+		[
+			[
+				0,
+				0,
+				1,
+				1
+			]
+		],
+		"cols":
+		[
+			0.0,
+			1.0
+		],
+		"rows":
+		[
+			0.0,
+			1.0
+		]
+	},
+	"menu_visible": true,
+	"output.exec":
+	{
+		"height": 116.0
+	},
+	"replace":
+	{
+		"height": 68.0
+	},
+	"save_all_on_build": true,
+	"select_file":
+	{
+		"height": 0.0,
+		"selected_items":
+		[
+			[
+				"setsass",
+				"assets/sass/table/table.sass"
+			],
+			[
+				"titledemo",
+				"php/title/demo.php"
+			],
+			[
+				"plugdmo",
+				"php/plug/demo.html"
+			],
+			[
+				"plugdemo",
+				"php/plug/demo.html"
+			],
+			[
+				"plug/demo",
+				"php/plug/demo.html"
+			],
+			[
+				"",
+				"docs/index.html"
+			]
+		],
+		"width": 0.0
+	},
+	"select_project":
+	{
+		"height": 500.0,
+		"selected_items":
+		[
+		],
+		"width": 380.0
+	},
+	"show_minimap": true,
+	"show_open_files": false,
+	"show_tabs": true,
+	"side_bar_visible": true,
+	"side_bar_width": 220.0,
+	"status_bar_visible": true
+}

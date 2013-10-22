@@ -26,7 +26,7 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
   if(idbSupported){
-    var openRequest = indexedDB.open('test_v2', 1);
+    var openRequest = indexedDB.open('test_v3', 1);
 
     openRequest.onupgradeneeded = function(e){
       console.log('running onupgradeneeded');
@@ -34,6 +34,14 @@ document.addEventListener('DOMContentLoaded', function(){
       if(!thisDB.objectStoreNames.contains('firstOS')){
         thisDB.createObjectStore('firstOS')
       }
+
+      if(!thisDB.objectStoreNames.contains('secondOS')){
+        thisDB.createObjectStore('secondOS')
+      }
+
+      document.getElementById('delDB').addEventListener('click', function(){
+        var deleteRequest = thisDB.transaction("idarticle_perple", 'readwrite').objectStore("people").delete(1); 
+      })
     }
 
     openRequest.onsuccess = function(e){
@@ -45,6 +53,9 @@ document.addEventListener('DOMContentLoaded', function(){
       console.log('error');
       console.dir(e);
     }
+
+    
+
   }
 
 }, false);

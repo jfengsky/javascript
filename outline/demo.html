@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body>
+
+<script>
+  // if (navigator.onLine) {
+  //   alert('online')
+  // } else {
+  //   alert('outline')
+  // }
+
+var el = document.body;
+if (el.addEventListener) {
+   window.addEventListener("online", function () {
+     alert("online");}, true);
+   window.addEventListener("offline", function () {
+     alert("offline");}, true);
+}
+else if (el.attachEvent) {
+   window.attachEvent("ononline", function () {
+     alert("online");});
+   window.attachEvent("onoffline", function () {
+     alert("offline");});
+}
+else {
+   window.ononline = function () {
+     alert("online");};
+   window.onoffline = function () {
+     alert("offline");};
+}
+</script>
+</body>
+</html>
