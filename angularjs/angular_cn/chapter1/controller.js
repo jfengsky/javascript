@@ -1,5 +1,6 @@
 function helloController($scope){
   $scope.greeting = {
-    text: 'hello'
+    text: 'hello',
+    name: '名字'
   }
 }

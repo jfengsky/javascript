@@ -1,0 +1,19 @@
+<!doctype html>
+<html lang="en" ng-app="myApp">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+</head>
+<body ng-controller="TextController">
+  <p>{{someText.message}}</p>
+<script src="../../angular/angular.js"></script>
+<script>
+var myAppModule = angular.module('myApp',[]);
+myAppModule.controller('TextController', function($scope){
+  var someText = {};
+  someText.message = "start angular";
+  $scope.someText = someText;
+})
+</script>
+</body>
+</html>
