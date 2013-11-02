@@ -11,6 +11,20 @@
     <li data-ng-repeat="name in names">{{ name }}</li>
   </ul>
 </div>
+
+<div class="" data-ng-init="customers=[
+{name: 'john smith', city: 'Phoneix'},
+{name: 'jfeng', city: 'ShangHai'},
+{name: 'terry', city: 'BeiJing'},
+{name: 'jerry', city: 'WuHan'}
+]">
+<input type="text" name="" data-ng-model="name" id=""> {{ name }}
+  <ul>
+    <li data-ng-repeat="cust in customers | filter: name | orderBy: 'city'">
+      {{ cust.name | uppercase }} - {{ cust.city | lowercase}}
+    </li>
+  </ul>
+</div>
 <script src="../angular/angular.js"></script>
 </body>
 </html>
