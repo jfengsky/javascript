@@ -1,39 +1,25 @@
 <!doctype html>
-<html ng-app="myApp">
-  <head>
-
-    
-  </head>
-  <body>
-    <div>
-      {{ 'World' | greet }}
-    </div>
-
-    <script src="../seajs/sea.js"></script>
-<script>
-seajs.config({
-  base: "./",
-  alias: {
-    "angularjs": "../angular/angular.js"
-  }
-});
-seajs.use("./main");
-</script>
-
-
-
-  </body>
-</html>
-
-<!-- 
+<html>
+<head>
+    <meta>
+    <title>Document</title>
+</head>
+<body ng-controller="TextController">
+<p>{{someText.message}}</p>
 <script src="../seajs/sea.js"></script>
+<script src="../angular/angular.js"></script>
+<!--<script src="script.js"></script>-->
 <script>
-seajs.config({
-  base: "./",
-  alias: {
-    "angular": "../angular/angular.js"
-  }
-});
-seajs.use("./main");
+    seajs.config({
+        base: "./",
+        alias: {
+            "angular": "../angular/angular.js"
+        }
+    });
+
+
+//angular.bootstrap(document, ['myApp']);
+    seajs.use("./script");
 </script>
--->
+</body>
+</html>
