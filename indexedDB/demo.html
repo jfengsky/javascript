@@ -3,10 +3,24 @@
 <head>
   <meta charset="UTF-8">
   <title>Document</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+  <script src="jquery.db.js"></script>
 </head>
 <body>
 
 <input type="button" id="delDB" value="delDB">
 <script src="demo.js"></script>
+
+<script>
+$('#delDB').click(function(){
+  var deletePromise = $.indexedDB("test_v3").deleteDatabase();
+
+  deletePromise.done(function(){
+    console.log('has delete');
+  });
+
+});
+
+</script>
 </body> 
 </html>

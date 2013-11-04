@@ -20,6 +20,7 @@
 
 var idbSupported = false,
     db;
+var indexedDB = window.indexedDB || window.webkitIndexedDB || window.mozIndexedDB || window.msIndexedDB;
 document.addEventListener('DOMContentLoaded', function(){
   if('indexedDB' in window){
     idbSupported = true;
@@ -39,9 +40,8 @@ document.addEventListener('DOMContentLoaded', function(){
         thisDB.createObjectStore('secondOS')
       }
 
-      document.getElementById('delDB').addEventListener('click', function(){
-        var deleteRequest = thisDB.transaction("idarticle_perple", 'readwrite').objectStore("people").delete(1); 
-      })
+      // del
+
     }
 
     openRequest.onsuccess = function(e){
@@ -54,8 +54,14 @@ document.addEventListener('DOMContentLoaded', function(){
       console.dir(e);
     }
 
+    document.getElementById('delDB').addEventListener('click', function(){
+      var deleteRequest = db.transaction("idarticle_perple", 'readwrite').objectStore("people").delete(1);
+      // console.log(111);
+    })
     
 
   }
+
+
 
 }, false);
