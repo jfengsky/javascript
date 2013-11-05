@@ -7,13 +7,23 @@
   <script src="jquery.db.js"></script>
 </head>
 <body>
-
+<label for="">title:<input type="text" id="tit"></label>
+<label for="">author:<input type="text" id="auth"></label>
+<label for="">isbn:<input type="text" id="isbn"></label>
+<input type="button" value="add store" id="addDB">
+<br>
+<input type="text" name="" id="delkey">
+<input type="button" value="del store" id="delstore">
+<br>
+<input type="text" name="" id="getkey">
+<input type="button" value="get key" id="getkeybutton">
+<br>
 <input type="button" id="delDB" value="delDB">
 <script src="demo.js"></script>
 
 <script>
 $('#delDB').click(function(){
-  var deletePromise = $.indexedDB("test_v3").deleteDatabase();
+  var deletePromise = $.indexedDB("library").deleteDatabase();
 
   deletePromise.done(function(){
     console.log('has delete');
