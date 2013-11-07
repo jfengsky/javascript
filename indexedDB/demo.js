@@ -1,5 +1,5 @@
 var idbSupported = false, // 是否支持indexedDB 默认为不支持
-    db; 
+    db;
 var indexedDB = window.indexedDB || window.webkitIndexedDB || window.mozIndexedDB || window.msIndexedDB;
 
 var customerData = [
@@ -23,9 +23,12 @@ document.addEventListener('DOMContentLoaded', function(){
   }
 
   if(idbSupported){
-    
+    $('#addIndexedDB').click(function(){
+      var dbname = $('#dbname').val();
+    });
     var request = indexedDB.open("library");
     request.onupgradeneeded = function(){
+      console.log('upgrade');
       var db = request.result;
       var store = db.createObjectStore("books", {keyPath: "isbn"});
       var titleIndex = store.createIndex("by_title", "title", {unique: true});
@@ -33,10 +36,10 @@ document.addEventListener('DOMContentLoaded', function(){
 
     }
 
-
     request.onsuccess = function(ev){
+      console.log('success');
       db = request.result;
-      
+
       document.getElementById('addDB').addEventListener('click', function(){
         console.log('add store');
         var tx = db.transaction("books", "readwrite");
@@ -50,7 +53,7 @@ document.addEventListener('DOMContentLoaded', function(){
           console.log('push complete');
         }
       });
-      
+
       // del store
       $('#delstore').click(function(){
         console.log('del store');
@@ -90,6 +93,7 @@ document.addEventListener('DOMContentLoaded', function(){
         var index = store.index("by_author");
 
         var request2 = index.openCursor(IDBKeyRange.only("auth2"));
+        
         request2.onsuccess = function() {
           var cursor = request2.result;
           if (cursor) {
@@ -103,8 +107,11 @@ document.addEventListener('DOMContentLoaded', function(){
           }
         };
 
-      });
 
+
+      });
+      db.close();
+      console.log('close')
     }
 
   }
