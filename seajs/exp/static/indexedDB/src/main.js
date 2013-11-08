@@ -4,11 +4,15 @@ define(function(require) {
       idb = require('./idb');
   var school = new idb();
 
+
+  
+
+
   $('#J_createDB').click(function(){
     var db_name = $('#J_dbname').val();
     var store_name = $('#storename').val();
     var key_name = $('#keyname').val();
-    var key_version = "1.12";
+    var key_version = "1.05";
     var datas = {
           "db": "school",
           "version": 1.01,
@@ -25,7 +29,7 @@ define(function(require) {
         };
 
     school.loadFromCache(db_name, store_name, key_name, key_version, function(){
-      console.log('loadfromecache');
+      console.log("loadfromcache");
     });
   });
 

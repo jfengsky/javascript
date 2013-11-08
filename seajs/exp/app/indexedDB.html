@@ -20,6 +20,10 @@
  <br>
 <!-- <input type="text" id="J_table2" value="jerry" style="margin-left: 40px"> <br> -->
 <input type="button" value="create indexedDB" id="J_createDB">
+<br>
+<br>
+version: <input type="text" id="J_newversion">
+<input type="button" value="modify indexedDB" id="J_modifyDB">
 <hr>
 <br>
 <input type="text" id="J_deldbname" value="school">
@@ -27,9 +31,11 @@
 <br>
 <hr>
 <br>
-<ul>
-  <li>{{age}}</li>
-  <li>{{address}}</li>
+<ul ng-controller="langControl">
+<!-- <ul> -->
+  <li>version: {{page.version}}</li>
+  <li>age: {{page.item.age}}</li>
+  <li>address: {{page.item.address}}</li>
 </ul>
 </div>
 
