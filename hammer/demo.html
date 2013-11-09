@@ -1,0 +1,61 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Document</title>
+  <script src="js/hammer.min.js"></script>
+  <style>
+  #club, #club2, #club3, #club4{
+    height: 200px;
+    width: 200px;
+    background-color: #f50;
+    float: left;
+    margin: 10px;
+  }
+  #club2{
+    background-color: #06f;
+  }
+  #club3{
+    color: #fff;
+    background-color: #00f;
+  }
+  #club4{
+    background-color: #ccc;
+  }
+  </style>
+</head>
+<body id="main">
+  <div id="club">轻按: tap</div>
+  <div id="club2">按住不动: hold</div>
+  <div id="club3">drag, dragstart, dragend, dragup, dragdown, dragleft, dragright</div>
+  <div id="club4">swipe, swipeup, swipedown, swipeleft, swiperight</div>
+<script>
+var main = document.getElementById('main');
+var club = document.getElementById('club');
+var club2 = document.getElementById('club2');
+var club3 = document.getElementById('club3');
+var club4 = document.getElementById('club4');
+Hammer(club).on('tap', function(){
+  alert('tap');
+})
+Hammer(club2).on('hold', function(){
+  alert('hold');
+})
+Hammer(club3).on('dragleft', function(){
+  alert('dragleft');
+})
+Hammer(club3).on('dragright', function(){
+  alert('dragright');
+})
+Hammer(club3).on('dragup', function(){
+  alert('dragup');
+})
+Hammer(club3).on('dragdown', function(){
+  alert('dragdown');
+})
+Hammer(club4).on('swiperight', function(){
+  alert('swiperight');
+})
+</script>
+</body>
+</html>
