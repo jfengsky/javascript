@@ -46,12 +46,12 @@ define(function(require, exports, module){
     angular.bootstrap(document, ['langApp']);
   }
 
-  function Idb(){
+  function Idb(storename){
     var self = this;
     
-    this.loadFromCache = function(dbname, storename, keyname, keyversion, data, fn){
+    this.loadFromCache = function(keyname, keyversion, data, fn){
       // open data
-      var dbOpen = $.indexedDB(dbname, {
+      var dbOpen = $.indexedDB("ix", {
         "version": 1,
         "schema": {
           1: function(trans){
@@ -63,19 +63,19 @@ define(function(require, exports, module){
         }
       }).done(function(db, event){
         // get version
-        $.indexedDB(dbname).objectStore(storename).get(keyname).done(function(result, event){
+        $.indexedDB("ix").objectStore(storename).get(keyname).done(function(result, event){
 
           if(!result) {
             console.log('db empty');
             getData(function(d){
               
-              $.indexedDB(dbname).objectStore(storename).put(d.resource);
+              $.indexedDB("ix").objectStore(storename).put(d.resource);
             });
           } else {
             var lastVersion = result.version;
             if(keyversion === lastVersion){
               console.log('same version and result:');
-              $.indexedDB(dbname).objectStore(storename).each(function(item){
+              $.indexedDB("ix").objectStore(storename).each(function(item){
 
                 
                 upUI(item.value);
@@ -90,7 +90,7 @@ define(function(require, exports, module){
                 // upUI(item.value);
 
                 upUI(d.resource);
-                $.indexedDB(dbname).objectStore(storename).put(d.resource);
+                $.indexedDB("ix").objectStore(storename).put(d.resource);
               });
             }
           }
@@ -100,8 +100,8 @@ define(function(require, exports, module){
       
     };
 
-    this.deleteFromCache = function(dbname, key){
-      var deletePromise = $.indexedDB(dbname).deleteDatabase();
+    this.deleteFromCache = function(){
+      var deletePromise = $.indexedDB("ix").deleteDatabase();
     };
   
     

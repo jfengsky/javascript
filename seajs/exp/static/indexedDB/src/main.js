@@ -2,15 +2,16 @@ define(function(require) {
 
   var $ = require('jquery'),
       idb = require('./idb');
-  var school = new idb();
+  var  = $('#storename').val();
+  var school = new idb(store_name);
 
 
   
 
 
   $('#J_createDB').click(function(){
-    var db_name = $('#J_dbname').val();
-    var store_name = $('#storename').val();
+    // var db_name = $('#J_dbname').val();
+    
     var key_name = $('#keyname').val();
     var key_version = "1.05";
     var datas = {
@@ -28,16 +29,16 @@ define(function(require) {
           ]
         };
 
-    school.loadFromCache(db_name, store_name, key_name, key_version, function(){
+    school.loadFromCache(key_name, key_version, function(){
       console.log("loadfromcache");
     });
   });
 
 
   $('#J_delIndeedDB').click(function(){
-    var db_name = $('#J_dbname').val();
-    var key_name = $('#storename').val();
+    // var db_name = $('#J_dbname').val();
+    // var key_name = $('#storename').val();
     console.log('del db');
-    school.deleteFromCache(db_name, key_name);
+    school.deleteFromCache();
   });
 });
