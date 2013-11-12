@@ -104,7 +104,6 @@ define(function(require, exports, module){
       var deletePromise = $.indexedDB("ix").deleteDatabase();
     };
   
-    
   };
 
   module.exports = Idb;

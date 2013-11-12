@@ -2,7 +2,7 @@ define(function(require) {
 
   var $ = require('jquery'),
       idb = require('./idb');
-  var  = $('#storename').val();
+  var store_name= $('#storename').val();
   var school = new idb(store_name);
 
 
