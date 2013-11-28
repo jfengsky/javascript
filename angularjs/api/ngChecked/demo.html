@@ -1,0 +1,11 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="http://code.angularjs.org/1.2.3/angular.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body ng-controller="Ctrl">
+    Check me to check both: <input type="checkbox" ng-model="master"><br/>
+    <input id="checkSlave" type="checkbox" ng-checked="master">
+  </body>
+</html>
