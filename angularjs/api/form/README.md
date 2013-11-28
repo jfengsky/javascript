@@ -7,8 +7,8 @@
 
 * $valid: 表单是否正确
 
-    myForm.$valid = true
+      myForm.$valid = true
 
 * $error: 表单里的错误
     
-    myForm.$error.required = false
+      myForm.$error.required = false
