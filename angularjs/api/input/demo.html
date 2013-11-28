@@ -1,0 +1,29 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="http://code.angularjs.org/1.2.3/angular.min.js"></script>
+    <script src="script.js"></script>
+  </head>
+  <body>
+    <div ng-controller="Ctrl">
+      <form name="myForm">
+        User name: <input type="text" name="userName" ng-model="user.name" required>
+         <span class="error" ng-show="myForm.userName.$error.required">
+          Required!</span><br>
+
+        Last name: <input type="text" name="lastName" ng-model="user.last"
+          ng-minlength="3" ng-maxlength="10">
+          <span class="error" ng-show="myForm.lastName.$error.minlength"> too short</span>
+          <span class="error" ng-show="myForm.lastName.$error.maxlength"> too long</span>
+      </form>
+      <hr>
+      <dt> user = {{user}}</dt> <br>
+      <dt> myForm.userName.$valid = {{myForm.userName.$valid}} </dt> <br>
+      <dt> myForm.userName.$error = {{myForm.userName.$error}} </dt> <br>
+      <dt> myForm.$valid = {{myForm.$valid}} </dt>
+      <dt> myForm.$error.required = {{!!myForm.$error.required}} </dt>
+      <dt> myForm.$error.minlength = {{!!myForm.$error.minlength}} </dt>
+      <dt> myForm.$error.maxlength = {{!!myForm.$error.maxlength}} </dt>
+    </div>
+  </body>
+</html>
