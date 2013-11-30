@@ -1,0 +1,26 @@
+<!doctype html>
+<html ng-app>
+  <head>
+    <script src="http://code.angularjs.org/1.2.3/angular.min.js"></script>
+    <style>
+    .strike {
+      text-decoration: line-through;
+    }
+    .bold {
+        font-weight: 2000
+    }
+    .red {
+        color: red;
+    }
+    </style>
+  </head>
+  <body>
+    <p ng-class="{strike:deleted, bold: important, red: error}">text example</p>
+    <input type="checkbox" ng-model="deleted"> deleted <br>
+    <input type="checkbox" ng-model="important"> bold <br>
+    <input type="checkbox" ng-model="error"> red 
+    <hr>
+    <p ng-class="style">using string</p>
+    <input type="text" ng-model="style">
+  </body>
+</html>
