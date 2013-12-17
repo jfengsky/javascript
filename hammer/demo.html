@@ -22,6 +22,18 @@
   #club4{
     background-color: #ccc;
   }
+  ul{
+    width: 100%;
+    float: left;
+  }
+  li{
+    float: left;
+    height: 200px;
+    width: 200px;
+    background-color: #999;
+    list-style: none;
+    margin: 10px;
+  }
   </style>
 </head>
 <body id="main">
@@ -29,12 +41,49 @@
   <div id="club2">按住不动: hold</div>
   <div id="club3">drag, dragstart, dragend, dragup, dragdown, dragleft, dragright</div>
   <div id="club4">swipe, swipeup, swipedown, swipeleft, swiperight</div>
+  <ul class="list">
+    <li>1</li>
+    <li>2</li>
+    <li>3</li>
+    <li>4</li>
+  </ul>
 <script>
 var main = document.getElementById('main');
 var club = document.getElementById('club');
 var club2 = document.getElementById('club2');
 var club3 = document.getElementById('club3');
 var club4 = document.getElementById('club4');
+// Hammer($('.list')).on('tap', function(){
+//   alert('tap');
+// })
+function getElementsByClassName(className, element) {
+  var children = (element || document).getElementsByTagName('*');
+  var elements = [];
+
+  for (var i = 0; i < children.length; i++) {
+    var child = children[i];
+    var classNames = child.className.split(' ');
+    for (var j = 0; j < classNames.length; j++) {
+      if (classNames[j] == className) {
+        elements.push(child);
+        break;
+      }
+    }
+  }
+  return elements
+}
+
+
+var tagdom = getElementsByClassName('list');
+console.log(tagdom);
+
+for (var i = 0; i < tagdom.length; i++){
+  Hammer(tagdom[i]).on('tap', function(){
+    alert('tap');
+  })
+}
+
+
 Hammer(club).on('tap', function(){
   alert('tap');
 })
