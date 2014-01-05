@@ -21,4 +21,4 @@ define(function(require) {
 //  var someText = {};
 //  someText.message = "start angular";
 //  $scope.someText = someText;
-//})
+//})d
