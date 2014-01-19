@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html ng-app>
+<head>
+    <title>ng-copy</title>
+    <script src="../../angular/angular.min.js"></script>
+</head>
+<body>
+<input type="text" ng-copy="copied=true" ng-init="copied=false" value="copy me"/>
+copied:{{copied}}
+<br/>
+<br/>
+<input type="text" ng-copy="copied2=true" ng-init="copied2=false" value="copy me 2"/>
+copied2:{{copied2}}
+</body>
+</html>
