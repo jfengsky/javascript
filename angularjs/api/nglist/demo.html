@@ -1,0 +1,19 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <script src="../../angular/angular.min.js"></script>
+</head>
+<body ng-controller="testController">
+<input type="text" ng-list ng-model="name" />
+<div class="">
+    name = {{name}}
+</div>
+
+
+<script>
+function testController($scope){
+    $scope.name=['abc', 'def', 'ghi'];
+}
+</script>
+</body>
+</html>
