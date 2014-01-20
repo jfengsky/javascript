@@ -1,0 +1,12 @@
+<!doctype html>
+<html ng-app>
+<head>
+    <script src="../../angular/angular.min.js"></script>
+</head>
+<body>
+<input type="button" value="red" ng-click="mystyle={color:'#f00'}"/>
+<input type="button" value="blue" ng-click="mystyle={color:'#06f'}"/>
+<input type="button" value="bold" ng-click="mystyle={'font-weight':'bold'}"/>
+<span ng-style="mystyle">test text</span>
+</body>
+</html>
