@@ -44,7 +44,7 @@ var ModalDemoCtrl = function ($scope, $modal, $log) {
 // It is not the same as the $modal service used above.
 
 var ModalInstanceCtrl = function ($scope, $modalInstance, items) {
-
+  $scope.overlaytitles = '4444';
   $scope.items = items;
   $scope.selected = {
     item: $scope.items[0]

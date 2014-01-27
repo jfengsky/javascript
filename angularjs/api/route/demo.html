@@ -1,0 +1,17 @@
+<!doctype html>
+<html ng-app="ngViewExample">
+<head>
+  <title>route</title>
+  <script src="../../angular/angular.min.js"></script>
+  <script src="script.js"></script>
+</head>
+<body>
+<div ng-controller="MainCntl">
+  choose:
+  <a href="book/moby">moby</a> | <br/>
+  <a href="book/moby/ch/1">moby: ch1</a> | <br/>
+  <br/>
+  <div ng-view></div>
+</div>
+</body>
+</html>
