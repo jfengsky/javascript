@@ -1,0 +1,28 @@
+<!doctype html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <title>Document</title>
+</head>
+<body ng-app="NewsPub">
+  <script src="../angular/angular.js"></script>
+  <script src="../angular/angular-route.js"></script>
+  <script src="script.js"></script>
+
+  <div id="content">
+    <div id="leftpanel">
+      <ul>
+        <li>
+          <a href="#/list">新闻列表</a>
+        </li>
+        <li>
+          <a href="#/add">发布新闻</a>
+        </li>
+      </ul>
+    </div>
+    <div id="right">
+      <div id="rightpanel" ng-view>abcd</div>
+    </div>
+  </div>
+</body>
+</html>
