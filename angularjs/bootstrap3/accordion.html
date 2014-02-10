@@ -1,0 +1,24 @@
+<!doctype html>
+<html ng-app="plunker">
+<head>
+  <meta charset="UTF-8">
+  <title>tab</title>
+  <script src="../angular/angular.js"></script>
+    <script src="style/js/ui-bootstrap-0.10.0.js"></script>
+    <script src="accordion.js"></script>
+    <link href="style/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  
+  <div ng-controller="AccordionDemoCtrl">
+    <accordion>
+      <accordion-group heading="static header, initially expanded" is-open="false">
+        this content is straight in the template
+      </accordion-group>
+      <accordion-group heading="{{group.title}}" ng-repeat="group in groups">
+        {{group.content}}
+      </accordion-group>
+  </accordion>
+  </div>
+</body>
+</html>
