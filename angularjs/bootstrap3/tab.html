@@ -1,0 +1,29 @@
+<!doctype html>
+<html lang="en" ng-app="plunker">
+<head>
+  <meta charset="UTF-8">
+  <title>tab</title>
+  <script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.2.8/angular.js"></script>
+    <script src="http://angular-ui.github.io/bootstrap/ui-bootstrap-tpls-0.10.0.js"></script>
+    <script src="tab.js"></script>
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css" rel="stylesheet">
+</head>
+<body>
+  <div ng-controller="TabsDemoCtrl">
+
+
+    <tabset>
+      <tab heading="Static title">Static content</tab>
+      <tab ng-repeat="tab in tabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled">{{tab.content}}</tab>
+      <tab select="alertMe()">
+        <tab-heading> <i class="glyphicon glyphicon-bell"></i>
+          Alert!
+        </tab-heading>
+        I've got an HTML heading, and a select callback. Pretty cool!
+      </tab>
+    </tabset>
+
+    
+  </div>
+</body>
+</html>
