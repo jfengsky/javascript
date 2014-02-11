@@ -1,0 +1,43 @@
+.tree h3, .tree h4, .tree h5 {
+  text-align: center;
+  margin: 0;
+  padding: 0; }
+.tree .fbox {
+  background: url(tree-line.png) repeat-y center center;
+  height: 50px; }
+.tree .tranline {
+  margin: auto;
+  height: 0;
+  border-bottom: 1px solid #cccccc; }
+.tree .sbox .sbox_list {
+  float: left;
+  background: url(tree-line.png) no-repeat center top;
+  padding-top: 10px; }
+.tree .tbox {
+  padding-top: 14px; }
+  .tree .tbox .sbox {
+    float: left;
+    background: url(tree-line.png) repeat-y center center;
+    padding-top: 10px; }
+.tree h3 {
+  width: 175px;
+  height: 32px;
+  margin: auto;
+  background-color: #f9ac16;
+  color: white;
+  line-height: 32px;
+  font-size: 16px; }
+.tree h4 {
+  width: 76px;
+  height: 25px;
+  background-color: #827e8e;
+  line-height: 25px;
+  font-size: 14px;
+  color: white;
+  margin: auto; }
+.tree h5 {
+  width: 76px;
+  height: 25px;
+  background-color: white;
+  line-height: 25px;
+  margin: auto; }

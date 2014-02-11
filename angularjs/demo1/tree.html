@@ -1,0 +1,87 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>tree</title>
+  <script src="http://lib.sinaapp.com/js/jquery/1.10.2/jquery-1.10.2.min.js"></script>
+  <link rel="stylesheet" href="http://lib.sinaapp.com/js/bootstrap/3.0.0/css/bootstrap.min.css" />
+  <link rel="stylesheet" href="tree.css">
+</head>
+<body>
+  <div class="tree" id="J_tree">
+    <div class="fbox">
+      <h3>MK2013 CRM运营</h3>
+    </div>
+    <div class="tranline"></div>
+    <div class="sbox">
+
+      
+
+      <div class="sbox_list">
+        <h4>项目一</h4>
+        <div class="tbox">
+          <div class="tranline"></div>
+          <div class="sbox">
+            <h5>活动一</h5>
+          </div>
+          <div class="sbox">
+            <h5>活动二</h5>
+          </div>
+        </div>
+      </div>
+      <div class="sbox_list">
+        <h4>项目二</h4>
+        <div class="tbox">
+          <div class="tranline"></div>
+          <div class="sbox">
+            <h5>活动一</h5>
+          </div>
+          <div class="sbox">
+            <h5>活动二</h5>
+          </div>
+          <div class="sbox">
+            <h5>活动二</h5>
+          </div>
+        </div>
+      </div>
+      <div class="sbox_list">
+        <h4>项目三</h4>
+        <div class="tbox">
+          <div class="tranline"></div>
+          <div class="sbox">
+            <h5>活动一</h5>
+          </div>
+          <div class="sbox">
+            <h5>活动二</h5>
+          </div>
+          <div class="sbox">
+            <h5>活动二</h5>
+          </div>
+          <div class="sbox">
+            <h5>活动二</h5>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+<script>
+$(function($){
+  // 节点2宽度
+  var firstLength = $("#J_tree .sbox_list").length;
+  var firstWidth = (100/firstLength).toFixed(2);
+  $('#J_tree .sbox_list').css('width', firstWidth + '%');
+  $("#J_tree .fbox").next().css('width', firstWidth * (firstLength - 1) + '%');
+  // 节点3宽度
+  $.each($("#J_tree .sbox_list"), function(index, item){
+    var thirdbox = $($('#J_tree .sbox_list')[index]).find('.sbox');
+    var thirdboxLength = thirdbox.length;
+    var thirdWidth = (100/thirdboxLength).toFixed(2);
+    var thirdline = $($('#J_tree .sbox_list')[index]).find('.tranline');
+    thirdline.css('width', thirdWidth * (thirdboxLength - 1) + '%');
+    thirdbox.css('width', thirdWidth + '%');
+  });
+})
+</script>
+</body>
+</html>
