@@ -22,7 +22,7 @@ single.publicMethod()
 console.log(single.publicVar)
 ###
 
-Singleton = (->
+Singleton = do ->
   init = ->
     publicMethod: ->
       console.log('hello world')
@@ -34,5 +34,4 @@ Singleton = (->
       instantiated = init()
     instantiated
 
-)()
 
