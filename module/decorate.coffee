@@ -22,9 +22,52 @@
 #   .method 'stop', ->
 #     this
 
-Book (isbn, title, author) ->
-  if isbn is undefined
-    throw new Error 'book constructor requires an isbn'
-  @isbn = isbn
-  @title = title or 'no title specified'
+# Book (isbn, title, author) ->
+#   if isbn is undefined
+#     throw new Error 'book constructor requires an isbn'
+#   @isbn = isbn
+#   @title = title or 'no title specified'
+#   return
+
+
+# Book = (isbn, title, author) ->
+#   if not @checkIsbn(isbn)
+#     throw new Error 'book: invalid ISBN'
+#   @isbn = isbn
+#   @title = title or 'not title'
+#   @author = author or 'not author'
+#   return
+# Book:: = 
+#   checkIsbn: (isnb) ->
+#     if isnb is undefined or typeof isnb not 'string'
+#       return false
+#     isbn = isbn.replace(/-/, '')
+#     if isbn.length isnt 10 and isbn.length isnt 13
+#       return false
+
+
+Publication = new Interface 'Publication', [
+    'getIsbn'
+    'setIsbn'
+    'getTitle'
+    'setTitle'
+    'getAuthor'
+    'setAuthor'
+    'display'
+  ]
+
+Book = (isbn, title, author) ->
+  @setIsbn isbn
+  @setTitle tilte
+  @setAuthor author
   return
+
+Book:: = 
+  checkIsbn: (isbn) ->
+    return
+  getIsbn: ->
+    @isbn
+  setIsbn: (isbn) ->
+    @isbn = isbn
+    return
+  
