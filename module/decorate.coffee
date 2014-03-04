@@ -46,28 +46,47 @@
 #       return false
 
 
-Publication = new Interface 'Publication', [
-    'getIsbn'
-    'setIsbn'
-    'getTitle'
-    'setTitle'
-    'getAuthor'
-    'setAuthor'
-    'display'
-  ]
+# Publication = new Interface 'Publication', [
+#     'getIsbn'
+#     'setIsbn'
+#     'getTitle'
+#     'setTitle'
+#     'getAuthor'
+#     'setAuthor'
+#     'display'
+#   ]
 
-Book = (isbn, title, author) ->
-  @setIsbn isbn
-  @setTitle tilte
-  @setAuthor author
+# Book = (isbn, title, author) ->
+#   @setIsbn isbn
+#   @setTitle tilte
+#   @setAuthor author
+#   return
+
+# Book:: = 
+#   checkIsbn: (isbn) ->
+#     return
+#   getIsbn: ->
+#     @isbn
+#   setIsbn: (isbn) ->
+#     @isbn = isbn
+#     return
+  
+
+Person = (name) ->
+  @name = name
   return
 
-Book:: = 
-  checkIsbn: (isbn) ->
-    return
-  getIsbn: ->
-    @isbn
-  setIsbn: (isbn) ->
-    @isbn = isbn
-    return
-  
+Person::getName = ->
+  @name
+
+# reader = new Person('john smith')
+# console.log reader.getName()
+
+Author = (name, books) ->
+  Person.call(@,name)
+  @books = books
+  return
+
+Author:: = new Person()
+
+
