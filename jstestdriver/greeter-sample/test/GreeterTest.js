@@ -1,10 +1,8 @@
-TestCase("GreeterTest", {
-    "test greet": function() {
-        var greeter = new myapp.Greeter();
-        assertEquals("Hello World!", greeter.greet("World"));
-    },
-    "test greet null": function() {
-        var greeter = new myapp.Greeter();
-        assertNull(greeter.greet(null));
-    }
-});
+GreeterTest = TestCase("GreeterTest");
+GreeterTest.prototype.testGreet = function() {
+  var greeter = new myapp.Greeter();
+  assertEquals("Hello World!", greeter.greet("World"));
+
+};
+assertEquals("number",demo(11));
+assertEquals("number",demo('string'));
