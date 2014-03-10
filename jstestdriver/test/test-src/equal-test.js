@@ -38,5 +38,31 @@ describe("A suite of jasmine", function(){
   it("less than", function(){
     expect(e).toBeLessThan(pi);
     expect(pi).not.toBeLessThan(e);
+  });
+
+  var i = 0;
+  beforeEach(function(){
+    i = 1;
+  });
+  it("beforeEach", function(){
+    expect(i).toEqual(1);
+  });
+//  afterEach(function(){
+//    i = 2;
+//  });
+//  it("afterEach", function(){
+//    expect(i).toEqual(2);
+//  })
+
+  beforeEach(function(){
+    this.addMatchers({
+      toBeBetween: function(first, second){
+        return this.actual > first && this.actual < second
+      }
+    });
+  });
+
+  it('3 between 1 and 5', function(){
+    expect(3).toBeBetween(1, 5);
   })
 });
