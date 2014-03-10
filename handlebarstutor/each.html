@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>express demo</title>
+  <script src="script/jquery.js"></script>
+  <script src="script/handlebars-1.0.0.beta.6.js"></script>
+</head>
+<body>
+<div id="list">
+
+</div>
+
+
+<script id="people-template" type="text/x-handlebars-template">
+  {{#each people}}
+  <div class="person">
+    {{this}}
+  </div>
+  {{/each}}
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function () {
+
+    // compile our template
+    var template = Handlebars.compile($("#people-template").html());
+
+    var data = {
+      people: [
+        "Alan Johnson" ,
+        "Allison House" ,
+        "Nick Pettit",
+        "Jim Hoskins",
+        "Ryan Carson"
+      ]
+    };
+
+    $('#list').html(template(data));
+  });
+</script>
+</body>
+</html>

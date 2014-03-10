@@ -1,0 +1,1799 @@
+0 info it worked if it ends with ok
+1 verbose cli [ 'C:\\Program Files\\nodejs\\\\node.exe',
+1 verbose cli   'C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js',
+1 verbose cli   'install',
+1 verbose cli   '-g',
+1 verbose cli   'karma-coverage' ]
+2 info using npm@1.4.3
+3 info using node@v0.10.26
+4 verbose node symlink C:\Program Files\nodejs\\node.exe
+5 verbose cache add [ 'karma-coverage', null ]
+6 verbose cache add name=undefined spec="karma-coverage" args=["karma-coverage",null]
+7 verbose parsed url { protocol: null,
+7 verbose parsed url   slashes: null,
+7 verbose parsed url   auth: null,
+7 verbose parsed url   host: null,
+7 verbose parsed url   port: null,
+7 verbose parsed url   hostname: null,
+7 verbose parsed url   hash: null,
+7 verbose parsed url   search: null,
+7 verbose parsed url   query: null,
+7 verbose parsed url   pathname: 'karma-coverage',
+7 verbose parsed url   path: 'karma-coverage',
+7 verbose parsed url   href: 'karma-coverage' }
+8 silly lockFile 9038671b-karma-coverage karma-coverage
+9 verbose lock karma-coverage d:\Users\jiang.f\AppData\Roaming\npm-cache\9038671b-karma-coverage.lock
+10 silly lockFile 9038671b-karma-coverage karma-coverage
+11 silly lockFile 9038671b-karma-coverage karma-coverage
+12 verbose addNamed [ 'karma-coverage', '' ]
+13 verbose addNamed [ null, '*' ]
+14 silly lockFile 8b64ace7-karma-coverage karma-coverage@
+15 verbose lock karma-coverage@ d:\Users\jiang.f\AppData\Roaming\npm-cache\8b64ace7-karma-coverage.lock
+16 silly addNameRange { name: 'karma-coverage', range: '*', hasData: false }
+17 verbose url raw karma-coverage
+18 verbose url resolving [ 'https://registry.npmjs.org/', './karma-coverage' ]
+19 verbose url resolved https://registry.npmjs.org/karma-coverage
+20 info trying registry request attempt 1 at 11:41:41
+21 http GET https://registry.npmjs.org/karma-coverage
+22 http 200 https://registry.npmjs.org/karma-coverage
+23 silly registry.get cb [ 200,
+23 silly registry.get   { date: 'Mon, 10 Mar 2014 03:41:43 GMT',
+23 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+23 silly registry.get     etag: '"ARHDWCYKI029OX3KTCTV0WHPE"',
+23 silly registry.get     'content-type': 'application/json',
+23 silly registry.get     via: '1.1 varnish',
+23 silly registry.get     'cache-control': 'max-age=1',
+23 silly registry.get     'content-length': '19471',
+23 silly registry.get     'accept-ranges': 'bytes',
+23 silly registry.get     age: '164',
+23 silly registry.get     'x-served-by': 'cache-v37-ASH, cache-ty67-TYO',
+23 silly registry.get     'x-cache': 'MISS, MISS',
+23 silly registry.get     'x-cache-hits': '0, 0',
+23 silly registry.get     'x-timer': 'S1394420610.576602221,VS0,VS379,VE395,VE2292596',
+23 silly registry.get     vary: 'Accept',
+23 silly registry.get     'keep-alive': 'timeout=10, max=50',
+23 silly registry.get     connection: 'Keep-Alive' } ]
+24 silly addNameRange number 2 { name: 'karma-coverage', range: '*', hasData: true }
+25 silly addNameRange versions [ 'karma-coverage',
+25 silly addNameRange   [ '0.0.1',
+25 silly addNameRange     '0.0.2',
+25 silly addNameRange     '0.0.3',
+25 silly addNameRange     '0.0.4',
+25 silly addNameRange     '0.0.5',
+25 silly addNameRange     '0.1.0',
+25 silly addNameRange     '0.1.1',
+25 silly addNameRange     '0.1.2',
+25 silly addNameRange     '0.1.3',
+25 silly addNameRange     '0.1.4',
+25 silly addNameRange     '0.1.5',
+25 silly addNameRange     '0.2.0' ] ]
+26 verbose addNamed [ 'karma-coverage', '0.2.0' ]
+27 verbose addNamed [ '0.2.0', '0.2.0' ]
+28 silly lockFile 3c2155a6-karma-coverage-0-2-0 karma-coverage@0.2.0
+29 verbose lock karma-coverage@0.2.0 d:\Users\jiang.f\AppData\Roaming\npm-cache\3c2155a6-karma-coverage-0-2-0.lock
+30 silly lockFile 1869dedf-overage-karma-coverage-0-2-0-tgz https://registry.npmjs.org/karma-coverage/-/karma-coverage-0.2.0.tgz
+31 verbose lock https://registry.npmjs.org/karma-coverage/-/karma-coverage-0.2.0.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\1869dedf-overage-karma-coverage-0-2-0-tgz.lock
+32 verbose addRemoteTarball [ 'https://registry.npmjs.org/karma-coverage/-/karma-coverage-0.2.0.tgz',
+32 verbose addRemoteTarball   'd8edc429c35ab7c68fa90a5cd2f2ecb3aa31fde8' ]
+33 info retry fetch attempt 1 at 11:41:43
+34 verbose fetch to= d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422903522-0.4866853654384613\tmp.tgz
+35 http GET https://registry.npmjs.org/karma-coverage/-/karma-coverage-0.2.0.tgz
+36 http 200 https://registry.npmjs.org/karma-coverage/-/karma-coverage-0.2.0.tgz
+37 verbose tar unpack d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422903522-0.4866853654384613\tmp.tgz
+38 silly lockFile c1c429b4-03522-0-4866853654384613-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422903522-0.4866853654384613\package
+39 verbose lock tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422903522-0.4866853654384613\package d:\Users\jiang.f\AppData\Roaming\npm-cache\c1c429b4-03522-0-4866853654384613-package.lock
+40 silly lockFile d69b41d4-03522-0-4866853654384613-tmp-tgz tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422903522-0.4866853654384613\tmp.tgz
+41 verbose lock tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422903522-0.4866853654384613\tmp.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\d69b41d4-03522-0-4866853654384613-tmp-tgz.lock
+42 silly gunzTarPerm modes [ '755', '644' ]
+43 silly gunzTarPerm extractEntry package.json
+44 silly gunzTarPerm extractEntry README.md
+45 silly gunzTarPerm extractEntry LICENSE
+46 silly gunzTarPerm extractEntry lib/index.js
+47 silly gunzTarPerm extractEntry lib/preprocessor.js
+48 silly gunzTarPerm extractEntry lib/reporter.js
+49 silly gunzTarPerm extractEntry lib/reporter.js.orig
+50 silly gunzTarPerm extractEntry package.json.orig
+51 silly lockFile c1c429b4-03522-0-4866853654384613-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422903522-0.4866853654384613\package
+52 silly lockFile c1c429b4-03522-0-4866853654384613-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422903522-0.4866853654384613\package
+53 silly lockFile d69b41d4-03522-0-4866853654384613-tmp-tgz tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422903522-0.4866853654384613\tmp.tgz
+54 silly lockFile d69b41d4-03522-0-4866853654384613-tmp-tgz tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422903522-0.4866853654384613\tmp.tgz
+55 verbose tar pack [ 'd:\\Users\\jiang.f\\AppData\\Roaming\\npm-cache\\karma-coverage\\0.2.0\\package.tgz',
+55 verbose tar pack   'd:\\Users\\jiang.f\\AppData\\Local\\Temp\\npm-5664-sRjaoD2n\\1394422903522-0.4866853654384613\\package' ]
+56 verbose tarball d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz
+57 verbose folder d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422903522-0.4866853654384613\package
+58 silly lockFile c1c429b4-03522-0-4866853654384613-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422903522-0.4866853654384613\package
+59 verbose lock tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422903522-0.4866853654384613\package d:\Users\jiang.f\AppData\Roaming\npm-cache\c1c429b4-03522-0-4866853654384613-package.lock
+60 silly lockFile 783aee10-karma-coverage-0-2-0-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz
+61 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\783aee10-karma-coverage-0-2-0-package-tgz.lock
+62 silly lockFile c1c429b4-03522-0-4866853654384613-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422903522-0.4866853654384613\package
+63 silly lockFile c1c429b4-03522-0-4866853654384613-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422903522-0.4866853654384613\package
+64 silly lockFile 783aee10-karma-coverage-0-2-0-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz
+65 silly lockFile 783aee10-karma-coverage-0-2-0-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz
+66 silly lockFile 92212cb8-che-karma-coverage-0-2-0-package d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package
+67 verbose lock d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package d:\Users\jiang.f\AppData\Roaming\npm-cache\92212cb8-che-karma-coverage-0-2-0-package.lock
+68 silly lockFile 92212cb8-che-karma-coverage-0-2-0-package d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package
+69 silly lockFile 92212cb8-che-karma-coverage-0-2-0-package d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package
+70 verbose tar unpack d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz
+71 silly lockFile ef1ffb18-che-karma-coverage-0-2-0-package tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package
+72 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package d:\Users\jiang.f\AppData\Roaming\npm-cache\ef1ffb18-che-karma-coverage-0-2-0-package.lock
+73 silly lockFile 783aee10-karma-coverage-0-2-0-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz
+74 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\783aee10-karma-coverage-0-2-0-package-tgz.lock
+75 silly gunzTarPerm modes [ '755', '644' ]
+76 silly gunzTarPerm extractEntry package.json
+77 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+78 silly gunzTarPerm extractEntry README.md
+79 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+80 silly gunzTarPerm extractEntry LICENSE
+81 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+82 silly gunzTarPerm extractEntry lib/index.js
+83 silly gunzTarPerm modified mode [ 'lib/index.js', 438, 420 ]
+84 silly gunzTarPerm extractEntry lib/preprocessor.js
+85 silly gunzTarPerm modified mode [ 'lib/preprocessor.js', 438, 420 ]
+86 silly gunzTarPerm extractEntry lib/reporter.js
+87 silly gunzTarPerm modified mode [ 'lib/reporter.js', 438, 420 ]
+88 silly gunzTarPerm extractEntry lib/reporter.js.orig
+89 silly gunzTarPerm modified mode [ 'lib/reporter.js.orig', 438, 420 ]
+90 silly gunzTarPerm extractEntry package.json.orig
+91 silly gunzTarPerm modified mode [ 'package.json.orig', 438, 420 ]
+92 silly lockFile ef1ffb18-che-karma-coverage-0-2-0-package tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package
+93 silly lockFile ef1ffb18-che-karma-coverage-0-2-0-package tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package
+94 silly lockFile 783aee10-karma-coverage-0-2-0-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz
+95 silly lockFile 783aee10-karma-coverage-0-2-0-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz
+96 verbose chmod d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz 644
+97 silly chown skipping for windows d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz
+98 silly lockFile 1869dedf-overage-karma-coverage-0-2-0-tgz https://registry.npmjs.org/karma-coverage/-/karma-coverage-0.2.0.tgz
+99 silly lockFile 1869dedf-overage-karma-coverage-0-2-0-tgz https://registry.npmjs.org/karma-coverage/-/karma-coverage-0.2.0.tgz
+100 silly lockFile 3c2155a6-karma-coverage-0-2-0 karma-coverage@0.2.0
+101 silly lockFile 3c2155a6-karma-coverage-0-2-0 karma-coverage@0.2.0
+102 silly lockFile 8b64ace7-karma-coverage karma-coverage@
+103 silly lockFile 8b64ace7-karma-coverage karma-coverage@
+104 silly resolved [ { name: 'karma-coverage',
+104 silly resolved     version: '0.2.0',
+104 silly resolved     description: 'A Karma plugin. Generate code coverage.',
+104 silly resolved     main: 'lib/index.js',
+104 silly resolved     scripts: { test: 'grunt test' },
+104 silly resolved     repository:
+104 silly resolved      { type: 'git',
+104 silly resolved        url: 'git://github.com/karma-runner/karma-coverage.git' },
+104 silly resolved     keywords:
+104 silly resolved      [ 'karma-plugin',
+104 silly resolved        'karma-preprocessor',
+104 silly resolved        'karma-reporter',
+104 silly resolved        'coverage',
+104 silly resolved        'istanbul' ],
+104 silly resolved     author: { name: 'SATO taichi', email: 'ryushi@gmail.com' },
+104 silly resolved     dependencies: { istanbul: '~0.1.45', ibrik: '~1.0.1', dateformat: '~1.0.6' },
+104 silly resolved     peerDependencies: { karma: '>=0.9' },
+104 silly resolved     license: 'MIT',
+104 silly resolved     devDependencies:
+104 silly resolved      { mocks: '0.0.11',
+104 silly resolved        grunt: '~0.4.1',
+104 silly resolved        'grunt-simple-mocha': '~0.4.0',
+104 silly resolved        'grunt-contrib-jshint': '~0.6.0',
+104 silly resolved        karma: '~0.9.3',
+104 silly resolved        sinon: '~1.7.3',
+104 silly resolved        chai: '~1.7.2',
+104 silly resolved        'sinon-chai': '~2.4.0',
+104 silly resolved        'grunt-bump': '~0.0.7',
+104 silly resolved        'grunt-npm': '~0.0.2',
+104 silly resolved        'grunt-auto-release': '~0.0.1' },
+104 silly resolved     contributors: [ [Object], [Object], [Object], [Object], [Object], [Object] ],
+104 silly resolved     readme: '# karma-coverage [![Build Status](https://travis-ci.org/karma-runner/karma-coverage.png?branch=master)](https://travis-ci.org/karma-runner/karma-coverage)\n\n> Generate code coverage using [Istanbul].\n\n## Installation\n\nThe easiest way is to keep `karma-coverage` as a devDependency in your `package.json`.\n```json\n{\n  "devDependencies": {\n    "karma": "~0.10",\n    "karma-coverage": "~0.1"\n  }\n}\n```\n\nYou can simple do it by:\n```bash\nnpm install karma-coverage --save-dev\n```\n\n## Configuration\nFollowing code shows the default configuration...\n```js\n// karma.conf.js\nmodule.exports = function(config) {\n  config.set({\n    files: [\n      \'src/**/*.js\',\n      \'test/**/*.js\'\n    ],\n\n    // coverage reporter generates the coverage\n    reporters: [\'progress\', \'coverage\'],\n\n    preprocessors: {\n      // source files, that you wanna generate coverage for\n      // do not include tests or libraries\n      // (these files will be instrumented by Istanbul)\n      \'src/*.js\': [\'coverage\']\n    },\n\n    // optionally, configure the reporter\n    coverageReporter: {\n      type : \'html\',\n      dir : \'coverage/\'\n    }\n  });\n};\n```\n\n### Options\n#### type\n**Type:** String\n\n**Possible Values:**\n  * `html` (default)\n  * `lcov` (lcov and html)\n  * `lcovonly`\n  * `text`\n  * `text-summary`\n  * `cobertura` (xml format supported by Jenkins)\n  * `teamcity` (code coverage System Messages for TeamCity)\n\nIf you set `type` to `text` or `text-summary`, you may set the `file` option, like this.\n```javascript\ncoverageReporter = {\n  type : \'text\',\n  dir : \'coverage/\',\n  file : \'coverage.txt\'\n}\n```\nIf no filename is given, it will write the output to the console.\n\n#### dir\n**Type:** String\n\n**Description:** This will be used to output coverage reports. When\n  you set a relative path, the directory is resolved against the `basePath`.\n\n#### multiple reporters\nYou can use multiple reporters, by providing array of options.\n\n```javascript\ncoverageReporter: {\n  reporters:[\n    {type: \'html\', dir:\'coverage/\'},\n    {type: \'teamcity\'},\n    {type: \'text-summary\'}\n  ],\n}\n```\n \n----\n\nFor more information on Karma see the [homepage].\n\n\n[homepage]: http://karma-runner.github.com\n[Istanbul]: https://github.com/yahoo/istanbul\n',
+104 silly resolved     readmeFilename: 'README.md',
+104 silly resolved     bugs: { url: 'https://github.com/karma-runner/karma-coverage/issues' },
+104 silly resolved     homepage: 'https://github.com/karma-runner/karma-coverage',
+104 silly resolved     _id: 'karma-coverage@0.2.0',
+104 silly resolved     dist: { shasum: '8f60b67f7e92f79746cd61e2c485a2886b234b0e' },
+104 silly resolved     _from: 'karma-coverage@',
+104 silly resolved     _resolved: 'https://registry.npmjs.org/karma-coverage/-/karma-coverage-0.2.0.tgz' } ]
+105 info install karma-coverage@0.2.0 into d:\Users\jiang.f\AppData\Roaming\npm
+106 info installOne karma-coverage@0.2.0
+107 info d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage unbuild
+108 verbose tar unpack d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz
+109 silly lockFile 2bd70451--npm-node-modules-karma-coverage tar://d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage
+110 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage d:\Users\jiang.f\AppData\Roaming\npm-cache\2bd70451--npm-node-modules-karma-coverage.lock
+111 silly lockFile 783aee10-karma-coverage-0-2-0-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz
+112 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\783aee10-karma-coverage-0-2-0-package-tgz.lock
+113 silly gunzTarPerm modes [ '755', '644' ]
+114 silly gunzTarPerm extractEntry package.json
+115 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+116 silly gunzTarPerm extractEntry README.md
+117 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+118 silly gunzTarPerm extractEntry LICENSE
+119 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+120 silly gunzTarPerm extractEntry lib/index.js
+121 silly gunzTarPerm modified mode [ 'lib/index.js', 438, 420 ]
+122 silly gunzTarPerm extractEntry lib/preprocessor.js
+123 silly gunzTarPerm modified mode [ 'lib/preprocessor.js', 438, 420 ]
+124 silly gunzTarPerm extractEntry lib/reporter.js
+125 silly gunzTarPerm modified mode [ 'lib/reporter.js', 438, 420 ]
+126 silly gunzTarPerm extractEntry lib/reporter.js.orig
+127 silly gunzTarPerm modified mode [ 'lib/reporter.js.orig', 438, 420 ]
+128 silly gunzTarPerm extractEntry package.json.orig
+129 silly gunzTarPerm modified mode [ 'package.json.orig', 438, 420 ]
+130 silly lockFile 2bd70451--npm-node-modules-karma-coverage tar://d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage
+131 silly lockFile 2bd70451--npm-node-modules-karma-coverage tar://d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage
+132 silly lockFile 783aee10-karma-coverage-0-2-0-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz
+133 silly lockFile 783aee10-karma-coverage-0-2-0-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\karma-coverage\0.2.0\package.tgz
+134 info preinstall karma-coverage@0.2.0
+135 verbose readDependencies using package.json deps
+136 verbose readDependencies using package.json deps
+137 verbose cache add [ 'istanbul@~0.1.45', null ]
+138 verbose cache add name=undefined spec="istanbul@~0.1.45" args=["istanbul@~0.1.45",null]
+139 verbose parsed url { protocol: null,
+139 verbose parsed url   slashes: null,
+139 verbose parsed url   auth: null,
+139 verbose parsed url   host: null,
+139 verbose parsed url   port: null,
+139 verbose parsed url   hostname: null,
+139 verbose parsed url   hash: null,
+139 verbose parsed url   search: null,
+139 verbose parsed url   query: null,
+139 verbose parsed url   pathname: 'istanbul@~0.1.45',
+139 verbose parsed url   path: 'istanbul@~0.1.45',
+139 verbose parsed url   href: 'istanbul@~0.1.45' }
+140 verbose cache add name="istanbul" spec="~0.1.45" args=["istanbul","~0.1.45"]
+141 verbose parsed url { protocol: null,
+141 verbose parsed url   slashes: null,
+141 verbose parsed url   auth: null,
+141 verbose parsed url   host: null,
+141 verbose parsed url   port: null,
+141 verbose parsed url   hostname: null,
+141 verbose parsed url   hash: null,
+141 verbose parsed url   search: null,
+141 verbose parsed url   query: null,
+141 verbose parsed url   pathname: '~0.1.45',
+141 verbose parsed url   path: '~0.1.45',
+141 verbose parsed url   href: '~0.1.45' }
+142 verbose addNamed [ 'istanbul', '~0.1.45' ]
+143 verbose addNamed [ null, '>=0.1.45-0 <0.2.0-0' ]
+144 silly lockFile e6699f3e-istanbul-0-1-45 istanbul@~0.1.45
+145 verbose lock istanbul@~0.1.45 d:\Users\jiang.f\AppData\Roaming\npm-cache\e6699f3e-istanbul-0-1-45.lock
+146 verbose cache add [ 'ibrik@~1.0.1', null ]
+147 verbose cache add name=undefined spec="ibrik@~1.0.1" args=["ibrik@~1.0.1",null]
+148 verbose parsed url { protocol: null,
+148 verbose parsed url   slashes: null,
+148 verbose parsed url   auth: null,
+148 verbose parsed url   host: null,
+148 verbose parsed url   port: null,
+148 verbose parsed url   hostname: null,
+148 verbose parsed url   hash: null,
+148 verbose parsed url   search: null,
+148 verbose parsed url   query: null,
+148 verbose parsed url   pathname: 'ibrik@~1.0.1',
+148 verbose parsed url   path: 'ibrik@~1.0.1',
+148 verbose parsed url   href: 'ibrik@~1.0.1' }
+149 verbose cache add name="ibrik" spec="~1.0.1" args=["ibrik","~1.0.1"]
+150 verbose parsed url { protocol: null,
+150 verbose parsed url   slashes: null,
+150 verbose parsed url   auth: null,
+150 verbose parsed url   host: null,
+150 verbose parsed url   port: null,
+150 verbose parsed url   hostname: null,
+150 verbose parsed url   hash: null,
+150 verbose parsed url   search: null,
+150 verbose parsed url   query: null,
+150 verbose parsed url   pathname: '~1.0.1',
+150 verbose parsed url   path: '~1.0.1',
+150 verbose parsed url   href: '~1.0.1' }
+151 verbose addNamed [ 'ibrik', '~1.0.1' ]
+152 verbose addNamed [ null, '>=1.0.1-0 <1.1.0-0' ]
+153 silly lockFile 8268bf66-ibrik-1-0-1 ibrik@~1.0.1
+154 verbose lock ibrik@~1.0.1 d:\Users\jiang.f\AppData\Roaming\npm-cache\8268bf66-ibrik-1-0-1.lock
+155 verbose cache add [ 'dateformat@~1.0.6', null ]
+156 verbose cache add name=undefined spec="dateformat@~1.0.6" args=["dateformat@~1.0.6",null]
+157 verbose parsed url { protocol: null,
+157 verbose parsed url   slashes: null,
+157 verbose parsed url   auth: null,
+157 verbose parsed url   host: null,
+157 verbose parsed url   port: null,
+157 verbose parsed url   hostname: null,
+157 verbose parsed url   hash: null,
+157 verbose parsed url   search: null,
+157 verbose parsed url   query: null,
+157 verbose parsed url   pathname: 'dateformat@~1.0.6',
+157 verbose parsed url   path: 'dateformat@~1.0.6',
+157 verbose parsed url   href: 'dateformat@~1.0.6' }
+158 verbose cache add name="dateformat" spec="~1.0.6" args=["dateformat","~1.0.6"]
+159 verbose parsed url { protocol: null,
+159 verbose parsed url   slashes: null,
+159 verbose parsed url   auth: null,
+159 verbose parsed url   host: null,
+159 verbose parsed url   port: null,
+159 verbose parsed url   hostname: null,
+159 verbose parsed url   hash: null,
+159 verbose parsed url   search: null,
+159 verbose parsed url   query: null,
+159 verbose parsed url   pathname: '~1.0.6',
+159 verbose parsed url   path: '~1.0.6',
+159 verbose parsed url   href: '~1.0.6' }
+160 verbose addNamed [ 'dateformat', '~1.0.6' ]
+161 verbose addNamed [ null, '>=1.0.6-0 <1.1.0-0' ]
+162 silly lockFile 7bc67268-dateformat-1-0-6 dateformat@~1.0.6
+163 verbose lock dateformat@~1.0.6 d:\Users\jiang.f\AppData\Roaming\npm-cache\7bc67268-dateformat-1-0-6.lock
+164 silly addNameRange { name: 'istanbul',
+164 silly addNameRange   range: '>=0.1.45-0 <0.2.0-0',
+164 silly addNameRange   hasData: false }
+165 silly addNameRange { name: 'ibrik', range: '>=1.0.1-0 <1.1.0-0', hasData: false }
+166 verbose url raw istanbul
+167 verbose url resolving [ 'https://registry.npmjs.org/', './istanbul' ]
+168 verbose url resolved https://registry.npmjs.org/istanbul
+169 info trying registry request attempt 1 at 11:41:44
+170 http GET https://registry.npmjs.org/istanbul
+171 verbose url raw ibrik
+172 verbose url resolving [ 'https://registry.npmjs.org/', './ibrik' ]
+173 verbose url resolved https://registry.npmjs.org/ibrik
+174 info trying registry request attempt 1 at 11:41:44
+175 http GET https://registry.npmjs.org/ibrik
+176 silly addNameRange { name: 'dateformat',
+176 silly addNameRange   range: '>=1.0.6-0 <1.1.0-0',
+176 silly addNameRange   hasData: false }
+177 verbose url raw dateformat
+178 verbose url resolving [ 'https://registry.npmjs.org/', './dateformat' ]
+179 verbose url resolved https://registry.npmjs.org/dateformat
+180 info trying registry request attempt 1 at 11:41:44
+181 http GET https://registry.npmjs.org/dateformat
+182 http 200 https://registry.npmjs.org/ibrik
+183 silly registry.get cb [ 200,
+183 silly registry.get   { date: 'Mon, 10 Mar 2014 03:41:45 GMT',
+183 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+183 silly registry.get     etag: '"7L15RFQRSJ10XSBZSRI0YBY6L"',
+183 silly registry.get     'content-type': 'application/json',
+183 silly registry.get     via: '1.1 varnish',
+183 silly registry.get     'cache-control': 'max-age=1',
+183 silly registry.get     'content-length': '14510',
+183 silly registry.get     'accept-ranges': 'bytes',
+183 silly registry.get     age: '62',
+183 silly registry.get     'x-served-by': 'cache-v36-ASH, cache-ty66-TYO',
+183 silly registry.get     'x-cache': 'HIT, MISS',
+183 silly registry.get     'x-cache-hits': '4376, 0',
+183 silly registry.get     'x-timer': 'S1394419901.928556919,VS0,VS-551,VE-551,VE3003606',
+183 silly registry.get     vary: 'Accept',
+183 silly registry.get     'keep-alive': 'timeout=10, max=50',
+183 silly registry.get     connection: 'Keep-Alive' } ]
+184 silly addNameRange number 2 { name: 'ibrik', range: '>=1.0.1-0 <1.1.0-0', hasData: true }
+185 silly addNameRange versions [ 'ibrik',
+185 silly addNameRange   [ '0.0.1-dev',
+185 silly addNameRange     '0.0.1',
+185 silly addNameRange     '0.0.2',
+185 silly addNameRange     '0.0.3',
+185 silly addNameRange     '0.0.3-1',
+185 silly addNameRange     '0.0.3-2',
+185 silly addNameRange     '0.0.4',
+185 silly addNameRange     '1.0.1',
+185 silly addNameRange     '1.1.0',
+185 silly addNameRange     '1.1.1' ] ]
+186 verbose addNamed [ 'ibrik', '1.0.1' ]
+187 verbose addNamed [ '1.0.1', '1.0.1' ]
+188 silly lockFile eeb5b243-ibrik-1-0-1 ibrik@1.0.1
+189 verbose lock ibrik@1.0.1 d:\Users\jiang.f\AppData\Roaming\npm-cache\eeb5b243-ibrik-1-0-1.lock
+190 silly lockFile a1e187e6--npmjs-org-ibrik-ibrik-1-0-1-tgz https://registry.npmjs.org/ibrik/-/ibrik-1.0.1.tgz
+191 verbose lock https://registry.npmjs.org/ibrik/-/ibrik-1.0.1.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\a1e187e6--npmjs-org-ibrik-ibrik-1-0-1-tgz.lock
+192 verbose addRemoteTarball [ 'https://registry.npmjs.org/ibrik/-/ibrik-1.0.1.tgz',
+192 verbose addRemoteTarball   'ba9c0cf9302c51a812dc4a92038b3de579c0aefb' ]
+193 info retry fetch attempt 1 at 11:41:45
+194 verbose fetch to= d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905874-0.8255516653880477\tmp.tgz
+195 http GET https://registry.npmjs.org/ibrik/-/ibrik-1.0.1.tgz
+196 http 200 https://registry.npmjs.org/dateformat
+197 silly registry.get cb [ 200,
+197 silly registry.get   { date: 'Mon, 10 Mar 2014 03:41:45 GMT',
+197 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+197 silly registry.get     etag: '"19W95X3HT424F4136OQZRSA9G"',
+197 silly registry.get     'content-type': 'application/json',
+197 silly registry.get     via: '1.1 varnish',
+197 silly registry.get     'cache-control': 'max-age=1',
+197 silly registry.get     'content-length': '21839',
+197 silly registry.get     'accept-ranges': 'bytes',
+197 silly registry.get     age: '51',
+197 silly registry.get     'x-served-by': 'cache-v37-ASH, cache-ty67-TYO',
+197 silly registry.get     'x-cache': 'HIT, HIT',
+197 silly registry.get     'x-cache-hits': '1, 1',
+197 silly registry.get     'x-timer': 'S1394413775.644575596,VS0,VS378,VE379,VE9129946',
+197 silly registry.get     vary: 'Accept',
+197 silly registry.get     'keep-alive': 'timeout=10, max=50',
+197 silly registry.get     connection: 'Keep-Alive' } ]
+198 silly addNameRange number 2 { name: 'dateformat',
+198 silly addNameRange   range: '>=1.0.6-0 <1.1.0-0',
+198 silly addNameRange   hasData: true }
+199 silly addNameRange versions [ 'dateformat',
+199 silly addNameRange   [ '0.9.0-1.2.3',
+199 silly addNameRange     '1.0.0-1.2.3',
+199 silly addNameRange     '1.0.1-1.2.3',
+199 silly addNameRange     '1.0.2-1.2.3',
+199 silly addNameRange     '1.0.3-1.2.3',
+199 silly addNameRange     '1.0.4-1.2.3',
+199 silly addNameRange     '1.0.5-1.2.3',
+199 silly addNameRange     '1.0.6-1.2.3',
+199 silly addNameRange     '1.0.7-1.2.3' ] ]
+200 verbose addNamed [ 'dateformat', '1.0.7-1.2.3' ]
+201 verbose addNamed [ '1.0.7-1.2.3', '1.0.7-1.2.3' ]
+202 silly lockFile 066f9cb9-dateformat-1-0-7-1-2-3 dateformat@1.0.7-1.2.3
+203 verbose lock dateformat@1.0.7-1.2.3 d:\Users\jiang.f\AppData\Roaming\npm-cache\066f9cb9-dateformat-1-0-7-1-2-3.lock
+204 silly lockFile 1d211258-ormat-dateformat-1-0-7-1-2-3-tgz https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz
+205 verbose lock https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\1d211258-ormat-dateformat-1-0-7-1-2-3-tgz.lock
+206 verbose addRemoteTarball [ 'https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz',
+206 verbose addRemoteTarball   'ebb561bb7214ee57a8dc2687adab1d555de9419c' ]
+207 info retry fetch attempt 1 at 11:41:45
+208 verbose fetch to= d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905945-0.5867259399965405\tmp.tgz
+209 http GET https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz
+210 http 200 https://registry.npmjs.org/istanbul
+211 silly registry.get cb [ 200,
+211 silly registry.get   { date: 'Mon, 10 Mar 2014 03:41:45 GMT',
+211 silly registry.get     server: 'CouchDB/1.5.0 (Erlang OTP/R16B)',
+211 silly registry.get     etag: '"E0YFS6MYJCMEY0UID9DC5N6IU"',
+211 silly registry.get     'content-type': 'application/json',
+211 silly registry.get     via: '1.1 varnish',
+211 silly registry.get     'cache-control': 'max-age=1',
+211 silly registry.get     'content-length': '127356',
+211 silly registry.get     'accept-ranges': 'bytes',
+211 silly registry.get     age: '283',
+211 silly registry.get     'x-served-by': 'cache-v43-ASH, cache-ty66-TYO',
+211 silly registry.get     'x-cache': 'HIT, MISS',
+211 silly registry.get     'x-cache-hits': '1, 0',
+211 silly registry.get     'x-timer': 'S1394413771.605919600,VS0,VS76,VE153,VE9133998',
+211 silly registry.get     vary: 'Accept',
+211 silly registry.get     'keep-alive': 'timeout=10, max=50',
+211 silly registry.get     connection: 'Keep-Alive' } ]
+212 silly addNameRange number 2 { name: 'istanbul', range: '>=0.1.45-0 <0.2.0-0', hasData: true }
+213 silly addNameRange versions [ 'istanbul',
+213 silly addNameRange   [ '0.1.0',
+213 silly addNameRange     '0.1.1',
+213 silly addNameRange     '0.1.2',
+213 silly addNameRange     '0.1.3',
+213 silly addNameRange     '0.1.4',
+213 silly addNameRange     '0.1.5',
+213 silly addNameRange     '0.1.6',
+213 silly addNameRange     '0.1.7',
+213 silly addNameRange     '0.1.8',
+213 silly addNameRange     '0.1.9',
+213 silly addNameRange     '0.1.10',
+213 silly addNameRange     '0.1.11',
+213 silly addNameRange     '0.1.12',
+213 silly addNameRange     '0.1.13',
+213 silly addNameRange     '0.1.14',
+213 silly addNameRange     '0.1.15',
+213 silly addNameRange     '0.1.16',
+213 silly addNameRange     '0.1.17',
+213 silly addNameRange     '0.1.18',
+213 silly addNameRange     '0.1.19',
+213 silly addNameRange     '0.1.20',
+213 silly addNameRange     '0.1.21',
+213 silly addNameRange     '0.1.22',
+213 silly addNameRange     '0.1.23',
+213 silly addNameRange     '0.1.24',
+213 silly addNameRange     '0.1.25',
+213 silly addNameRange     '0.1.26',
+213 silly addNameRange     '0.1.27',
+213 silly addNameRange     '0.1.28',
+213 silly addNameRange     '0.1.29',
+213 silly addNameRange     '0.1.30',
+213 silly addNameRange     '0.1.31',
+213 silly addNameRange     '0.1.32',
+213 silly addNameRange     '0.1.33',
+213 silly addNameRange     '0.1.34',
+213 silly addNameRange     '0.1.35',
+213 silly addNameRange     '0.1.36',
+213 silly addNameRange     '0.1.37',
+213 silly addNameRange     '0.1.38',
+213 silly addNameRange     '0.1.39',
+213 silly addNameRange     '0.1.40',
+213 silly addNameRange     '0.1.41',
+213 silly addNameRange     '0.1.42',
+213 silly addNameRange     '0.1.43',
+213 silly addNameRange     '0.1.44',
+213 silly addNameRange     '0.1.45',
+213 silly addNameRange     '0.1.46',
+213 silly addNameRange     '0.2.0',
+213 silly addNameRange     '0.2.1',
+213 silly addNameRange     '0.2.2',
+213 silly addNameRange     '0.2.3',
+213 silly addNameRange     '0.2.4',
+213 silly addNameRange     '0.2.5',
+213 silly addNameRange     '0.2.6' ] ]
+214 verbose addNamed [ 'istanbul', '0.1.46' ]
+215 verbose addNamed [ '0.1.46', '0.1.46' ]
+216 silly lockFile 0d8aeccf-istanbul-0-1-46 istanbul@0.1.46
+217 verbose lock istanbul@0.1.46 d:\Users\jiang.f\AppData\Roaming\npm-cache\0d8aeccf-istanbul-0-1-46.lock
+218 silly lockFile d3723c84-org-istanbul-istanbul-0-1-46-tgz https://registry.npmjs.org/istanbul/-/istanbul-0.1.46.tgz
+219 verbose lock https://registry.npmjs.org/istanbul/-/istanbul-0.1.46.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\d3723c84-org-istanbul-istanbul-0-1-46-tgz.lock
+220 verbose addRemoteTarball [ 'https://registry.npmjs.org/istanbul/-/istanbul-0.1.46.tgz',
+220 verbose addRemoteTarball   'cefeb1c787d125a6db23bd0f63b0eb9390b0b40d' ]
+221 info retry fetch attempt 1 at 11:41:46
+222 verbose fetch to= d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422906624-0.019398269709199667\tmp.tgz
+223 http GET https://registry.npmjs.org/istanbul/-/istanbul-0.1.46.tgz
+224 http 200 https://registry.npmjs.org/ibrik/-/ibrik-1.0.1.tgz
+225 verbose tar unpack d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905874-0.8255516653880477\tmp.tgz
+226 silly lockFile 36e91c91-05874-0-8255516653880477-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905874-0.8255516653880477\package
+227 verbose lock tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905874-0.8255516653880477\package d:\Users\jiang.f\AppData\Roaming\npm-cache\36e91c91-05874-0-8255516653880477-package.lock
+228 silly lockFile 0af78918-05874-0-8255516653880477-tmp-tgz tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905874-0.8255516653880477\tmp.tgz
+229 verbose lock tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905874-0.8255516653880477\tmp.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\0af78918-05874-0-8255516653880477-tmp-tgz.lock
+230 silly gunzTarPerm modes [ '755', '644' ]
+231 silly gunzTarPerm extractEntry package.json
+232 silly gunzTarPerm extractEntry README.md
+233 silly gunzTarPerm extractEntry LICENSE.BSD
+234 silly gunzTarPerm extractEntry Makefile
+235 silly gunzTarPerm extractEntry bin/ibrik
+236 silly gunzTarPerm extractEntry lib/command.js
+237 silly gunzTarPerm extractEntry lib/cover.js
+238 http 200 https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz
+239 verbose tar unpack d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905945-0.5867259399965405\tmp.tgz
+240 silly lockFile 498b80ea-05945-0-5867259399965405-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905945-0.5867259399965405\package
+241 verbose lock tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905945-0.5867259399965405\package d:\Users\jiang.f\AppData\Roaming\npm-cache\498b80ea-05945-0-5867259399965405-package.lock
+242 silly lockFile 46e1461d-05945-0-5867259399965405-tmp-tgz tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905945-0.5867259399965405\tmp.tgz
+243 verbose lock tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905945-0.5867259399965405\tmp.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\46e1461d-05945-0-5867259399965405-tmp-tgz.lock
+244 silly gunzTarPerm modes [ '755', '644' ]
+245 silly gunzTarPerm extractEntry lib/hook.js
+246 silly gunzTarPerm extractEntry package.json
+247 silly gunzTarPerm extractEntry LICENSE
+248 silly gunzTarPerm extractEntry lib/dateformat.js
+249 silly gunzTarPerm extractEntry lib/ibrik.js
+250 silly gunzTarPerm extractEntry lib/instrumenter.js
+251 silly gunzTarPerm extractEntry Readme.md
+252 silly gunzTarPerm extractEntry test/basic.js
+253 silly gunzTarPerm extractEntry lib/report.js
+254 silly gunzTarPerm extractEntry tools/watch.coffee
+255 silly gunzTarPerm extractEntry test/test_dayofweek.js
+256 silly gunzTarPerm extractEntry test/test_weekofyear.js
+257 silly gunzTarPerm extractEntry test/test_weekofyear.sh
+258 silly lockFile 498b80ea-05945-0-5867259399965405-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905945-0.5867259399965405\package
+259 silly lockFile 498b80ea-05945-0-5867259399965405-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905945-0.5867259399965405\package
+260 silly lockFile 46e1461d-05945-0-5867259399965405-tmp-tgz tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905945-0.5867259399965405\tmp.tgz
+261 silly lockFile 46e1461d-05945-0-5867259399965405-tmp-tgz tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905945-0.5867259399965405\tmp.tgz
+262 silly lockFile 36e91c91-05874-0-8255516653880477-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905874-0.8255516653880477\package
+263 silly lockFile 36e91c91-05874-0-8255516653880477-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905874-0.8255516653880477\package
+264 verbose tar pack [ 'd:\\Users\\jiang.f\\AppData\\Roaming\\npm-cache\\dateformat\\1.0.7-1.2.3\\package.tgz',
+264 verbose tar pack   'd:\\Users\\jiang.f\\AppData\\Local\\Temp\\npm-5664-sRjaoD2n\\1394422905945-0.5867259399965405\\package' ]
+265 verbose tarball d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz
+266 verbose folder d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905945-0.5867259399965405\package
+267 silly lockFile 498b80ea-05945-0-5867259399965405-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905945-0.5867259399965405\package
+268 verbose lock tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905945-0.5867259399965405\package d:\Users\jiang.f\AppData\Roaming\npm-cache\498b80ea-05945-0-5867259399965405-package.lock
+269 silly lockFile 8df23715-teformat-1-0-7-1-2-3-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz
+270 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\8df23715-teformat-1-0-7-1-2-3-package-tgz.lock
+271 silly lockFile 0af78918-05874-0-8255516653880477-tmp-tgz tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905874-0.8255516653880477\tmp.tgz
+272 silly lockFile 0af78918-05874-0-8255516653880477-tmp-tgz tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905874-0.8255516653880477\tmp.tgz
+273 verbose tar pack [ 'd:\\Users\\jiang.f\\AppData\\Roaming\\npm-cache\\ibrik\\1.0.1\\package.tgz',
+273 verbose tar pack   'd:\\Users\\jiang.f\\AppData\\Local\\Temp\\npm-5664-sRjaoD2n\\1394422905874-0.8255516653880477\\package' ]
+274 verbose tarball d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz
+275 verbose folder d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905874-0.8255516653880477\package
+276 silly lockFile 36e91c91-05874-0-8255516653880477-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905874-0.8255516653880477\package
+277 verbose lock tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905874-0.8255516653880477\package d:\Users\jiang.f\AppData\Roaming\npm-cache\36e91c91-05874-0-8255516653880477-package.lock
+278 silly lockFile 8bd4203c-pm-cache-ibrik-1-0-1-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz
+279 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\8bd4203c-pm-cache-ibrik-1-0-1-package-tgz.lock
+280 silly lockFile 498b80ea-05945-0-5867259399965405-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905945-0.5867259399965405\package
+281 silly lockFile 498b80ea-05945-0-5867259399965405-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905945-0.5867259399965405\package
+282 silly lockFile 8df23715-teformat-1-0-7-1-2-3-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz
+283 silly lockFile 8df23715-teformat-1-0-7-1-2-3-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz
+284 silly lockFile 9a3ae8c6-e-dateformat-1-0-7-1-2-3-package d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package
+285 verbose lock d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package d:\Users\jiang.f\AppData\Roaming\npm-cache\9a3ae8c6-e-dateformat-1-0-7-1-2-3-package.lock
+286 silly lockFile 9a3ae8c6-e-dateformat-1-0-7-1-2-3-package d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package
+287 silly lockFile 9a3ae8c6-e-dateformat-1-0-7-1-2-3-package d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package
+288 verbose tar unpack d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz
+289 silly lockFile f66b4bc2-e-dateformat-1-0-7-1-2-3-package tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package
+290 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package d:\Users\jiang.f\AppData\Roaming\npm-cache\f66b4bc2-e-dateformat-1-0-7-1-2-3-package.lock
+291 silly lockFile 8df23715-teformat-1-0-7-1-2-3-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz
+292 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\8df23715-teformat-1-0-7-1-2-3-package-tgz.lock
+293 silly gunzTarPerm modes [ '755', '644' ]
+294 silly gunzTarPerm extractEntry package.json
+295 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+296 silly gunzTarPerm extractEntry LICENSE
+297 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+298 silly gunzTarPerm extractEntry Readme.md
+299 silly gunzTarPerm modified mode [ 'Readme.md', 438, 420 ]
+300 silly lockFile 36e91c91-05874-0-8255516653880477-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905874-0.8255516653880477\package
+301 silly lockFile 36e91c91-05874-0-8255516653880477-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422905874-0.8255516653880477\package
+302 silly lockFile 8bd4203c-pm-cache-ibrik-1-0-1-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz
+303 silly lockFile 8bd4203c-pm-cache-ibrik-1-0-1-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz
+304 silly lockFile 797af76d-ng-npm-cache-ibrik-1-0-1-package d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package
+305 verbose lock d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package d:\Users\jiang.f\AppData\Roaming\npm-cache\797af76d-ng-npm-cache-ibrik-1-0-1-package.lock
+306 silly lockFile 797af76d-ng-npm-cache-ibrik-1-0-1-package d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package
+307 silly lockFile 797af76d-ng-npm-cache-ibrik-1-0-1-package d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package
+308 verbose tar unpack d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz
+309 silly lockFile 6c958cc3-ng-npm-cache-ibrik-1-0-1-package tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package
+310 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package d:\Users\jiang.f\AppData\Roaming\npm-cache\6c958cc3-ng-npm-cache-ibrik-1-0-1-package.lock
+311 silly lockFile 8bd4203c-pm-cache-ibrik-1-0-1-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz
+312 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\8bd4203c-pm-cache-ibrik-1-0-1-package-tgz.lock
+313 silly gunzTarPerm modes [ '755', '644' ]
+314 silly gunzTarPerm extractEntry package.json
+315 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+316 silly gunzTarPerm extractEntry lib/dateformat.js
+317 silly gunzTarPerm modified mode [ 'lib/dateformat.js', 438, 420 ]
+318 silly gunzTarPerm extractEntry test/basic.js
+319 silly gunzTarPerm modified mode [ 'test/basic.js', 438, 420 ]
+320 silly gunzTarPerm extractEntry README.md
+321 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+322 silly gunzTarPerm extractEntry LICENSE.BSD
+323 silly gunzTarPerm modified mode [ 'LICENSE.BSD', 438, 420 ]
+324 silly gunzTarPerm extractEntry test/test_dayofweek.js
+325 silly gunzTarPerm modified mode [ 'test/test_dayofweek.js', 438, 420 ]
+326 silly gunzTarPerm extractEntry test/test_weekofyear.js
+327 silly gunzTarPerm modified mode [ 'test/test_weekofyear.js', 438, 420 ]
+328 silly gunzTarPerm extractEntry test/test_weekofyear.sh
+329 silly gunzTarPerm modified mode [ 'test/test_weekofyear.sh', 438, 420 ]
+330 silly gunzTarPerm extractEntry Makefile
+331 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+332 silly gunzTarPerm extractEntry bin/ibrik
+333 silly gunzTarPerm modified mode [ 'bin/ibrik', 438, 420 ]
+334 silly gunzTarPerm extractEntry lib/command.js
+335 silly gunzTarPerm modified mode [ 'lib/command.js', 438, 420 ]
+336 silly gunzTarPerm extractEntry lib/cover.js
+337 silly gunzTarPerm modified mode [ 'lib/cover.js', 438, 420 ]
+338 silly gunzTarPerm extractEntry lib/hook.js
+339 silly gunzTarPerm modified mode [ 'lib/hook.js', 438, 420 ]
+340 silly gunzTarPerm extractEntry lib/ibrik.js
+341 silly gunzTarPerm modified mode [ 'lib/ibrik.js', 438, 420 ]
+342 silly gunzTarPerm extractEntry lib/instrumenter.js
+343 silly gunzTarPerm modified mode [ 'lib/instrumenter.js', 438, 420 ]
+344 silly gunzTarPerm extractEntry lib/report.js
+345 silly gunzTarPerm modified mode [ 'lib/report.js', 438, 420 ]
+346 silly gunzTarPerm extractEntry tools/watch.coffee
+347 silly gunzTarPerm modified mode [ 'tools/watch.coffee', 438, 420 ]
+348 silly lockFile f66b4bc2-e-dateformat-1-0-7-1-2-3-package tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package
+349 silly lockFile f66b4bc2-e-dateformat-1-0-7-1-2-3-package tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package
+350 silly lockFile 8df23715-teformat-1-0-7-1-2-3-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz
+351 silly lockFile 8df23715-teformat-1-0-7-1-2-3-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz
+352 verbose chmod d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz 644
+353 silly chown skipping for windows d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz
+354 silly lockFile 1d211258-ormat-dateformat-1-0-7-1-2-3-tgz https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz
+355 silly lockFile 1d211258-ormat-dateformat-1-0-7-1-2-3-tgz https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz
+356 silly lockFile 066f9cb9-dateformat-1-0-7-1-2-3 dateformat@1.0.7-1.2.3
+357 silly lockFile 066f9cb9-dateformat-1-0-7-1-2-3 dateformat@1.0.7-1.2.3
+358 silly lockFile 7bc67268-dateformat-1-0-6 dateformat@~1.0.6
+359 silly lockFile 7bc67268-dateformat-1-0-6 dateformat@~1.0.6
+360 silly lockFile 6c958cc3-ng-npm-cache-ibrik-1-0-1-package tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package
+361 silly lockFile 6c958cc3-ng-npm-cache-ibrik-1-0-1-package tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package
+362 silly lockFile 8bd4203c-pm-cache-ibrik-1-0-1-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz
+363 silly lockFile 8bd4203c-pm-cache-ibrik-1-0-1-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz
+364 verbose chmod d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz 644
+365 silly chown skipping for windows d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz
+366 silly lockFile a1e187e6--npmjs-org-ibrik-ibrik-1-0-1-tgz https://registry.npmjs.org/ibrik/-/ibrik-1.0.1.tgz
+367 silly lockFile a1e187e6--npmjs-org-ibrik-ibrik-1-0-1-tgz https://registry.npmjs.org/ibrik/-/ibrik-1.0.1.tgz
+368 silly lockFile eeb5b243-ibrik-1-0-1 ibrik@1.0.1
+369 silly lockFile eeb5b243-ibrik-1-0-1 ibrik@1.0.1
+370 silly lockFile 8268bf66-ibrik-1-0-1 ibrik@~1.0.1
+371 silly lockFile 8268bf66-ibrik-1-0-1 ibrik@~1.0.1
+372 http 200 https://registry.npmjs.org/istanbul/-/istanbul-0.1.46.tgz
+373 verbose tar unpack d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422906624-0.019398269709199667\tmp.tgz
+374 silly lockFile 9e360348-624-0-019398269709199667-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422906624-0.019398269709199667\package
+375 verbose lock tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422906624-0.019398269709199667\package d:\Users\jiang.f\AppData\Roaming\npm-cache\9e360348-624-0-019398269709199667-package.lock
+376 silly lockFile 8556af72-624-0-019398269709199667-tmp-tgz tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422906624-0.019398269709199667\tmp.tgz
+377 verbose lock tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422906624-0.019398269709199667\tmp.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\8556af72-624-0-019398269709199667-tmp-tgz.lock
+378 silly gunzTarPerm modes [ '755', '644' ]
+379 silly gunzTarPerm extractEntry package.json
+380 silly gunzTarPerm extractEntry README.md
+381 silly gunzTarPerm extractEntry LICENSE
+382 silly gunzTarPerm extractEntry index.js
+383 silly gunzTarPerm extractEntry CHANGELOG.md
+384 silly gunzTarPerm extractEntry lib/cli.js
+385 silly gunzTarPerm extractEntry lib/register-plugins.js
+386 silly gunzTarPerm extractEntry lib/hook.js
+387 silly gunzTarPerm extractEntry lib/instrumenter.js
+388 silly gunzTarPerm extractEntry lib/collector.js
+389 silly gunzTarPerm extractEntry lib/object-utils.js
+390 silly gunzTarPerm extractEntry lib/command/check-coverage.js
+391 silly gunzTarPerm extractEntry lib/command/cover.js
+392 silly gunzTarPerm extractEntry lib/command/help.js
+393 silly gunzTarPerm extractEntry lib/command/index.js
+394 silly gunzTarPerm extractEntry lib/command/instrument.js
+395 silly gunzTarPerm extractEntry lib/command/report.js
+396 silly gunzTarPerm extractEntry lib/command/test.js
+397 silly gunzTarPerm extractEntry lib/command/common/run-with-cover.js
+398 silly gunzTarPerm extractEntry lib/report/cobertura.js
+399 silly gunzTarPerm extractEntry lib/report/index.js
+400 silly gunzTarPerm extractEntry lib/report/json.js
+401 silly gunzTarPerm extractEntry lib/report/lcov.js
+402 silly gunzTarPerm extractEntry lib/report/html.js
+403 silly gunzTarPerm extractEntry lib/report/none.js
+404 silly gunzTarPerm extractEntry lib/report/teamcity.js
+405 silly gunzTarPerm extractEntry lib/report/text-summary.js
+406 silly gunzTarPerm extractEntry lib/report/text.js
+407 silly gunzTarPerm extractEntry lib/report/lcovonly.js
+408 silly gunzTarPerm extractEntry lib/report/templates/foot.txt
+409 silly gunzTarPerm extractEntry lib/report/templates/head.txt
+410 silly gunzTarPerm extractEntry lib/store/fslookup.js
+411 silly gunzTarPerm extractEntry lib/store/index.js
+412 silly gunzTarPerm extractEntry lib/store/memory.js
+413 silly gunzTarPerm extractEntry lib/store/tmp.js
+414 silly gunzTarPerm extractEntry lib/util/factory.js
+415 silly gunzTarPerm extractEntry lib/util/file-writer.js
+416 silly gunzTarPerm extractEntry lib/util/flow-control.js
+417 silly gunzTarPerm extractEntry lib/util/help-formatter.js
+418 silly gunzTarPerm extractEntry lib/util/file-matcher.js
+419 silly gunzTarPerm extractEntry lib/util/insertion-text.js
+420 silly gunzTarPerm extractEntry lib/util/meta.js
+421 silly gunzTarPerm extractEntry lib/util/tree-summarizer.js
+422 silly gunzTarPerm extractEntry lib/util/writer.js
+423 silly gunzTarPerm extractEntry lib/util/yui-load-hook.js
+424 silly gunzTarPerm extractEntry lib/util/input-error.js
+425 silly gunzTarPerm extractEntry lib/vendor/prettify.js
+426 silly gunzTarPerm extractEntry lib/vendor/prettify.css
+427 silly gunzTarPerm extractEntry test/cli-helper.js
+428 silly gunzTarPerm extractEntry test/common.js
+429 silly gunzTarPerm extractEntry test/helper.js
+430 silly gunzTarPerm extractEntry test/loader.js
+431 silly gunzTarPerm extractEntry test/run-again.js
+432 silly gunzTarPerm extractEntry test/run.js
+433 silly gunzTarPerm extractEntry test/browser/test-browser-instrumentation.js
+434 silly gunzTarPerm extractEntry test/browser/support/phantom-test.client.js
+435 silly gunzTarPerm extractEntry test/browser/support/server.js
+436 silly gunzTarPerm extractEntry test/browser/support/index.html
+437 silly gunzTarPerm extractEntry test/cli/package.json
+438 silly gunzTarPerm extractEntry test/cli/test-cobertura-report.js
+439 silly gunzTarPerm extractEntry test/cli/test-cover-command.js
+440 silly gunzTarPerm extractEntry test/cli/test-html-report.js
+441 silly gunzTarPerm extractEntry test/cli/test-check-coverage-command.js
+442 silly gunzTarPerm extractEntry test/cli/test-teamcity-report.js
+443 silly gunzTarPerm extractEntry test/cli/test-lcov-report.js
+444 silly gunzTarPerm extractEntry test/cli/test-lcovonly-report.js
+445 silly gunzTarPerm extractEntry test/cli/test-lots-of-files.js
+446 silly gunzTarPerm extractEntry test/cli/test-none-report.js
+447 silly gunzTarPerm extractEntry test/cli/test-base-cli.js
+448 silly gunzTarPerm extractEntry test/cli/test-report-command.js
+449 silly gunzTarPerm extractEntry test/cli/test-instrument-command.js
+450 silly gunzTarPerm extractEntry test/cli/test-test-command.js
+451 silly gunzTarPerm extractEntry test/cli/test-json-report.js
+452 silly gunzTarPerm extractEntry test/cli/sample-project/amd/ipsum.js
+453 silly gunzTarPerm extractEntry test/cli/sample-project/amd/lorem.js
+454 silly gunzTarPerm extractEntry test/cli/sample-project/lib/bar.js
+455 silly gunzTarPerm extractEntry test/cli/sample-project/lib/foo.js
+456 silly gunzTarPerm extractEntry test/cli/sample-project/lib/util/bad.js
+457 silly gunzTarPerm extractEntry test/cli/sample-project/lib/util/generate-names.js
+458 silly gunzTarPerm extractEntry test/cli/sample-project/test/amd-run.js
+459 silly gunzTarPerm extractEntry test/cli/sample-project/test/global-leak.js
+460 silly gunzTarPerm extractEntry test/cli/sample-project/test/run.js
+461 silly gunzTarPerm extractEntry test/cli/sample-project/vendor/dummy_vendor_lib.js
+462 silly gunzTarPerm extractEntry test/cli/sample-project/node_modules/dependency/index.js
+463 silly gunzTarPerm extractEntry test/cli/sample-project/node_modules/post-require/package.json
+464 silly gunzTarPerm extractEntry test/cli/sample-project/node_modules/post-require/hook.js
+465 silly gunzTarPerm extractEntry test/instrumentation/test-do.js
+466 silly gunzTarPerm extractEntry test/instrumentation/test-for.js
+467 silly gunzTarPerm extractEntry test/instrumentation/test-forin.js
+468 silly gunzTarPerm extractEntry test/instrumentation/test-functions.js
+469 silly gunzTarPerm extractEntry test/instrumentation/test-expressions.js
+470 silly gunzTarPerm extractEntry test/instrumentation/test-misc.js
+471 silly gunzTarPerm extractEntry test/instrumentation/test-statement.js
+472 silly gunzTarPerm extractEntry test/instrumentation/test-strict.js
+473 silly gunzTarPerm extractEntry test/instrumentation/test-switch.js
+474 silly gunzTarPerm extractEntry test/instrumentation/test-while.js
+475 silly gunzTarPerm extractEntry test/instrumentation/test-if.js
+476 silly gunzTarPerm extractEntry test/other/test-summarizer.js
+477 silly gunzTarPerm extractEntry test/other/test-command-xface.js
+478 silly gunzTarPerm extractEntry test/other/test-file-writer.js
+479 silly gunzTarPerm extractEntry test/other/test-help-formatter.js
+480 silly gunzTarPerm extractEntry test/other/test-collector.js
+481 silly gunzTarPerm extractEntry test/other/test-store.js
+482 silly gunzTarPerm extractEntry test/other/test-input-error.js
+483 silly gunzTarPerm extractEntry test/other/test-insertion-text.js
+484 silly gunzTarPerm extractEntry test/other/test-matcher.js
+485 silly gunzTarPerm extractEntry test/other/test-object-utils.js
+486 silly gunzTarPerm extractEntry test/other/test-hook.js
+487 silly gunzTarPerm extractEntry test/other/test-index-xface.js
+488 silly gunzTarPerm extractEntry test/other/data-complete-copy/baz.js
+489 silly gunzTarPerm extractEntry test/other/data-complete-copy/foo.js
+490 silly gunzTarPerm extractEntry test/other/data-complete-copy/fixture.xml
+491 silly gunzTarPerm extractEntry test/other/data-complete-copy/myfile1
+492 silly gunzTarPerm extractEntry test/other/data-complete-copy/myfile2
+493 silly gunzTarPerm extractEntry test/other/data-complete-copy/subdir/x.css
+494 silly gunzTarPerm extractEntry test/other/data/baz.js
+495 silly gunzTarPerm extractEntry test/other/data/foo.js
+496 silly gunzTarPerm extractEntry test/other/data/matcher/top.js
+497 silly gunzTarPerm extractEntry test/other/data/matcher/general/general.js
+498 silly gunzTarPerm extractEntry test/other/data/matcher/general/node_modules/mod-file.js
+499 silly gunzTarPerm extractEntry test/other/data/matcher/lib/lib-top.js
+500 silly gunzTarPerm extractEntry test/other/data/matcher/node_modules/mod-file.js
+501 silly gunzTarPerm extractEntry test/other/data/matcher/node_modules/dep/mod-file.js
+502 silly gunzTarPerm extractEntry yui-coverage-comparison.md
+503 silly lockFile 9e360348-624-0-019398269709199667-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422906624-0.019398269709199667\package
+504 silly lockFile 9e360348-624-0-019398269709199667-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422906624-0.019398269709199667\package
+505 silly lockFile 8556af72-624-0-019398269709199667-tmp-tgz tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422906624-0.019398269709199667\tmp.tgz
+506 silly lockFile 8556af72-624-0-019398269709199667-tmp-tgz tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422906624-0.019398269709199667\tmp.tgz
+507 verbose tar pack [ 'd:\\Users\\jiang.f\\AppData\\Roaming\\npm-cache\\istanbul\\0.1.46\\package.tgz',
+507 verbose tar pack   'd:\\Users\\jiang.f\\AppData\\Local\\Temp\\npm-5664-sRjaoD2n\\1394422906624-0.019398269709199667\\package' ]
+508 verbose tarball d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package.tgz
+509 verbose folder d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422906624-0.019398269709199667\package
+510 silly lockFile 9e360348-624-0-019398269709199667-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422906624-0.019398269709199667\package
+511 verbose lock tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422906624-0.019398269709199667\package d:\Users\jiang.f\AppData\Roaming\npm-cache\9e360348-624-0-019398269709199667-package.lock
+512 silly lockFile 77768dd5-ache-istanbul-0-1-46-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package.tgz
+513 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\77768dd5-ache-istanbul-0-1-46-package-tgz.lock
+514 silly lockFile 9e360348-624-0-019398269709199667-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422906624-0.019398269709199667\package
+515 silly lockFile 9e360348-624-0-019398269709199667-package tar://d:\Users\jiang.f\AppData\Local\Temp\npm-5664-sRjaoD2n\1394422906624-0.019398269709199667\package
+516 silly lockFile 77768dd5-ache-istanbul-0-1-46-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package.tgz
+517 silly lockFile 77768dd5-ache-istanbul-0-1-46-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package.tgz
+518 silly lockFile 9a8dd7a3-pm-cache-istanbul-0-1-46-package d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package
+519 verbose lock d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package d:\Users\jiang.f\AppData\Roaming\npm-cache\9a8dd7a3-pm-cache-istanbul-0-1-46-package.lock
+520 silly lockFile 9a8dd7a3-pm-cache-istanbul-0-1-46-package d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package
+521 silly lockFile 9a8dd7a3-pm-cache-istanbul-0-1-46-package d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package
+522 verbose tar unpack d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package.tgz
+523 silly lockFile f6ac5f9c-pm-cache-istanbul-0-1-46-package tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package
+524 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package d:\Users\jiang.f\AppData\Roaming\npm-cache\f6ac5f9c-pm-cache-istanbul-0-1-46-package.lock
+525 silly lockFile 77768dd5-ache-istanbul-0-1-46-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package.tgz
+526 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\77768dd5-ache-istanbul-0-1-46-package-tgz.lock
+527 silly gunzTarPerm modes [ '755', '644' ]
+528 silly gunzTarPerm extractEntry package.json
+529 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+530 silly gunzTarPerm extractEntry README.md
+531 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+532 silly gunzTarPerm extractEntry LICENSE
+533 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+534 silly gunzTarPerm extractEntry index.js
+535 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+536 silly gunzTarPerm extractEntry CHANGELOG.md
+537 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 438, 420 ]
+538 silly gunzTarPerm extractEntry lib/cli.js
+539 silly gunzTarPerm modified mode [ 'lib/cli.js', 438, 420 ]
+540 silly gunzTarPerm extractEntry lib/register-plugins.js
+541 silly gunzTarPerm modified mode [ 'lib/register-plugins.js', 438, 420 ]
+542 silly gunzTarPerm extractEntry lib/hook.js
+543 silly gunzTarPerm modified mode [ 'lib/hook.js', 438, 420 ]
+544 silly gunzTarPerm extractEntry lib/instrumenter.js
+545 silly gunzTarPerm modified mode [ 'lib/instrumenter.js', 438, 420 ]
+546 silly gunzTarPerm extractEntry lib/collector.js
+547 silly gunzTarPerm modified mode [ 'lib/collector.js', 438, 420 ]
+548 silly gunzTarPerm extractEntry lib/object-utils.js
+549 silly gunzTarPerm modified mode [ 'lib/object-utils.js', 438, 420 ]
+550 silly gunzTarPerm extractEntry lib/command/check-coverage.js
+551 silly gunzTarPerm modified mode [ 'lib/command/check-coverage.js', 438, 420 ]
+552 silly gunzTarPerm extractEntry lib/command/cover.js
+553 silly gunzTarPerm modified mode [ 'lib/command/cover.js', 438, 420 ]
+554 silly gunzTarPerm extractEntry lib/command/help.js
+555 silly gunzTarPerm modified mode [ 'lib/command/help.js', 438, 420 ]
+556 silly gunzTarPerm extractEntry lib/command/index.js
+557 silly gunzTarPerm modified mode [ 'lib/command/index.js', 438, 420 ]
+558 silly gunzTarPerm extractEntry lib/command/instrument.js
+559 silly gunzTarPerm modified mode [ 'lib/command/instrument.js', 438, 420 ]
+560 silly gunzTarPerm extractEntry lib/command/report.js
+561 silly gunzTarPerm modified mode [ 'lib/command/report.js', 438, 420 ]
+562 silly gunzTarPerm extractEntry lib/command/test.js
+563 silly gunzTarPerm modified mode [ 'lib/command/test.js', 438, 420 ]
+564 silly gunzTarPerm extractEntry lib/command/common/run-with-cover.js
+565 silly gunzTarPerm modified mode [ 'lib/command/common/run-with-cover.js', 438, 420 ]
+566 silly gunzTarPerm extractEntry lib/report/cobertura.js
+567 silly gunzTarPerm modified mode [ 'lib/report/cobertura.js', 438, 420 ]
+568 silly gunzTarPerm extractEntry lib/report/index.js
+569 silly gunzTarPerm modified mode [ 'lib/report/index.js', 438, 420 ]
+570 silly gunzTarPerm extractEntry lib/report/json.js
+571 silly gunzTarPerm modified mode [ 'lib/report/json.js', 438, 420 ]
+572 silly gunzTarPerm extractEntry lib/report/lcov.js
+573 silly gunzTarPerm modified mode [ 'lib/report/lcov.js', 438, 420 ]
+574 silly gunzTarPerm extractEntry lib/report/html.js
+575 silly gunzTarPerm modified mode [ 'lib/report/html.js', 438, 420 ]
+576 silly gunzTarPerm extractEntry lib/report/none.js
+577 silly gunzTarPerm modified mode [ 'lib/report/none.js', 438, 420 ]
+578 silly gunzTarPerm extractEntry lib/report/teamcity.js
+579 silly gunzTarPerm modified mode [ 'lib/report/teamcity.js', 438, 420 ]
+580 silly gunzTarPerm extractEntry lib/report/text-summary.js
+581 silly gunzTarPerm modified mode [ 'lib/report/text-summary.js', 438, 420 ]
+582 silly gunzTarPerm extractEntry lib/report/text.js
+583 silly gunzTarPerm modified mode [ 'lib/report/text.js', 438, 420 ]
+584 silly gunzTarPerm extractEntry lib/report/lcovonly.js
+585 silly gunzTarPerm modified mode [ 'lib/report/lcovonly.js', 438, 420 ]
+586 silly gunzTarPerm extractEntry lib/report/templates/foot.txt
+587 silly gunzTarPerm modified mode [ 'lib/report/templates/foot.txt', 438, 420 ]
+588 silly gunzTarPerm extractEntry lib/report/templates/head.txt
+589 silly gunzTarPerm modified mode [ 'lib/report/templates/head.txt', 438, 420 ]
+590 silly gunzTarPerm extractEntry lib/store/fslookup.js
+591 silly gunzTarPerm modified mode [ 'lib/store/fslookup.js', 438, 420 ]
+592 silly gunzTarPerm extractEntry lib/store/index.js
+593 silly gunzTarPerm modified mode [ 'lib/store/index.js', 438, 420 ]
+594 silly gunzTarPerm extractEntry lib/store/memory.js
+595 silly gunzTarPerm modified mode [ 'lib/store/memory.js', 438, 420 ]
+596 silly gunzTarPerm extractEntry lib/store/tmp.js
+597 silly gunzTarPerm modified mode [ 'lib/store/tmp.js', 438, 420 ]
+598 silly gunzTarPerm extractEntry lib/util/factory.js
+599 silly gunzTarPerm modified mode [ 'lib/util/factory.js', 438, 420 ]
+600 silly gunzTarPerm extractEntry lib/util/file-writer.js
+601 silly gunzTarPerm modified mode [ 'lib/util/file-writer.js', 438, 420 ]
+602 silly gunzTarPerm extractEntry lib/util/flow-control.js
+603 silly gunzTarPerm modified mode [ 'lib/util/flow-control.js', 438, 420 ]
+604 silly gunzTarPerm extractEntry lib/util/help-formatter.js
+605 silly gunzTarPerm modified mode [ 'lib/util/help-formatter.js', 438, 420 ]
+606 silly gunzTarPerm extractEntry lib/util/file-matcher.js
+607 silly gunzTarPerm modified mode [ 'lib/util/file-matcher.js', 438, 420 ]
+608 silly gunzTarPerm extractEntry lib/util/insertion-text.js
+609 silly gunzTarPerm modified mode [ 'lib/util/insertion-text.js', 438, 420 ]
+610 silly gunzTarPerm extractEntry lib/util/meta.js
+611 silly gunzTarPerm modified mode [ 'lib/util/meta.js', 438, 420 ]
+612 silly gunzTarPerm extractEntry lib/util/tree-summarizer.js
+613 silly gunzTarPerm modified mode [ 'lib/util/tree-summarizer.js', 438, 420 ]
+614 silly gunzTarPerm extractEntry lib/util/writer.js
+615 silly gunzTarPerm modified mode [ 'lib/util/writer.js', 438, 420 ]
+616 silly gunzTarPerm extractEntry lib/util/yui-load-hook.js
+617 silly gunzTarPerm modified mode [ 'lib/util/yui-load-hook.js', 438, 420 ]
+618 silly gunzTarPerm extractEntry lib/util/input-error.js
+619 silly gunzTarPerm modified mode [ 'lib/util/input-error.js', 438, 420 ]
+620 silly gunzTarPerm extractEntry lib/vendor/prettify.js
+621 silly gunzTarPerm modified mode [ 'lib/vendor/prettify.js', 438, 420 ]
+622 silly gunzTarPerm extractEntry lib/vendor/prettify.css
+623 silly gunzTarPerm modified mode [ 'lib/vendor/prettify.css', 438, 420 ]
+624 silly gunzTarPerm extractEntry test/cli-helper.js
+625 silly gunzTarPerm modified mode [ 'test/cli-helper.js', 438, 420 ]
+626 silly gunzTarPerm extractEntry test/common.js
+627 silly gunzTarPerm modified mode [ 'test/common.js', 438, 420 ]
+628 silly gunzTarPerm extractEntry test/helper.js
+629 silly gunzTarPerm modified mode [ 'test/helper.js', 438, 420 ]
+630 silly gunzTarPerm extractEntry test/loader.js
+631 silly gunzTarPerm modified mode [ 'test/loader.js', 438, 420 ]
+632 silly gunzTarPerm extractEntry test/run-again.js
+633 silly gunzTarPerm modified mode [ 'test/run-again.js', 438, 420 ]
+634 silly gunzTarPerm extractEntry test/run.js
+635 silly gunzTarPerm modified mode [ 'test/run.js', 438, 420 ]
+636 silly gunzTarPerm extractEntry test/browser/test-browser-instrumentation.js
+637 silly gunzTarPerm modified mode [ 'test/browser/test-browser-instrumentation.js', 438, 420 ]
+638 silly gunzTarPerm extractEntry test/browser/support/phantom-test.client.js
+639 silly gunzTarPerm modified mode [ 'test/browser/support/phantom-test.client.js', 438, 420 ]
+640 silly gunzTarPerm extractEntry test/browser/support/server.js
+641 silly gunzTarPerm modified mode [ 'test/browser/support/server.js', 438, 420 ]
+642 silly gunzTarPerm extractEntry test/browser/support/index.html
+643 silly gunzTarPerm modified mode [ 'test/browser/support/index.html', 438, 420 ]
+644 silly gunzTarPerm extractEntry test/cli/package.json
+645 silly gunzTarPerm modified mode [ 'test/cli/package.json', 438, 420 ]
+646 silly gunzTarPerm extractEntry test/cli/test-cobertura-report.js
+647 silly gunzTarPerm modified mode [ 'test/cli/test-cobertura-report.js', 438, 420 ]
+648 silly gunzTarPerm extractEntry test/cli/test-cover-command.js
+649 silly gunzTarPerm modified mode [ 'test/cli/test-cover-command.js', 438, 420 ]
+650 silly gunzTarPerm extractEntry test/cli/test-html-report.js
+651 silly gunzTarPerm modified mode [ 'test/cli/test-html-report.js', 438, 420 ]
+652 silly gunzTarPerm extractEntry test/cli/test-check-coverage-command.js
+653 silly gunzTarPerm modified mode [ 'test/cli/test-check-coverage-command.js', 438, 420 ]
+654 silly gunzTarPerm extractEntry test/cli/test-teamcity-report.js
+655 silly gunzTarPerm modified mode [ 'test/cli/test-teamcity-report.js', 438, 420 ]
+656 silly gunzTarPerm extractEntry test/cli/test-lcov-report.js
+657 silly gunzTarPerm modified mode [ 'test/cli/test-lcov-report.js', 438, 420 ]
+658 silly gunzTarPerm extractEntry test/cli/test-lcovonly-report.js
+659 silly gunzTarPerm modified mode [ 'test/cli/test-lcovonly-report.js', 438, 420 ]
+660 silly gunzTarPerm extractEntry test/cli/test-lots-of-files.js
+661 silly gunzTarPerm modified mode [ 'test/cli/test-lots-of-files.js', 438, 420 ]
+662 silly gunzTarPerm extractEntry test/cli/test-none-report.js
+663 silly gunzTarPerm modified mode [ 'test/cli/test-none-report.js', 438, 420 ]
+664 silly gunzTarPerm extractEntry test/cli/test-base-cli.js
+665 silly gunzTarPerm modified mode [ 'test/cli/test-base-cli.js', 438, 420 ]
+666 silly gunzTarPerm extractEntry test/cli/test-report-command.js
+667 silly gunzTarPerm modified mode [ 'test/cli/test-report-command.js', 438, 420 ]
+668 silly gunzTarPerm extractEntry test/cli/test-instrument-command.js
+669 silly gunzTarPerm modified mode [ 'test/cli/test-instrument-command.js', 438, 420 ]
+670 silly gunzTarPerm extractEntry test/cli/test-test-command.js
+671 silly gunzTarPerm modified mode [ 'test/cli/test-test-command.js', 438, 420 ]
+672 silly gunzTarPerm extractEntry test/cli/test-json-report.js
+673 silly gunzTarPerm modified mode [ 'test/cli/test-json-report.js', 438, 420 ]
+674 silly gunzTarPerm extractEntry test/cli/sample-project/amd/ipsum.js
+675 silly gunzTarPerm modified mode [ 'test/cli/sample-project/amd/ipsum.js', 438, 420 ]
+676 silly gunzTarPerm extractEntry test/cli/sample-project/amd/lorem.js
+677 silly gunzTarPerm modified mode [ 'test/cli/sample-project/amd/lorem.js', 438, 420 ]
+678 silly gunzTarPerm extractEntry test/cli/sample-project/lib/bar.js
+679 silly gunzTarPerm modified mode [ 'test/cli/sample-project/lib/bar.js', 438, 420 ]
+680 silly gunzTarPerm extractEntry test/cli/sample-project/lib/foo.js
+681 silly gunzTarPerm modified mode [ 'test/cli/sample-project/lib/foo.js', 438, 420 ]
+682 silly gunzTarPerm extractEntry test/cli/sample-project/lib/util/bad.js
+683 silly gunzTarPerm modified mode [ 'test/cli/sample-project/lib/util/bad.js', 438, 420 ]
+684 silly gunzTarPerm extractEntry test/cli/sample-project/lib/util/generate-names.js
+685 silly gunzTarPerm modified mode [ 'test/cli/sample-project/lib/util/generate-names.js',
+685 silly gunzTarPerm   438,
+685 silly gunzTarPerm   420 ]
+686 silly gunzTarPerm extractEntry test/cli/sample-project/test/amd-run.js
+687 silly gunzTarPerm modified mode [ 'test/cli/sample-project/test/amd-run.js', 438, 420 ]
+688 silly gunzTarPerm extractEntry test/cli/sample-project/test/global-leak.js
+689 silly gunzTarPerm modified mode [ 'test/cli/sample-project/test/global-leak.js', 438, 420 ]
+690 silly gunzTarPerm extractEntry test/cli/sample-project/test/run.js
+691 silly gunzTarPerm modified mode [ 'test/cli/sample-project/test/run.js', 438, 420 ]
+692 silly gunzTarPerm extractEntry test/cli/sample-project/vendor/dummy_vendor_lib.js
+693 silly gunzTarPerm modified mode [ 'test/cli/sample-project/vendor/dummy_vendor_lib.js',
+693 silly gunzTarPerm   438,
+693 silly gunzTarPerm   420 ]
+694 silly gunzTarPerm extractEntry test/cli/sample-project/node_modules/dependency/index.js
+695 silly gunzTarPerm modified mode [ 'test/cli/sample-project/node_modules/dependency/index.js',
+695 silly gunzTarPerm   438,
+695 silly gunzTarPerm   420 ]
+696 silly gunzTarPerm extractEntry test/cli/sample-project/node_modules/post-require/package.json
+697 silly gunzTarPerm modified mode [ 'test/cli/sample-project/node_modules/post-require/package.json',
+697 silly gunzTarPerm   438,
+697 silly gunzTarPerm   420 ]
+698 silly gunzTarPerm extractEntry test/cli/sample-project/node_modules/post-require/hook.js
+699 silly gunzTarPerm modified mode [ 'test/cli/sample-project/node_modules/post-require/hook.js',
+699 silly gunzTarPerm   438,
+699 silly gunzTarPerm   420 ]
+700 silly gunzTarPerm extractEntry test/instrumentation/test-do.js
+701 silly gunzTarPerm modified mode [ 'test/instrumentation/test-do.js', 438, 420 ]
+702 silly gunzTarPerm extractEntry test/instrumentation/test-for.js
+703 silly gunzTarPerm modified mode [ 'test/instrumentation/test-for.js', 438, 420 ]
+704 silly gunzTarPerm extractEntry test/instrumentation/test-forin.js
+705 silly gunzTarPerm modified mode [ 'test/instrumentation/test-forin.js', 438, 420 ]
+706 silly gunzTarPerm extractEntry test/instrumentation/test-functions.js
+707 silly gunzTarPerm modified mode [ 'test/instrumentation/test-functions.js', 438, 420 ]
+708 silly gunzTarPerm extractEntry test/instrumentation/test-expressions.js
+709 silly gunzTarPerm modified mode [ 'test/instrumentation/test-expressions.js', 438, 420 ]
+710 silly gunzTarPerm extractEntry test/instrumentation/test-misc.js
+711 silly gunzTarPerm modified mode [ 'test/instrumentation/test-misc.js', 438, 420 ]
+712 silly gunzTarPerm extractEntry test/instrumentation/test-statement.js
+713 silly gunzTarPerm modified mode [ 'test/instrumentation/test-statement.js', 438, 420 ]
+714 silly gunzTarPerm extractEntry test/instrumentation/test-strict.js
+715 silly gunzTarPerm modified mode [ 'test/instrumentation/test-strict.js', 438, 420 ]
+716 silly gunzTarPerm extractEntry test/instrumentation/test-switch.js
+717 silly gunzTarPerm modified mode [ 'test/instrumentation/test-switch.js', 438, 420 ]
+718 silly gunzTarPerm extractEntry test/instrumentation/test-while.js
+719 silly gunzTarPerm modified mode [ 'test/instrumentation/test-while.js', 438, 420 ]
+720 silly gunzTarPerm extractEntry test/instrumentation/test-if.js
+721 silly gunzTarPerm modified mode [ 'test/instrumentation/test-if.js', 438, 420 ]
+722 silly gunzTarPerm extractEntry test/other/test-summarizer.js
+723 silly gunzTarPerm modified mode [ 'test/other/test-summarizer.js', 438, 420 ]
+724 silly gunzTarPerm extractEntry test/other/test-command-xface.js
+725 silly gunzTarPerm modified mode [ 'test/other/test-command-xface.js', 438, 420 ]
+726 silly gunzTarPerm extractEntry test/other/test-file-writer.js
+727 silly gunzTarPerm modified mode [ 'test/other/test-file-writer.js', 438, 420 ]
+728 silly gunzTarPerm extractEntry test/other/test-help-formatter.js
+729 silly gunzTarPerm modified mode [ 'test/other/test-help-formatter.js', 438, 420 ]
+730 silly gunzTarPerm extractEntry test/other/test-collector.js
+731 silly gunzTarPerm modified mode [ 'test/other/test-collector.js', 438, 420 ]
+732 silly gunzTarPerm extractEntry test/other/test-store.js
+733 silly gunzTarPerm modified mode [ 'test/other/test-store.js', 438, 420 ]
+734 silly gunzTarPerm extractEntry test/other/test-input-error.js
+735 silly gunzTarPerm modified mode [ 'test/other/test-input-error.js', 438, 420 ]
+736 silly gunzTarPerm extractEntry test/other/test-insertion-text.js
+737 silly gunzTarPerm modified mode [ 'test/other/test-insertion-text.js', 438, 420 ]
+738 silly gunzTarPerm extractEntry test/other/test-matcher.js
+739 silly gunzTarPerm modified mode [ 'test/other/test-matcher.js', 438, 420 ]
+740 silly gunzTarPerm extractEntry test/other/test-object-utils.js
+741 silly gunzTarPerm modified mode [ 'test/other/test-object-utils.js', 438, 420 ]
+742 silly gunzTarPerm extractEntry test/other/test-hook.js
+743 silly gunzTarPerm modified mode [ 'test/other/test-hook.js', 438, 420 ]
+744 silly gunzTarPerm extractEntry test/other/test-index-xface.js
+745 silly gunzTarPerm modified mode [ 'test/other/test-index-xface.js', 438, 420 ]
+746 silly gunzTarPerm extractEntry test/other/data-complete-copy/baz.js
+747 silly gunzTarPerm modified mode [ 'test/other/data-complete-copy/baz.js', 438, 420 ]
+748 silly gunzTarPerm extractEntry test/other/data-complete-copy/foo.js
+749 silly gunzTarPerm modified mode [ 'test/other/data-complete-copy/foo.js', 438, 420 ]
+750 silly gunzTarPerm extractEntry test/other/data-complete-copy/fixture.xml
+751 silly gunzTarPerm modified mode [ 'test/other/data-complete-copy/fixture.xml', 438, 420 ]
+752 silly gunzTarPerm extractEntry test/other/data-complete-copy/myfile1
+753 silly gunzTarPerm modified mode [ 'test/other/data-complete-copy/myfile1', 438, 420 ]
+754 silly gunzTarPerm extractEntry test/other/data-complete-copy/myfile2
+755 silly gunzTarPerm modified mode [ 'test/other/data-complete-copy/myfile2', 438, 420 ]
+756 silly gunzTarPerm extractEntry test/other/data-complete-copy/subdir/x.css
+757 silly gunzTarPerm modified mode [ 'test/other/data-complete-copy/subdir/x.css', 438, 420 ]
+758 silly gunzTarPerm extractEntry test/other/data/baz.js
+759 silly gunzTarPerm modified mode [ 'test/other/data/baz.js', 438, 420 ]
+760 silly gunzTarPerm extractEntry test/other/data/foo.js
+761 silly gunzTarPerm modified mode [ 'test/other/data/foo.js', 438, 420 ]
+762 silly gunzTarPerm extractEntry test/other/data/matcher/top.js
+763 silly gunzTarPerm modified mode [ 'test/other/data/matcher/top.js', 438, 420 ]
+764 silly gunzTarPerm extractEntry test/other/data/matcher/general/general.js
+765 silly gunzTarPerm modified mode [ 'test/other/data/matcher/general/general.js', 438, 420 ]
+766 silly gunzTarPerm extractEntry test/other/data/matcher/general/node_modules/mod-file.js
+767 silly gunzTarPerm modified mode [ 'test/other/data/matcher/general/node_modules/mod-file.js',
+767 silly gunzTarPerm   438,
+767 silly gunzTarPerm   420 ]
+768 silly gunzTarPerm extractEntry test/other/data/matcher/lib/lib-top.js
+769 silly gunzTarPerm modified mode [ 'test/other/data/matcher/lib/lib-top.js', 438, 420 ]
+770 silly gunzTarPerm extractEntry test/other/data/matcher/node_modules/mod-file.js
+771 silly gunzTarPerm modified mode [ 'test/other/data/matcher/node_modules/mod-file.js', 438, 420 ]
+772 silly gunzTarPerm extractEntry test/other/data/matcher/node_modules/dep/mod-file.js
+773 silly gunzTarPerm modified mode [ 'test/other/data/matcher/node_modules/dep/mod-file.js',
+773 silly gunzTarPerm   438,
+773 silly gunzTarPerm   420 ]
+774 silly gunzTarPerm extractEntry yui-coverage-comparison.md
+775 silly gunzTarPerm modified mode [ 'yui-coverage-comparison.md', 438, 420 ]
+776 silly lockFile f6ac5f9c-pm-cache-istanbul-0-1-46-package tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package
+777 silly lockFile f6ac5f9c-pm-cache-istanbul-0-1-46-package tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package
+778 silly lockFile 77768dd5-ache-istanbul-0-1-46-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package.tgz
+779 silly lockFile 77768dd5-ache-istanbul-0-1-46-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package.tgz
+780 verbose chmod d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package.tgz 644
+781 silly chown skipping for windows d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package.tgz
+782 silly lockFile d3723c84-org-istanbul-istanbul-0-1-46-tgz https://registry.npmjs.org/istanbul/-/istanbul-0.1.46.tgz
+783 silly lockFile d3723c84-org-istanbul-istanbul-0-1-46-tgz https://registry.npmjs.org/istanbul/-/istanbul-0.1.46.tgz
+784 silly lockFile 0d8aeccf-istanbul-0-1-46 istanbul@0.1.46
+785 silly lockFile 0d8aeccf-istanbul-0-1-46 istanbul@0.1.46
+786 silly lockFile e6699f3e-istanbul-0-1-45 istanbul@~0.1.45
+787 silly lockFile e6699f3e-istanbul-0-1-45 istanbul@~0.1.45
+788 silly resolved [ { name: 'dateformat',
+788 silly resolved     description: 'A node.js package for Steven Levithan\'s excellent dateFormat() function.',
+788 silly resolved     maintainers: 'Felix Geisendörfer <felix@debuggable.com>',
+788 silly resolved     homepage: 'https://github.com/felixge/node-dateformat',
+788 silly resolved     author: { name: 'Steven Levithan' },
+788 silly resolved     contributors: [ [Object], [Object], [Object] ],
+788 silly resolved     version: '1.0.7-1.2.3',
+788 silly resolved     main: './lib/dateformat',
+788 silly resolved     dependencies: {},
+788 silly resolved     devDependencies: {},
+788 silly resolved     engines: { node: '*' },
+788 silly resolved     repository:
+788 silly resolved      { type: 'git',
+788 silly resolved        url: 'https://github.com/felixge/node-dateformat.git' },
+788 silly resolved     readme: '# dateformat\n\nA node.js package for Steven Levithan\'s excellent [dateFormat()][dateformat] function.\n\n## Modifications\n\n* Removed the `Date.prototype.format` method. Sorry folks, but extending native prototypes is for suckers.\n* Added a `module.exports = dateFormat;` statement at the bottom\n* Added the placeholder `N` to get the ISO 8601 numeric representation of the day of the week\n\n## Installation\n\n```bash\n$ npm install dateformat\n```\n\n## Usage\n\nAs taken from Steven\'s post, modified to match the Modifications listed above:\n```js\n    var dateFormat = require(\'dateformat\');\n    var now = new Date();\n\n    // Basic usage\n    dateFormat(now, "dddd, mmmm dS, yyyy, h:MM:ss TT");\n    // Saturday, June 9th, 2007, 5:46:21 PM\n\n    // You can use one of several named masks\n    dateFormat(now, "isoDateTime");\n    // 2007-06-09T17:46:21\n\n    // ...Or add your own\n    dateFormat.masks.hammerTime = \'HH:MM! "Can\\\'t touch this!"\';\n    dateFormat(now, "hammerTime");\n    // 17:46! Can\'t touch this!\n\n    // When using the standalone dateFormat function,\n    // you can also provide the date as a string\n    dateFormat("Jun 9 2007", "fullDate");\n    // Saturday, June 9, 2007\n\n    // Note that if you don\'t include the mask argument,\n    // dateFormat.masks.default is used\n    dateFormat(now);\n    // Sat Jun 09 2007 17:46:21\n\n    // And if you don\'t include the date argument,\n    // the current date and time is used\n    dateFormat();\n    // Sat Jun 09 2007 17:46:22\n\n    // You can also skip the date argument (as long as your mask doesn\'t\n    // contain any numbers), in which case the current date/time is used\n    dateFormat("longTime");\n    // 5:46:22 PM EST\n\n    // And finally, you can convert local time to UTC time. Simply pass in\n    // true as an additional argument (no argument skipping allowed in this case):\n    dateFormat(now, "longTime", true);\n    // 10:46:21 PM UTC\n\n    // ...Or add the prefix "UTC:" or "GMT:" to your mask.\n    dateFormat(now, "UTC:h:MM:ss TT Z");\n    // 10:46:21 PM UTC\n\n    // You can also get the ISO 8601 week of the year:\n    dateFormat(now, "W");\n    // 42\n\n    // and also get the ISO 8601 numeric representation of the day of the week:\n    dateFormat(now,"N");\n    // 6\n```\n## License\n\n(c) 2007-2009 Steven Levithan [stevenlevithan.com][stevenlevithan], MIT license.\n\n[dateformat]: http://blog.stevenlevithan.com/archives/date-time-format\n[stevenlevithan]: http://stevenlevithan.com/\n',
+788 silly resolved     readmeFilename: 'Readme.md',
+788 silly resolved     bugs: { url: 'https://github.com/felixge/node-dateformat/issues' },
+788 silly resolved     _id: 'dateformat@1.0.7-1.2.3',
+788 silly resolved     dist: { shasum: '776accd6125f1a7ff2b4a8e62fa384d823813540' },
+788 silly resolved     _from: 'dateformat@~1.0.6',
+788 silly resolved     _resolved: 'https://registry.npmjs.org/dateformat/-/dateformat-1.0.7-1.2.3.tgz' },
+788 silly resolved   { name: 'ibrik',
+788 silly resolved     description: 'CoffeeScript coverage tool',
+788 silly resolved     homepage: 'https://github.com/Constellation/ibrik',
+788 silly resolved     main: './lib/ibrik',
+788 silly resolved     directories: { lib: './lib', tools: './tools' },
+788 silly resolved     bin: { ibrik: './bin/ibrik' },
+788 silly resolved     version: '1.0.1',
+788 silly resolved     engines: { node: '>=0.4.0' },
+788 silly resolved     maintainers: [ [Object] ],
+788 silly resolved     repository: { type: 'git', url: 'git://github.com/Constellation/ibrik.git' },
+788 silly resolved     dependencies:
+788 silly resolved      { 'coffee-script-redux': 'git+https://github.com/michaelficarra/CoffeeScriptRedux.git#9895cd1641fdf3a2424e662ab7583726bb0e35b3',
+788 silly resolved        istanbul: '*',
+788 silly resolved        optimist: '*',
+788 silly resolved        escodegen: '*',
+788 silly resolved        mkdirp: '*',
+788 silly resolved        which: '*',
+788 silly resolved        estraverse: '*' },
+788 silly resolved     devDependencies: { mocha: '*', chai: '*' },
+788 silly resolved     licenses: [ [Object] ],
+788 silly resolved     scripts: { test: 'mocha', build: 'make build', watch: 'make watch' },
+788 silly resolved     readme: '## Ibrik - CoffeeScript meets Istanbul\n\nIbrik ([ibrik](http://github.com/Constellation/ibrik)) is\ncode coverage tool for CoffeeScript.\nIt uses [istanbul](https://github.com/gotwarlost/istanbul) and [CoffeeScriptRedux compiler](https://github.com/michaelficarra/CoffeeScriptRedux). Internally, it uses Mozilla JS AST as its IR.\n\n\n### Install\n\nibrik can be used in in a Node.js application via the package manager:\n\n    npm install -g ibrik\n\n\n### Usage\n\nlike this\n```sh\nibrik cover script.coffee\nistanbul report html\nopen coverage/index.html\n```\n\n### License\n\nCopyright (C) 2012 [Yusuke Suzuki](http://github.com/Constellation)\n (twitter: [@Constellation](http://twitter.com/Constellation)) and other contributors.\n\nRedistribution and use in source and binary forms, with or without\nmodification, are permitted provided that the following conditions are met:\n\n  * Redistributions of source code must retain the above copyright\n    notice, this list of conditions and the following disclaimer.\n\n  * Redistributions in binary form must reproduce the above copyright\n    notice, this list of conditions and the following disclaimer in the\n    documentation and/or other materials provided with the distribution.\n\nTHIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS "AS IS"\nAND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE\nIMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE\nARE DISCLAIMED. IN NO EVENT SHALL <COPYRIGHT HOLDER> BE LIABLE FOR ANY\nDIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES\n(INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES;\nLOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND\nON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT\n(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF\nTHIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.\n\n### Status\n\n[![Build Status](https://secure.travis-ci.org/Constellation/ibrik.png)](http://travis-ci.org/Constellation/ibrik)\n',
+788 silly resolved     readmeFilename: 'README.md',
+788 silly resolved     bugs: { url: 'https://github.com/Constellation/ibrik/issues' },
+788 silly resolved     _id: 'ibrik@1.0.1',
+788 silly resolved     dist: { shasum: 'ec86348c37eac4569fdf086e8a9d86146457e4a0' },
+788 silly resolved     _from: 'ibrik@~1.0.1',
+788 silly resolved     _resolved: 'https://registry.npmjs.org/ibrik/-/ibrik-1.0.1.tgz' },
+788 silly resolved   { name: 'istanbul',
+788 silly resolved     version: '0.1.46',
+788 silly resolved     description: 'Yet another JS code coverage tool that computes statement, line, function and branch coverage with module loader hooks to transparently add coverage when running tests. Supports all JS coverage use cases including unit tests, server side functional tests and browser tests. Built for scale',
+788 silly resolved     keywords: [ 'coverage', 'code coverage', 'JS code coverage', 'JS coverage' ],
+788 silly resolved     author:
+788 silly resolved      { name: 'Krishnan Anantheswaran',
+788 silly resolved        email: 'kananthmail-github@yahoo.com' },
+788 silly resolved     contributors:
+788 silly resolved      [ [Object],
+788 silly resolved        [Object],
+788 silly resolved        [Object],
+788 silly resolved        [Object],
+788 silly resolved        [Object],
+788 silly resolved        [Object],
+788 silly resolved        [Object],
+788 silly resolved        [Object],
+788 silly resolved        [Object],
+788 silly resolved        [Object],
+788 silly resolved        [Object],
+788 silly resolved        [Object],
+788 silly resolved        [Object],
+788 silly resolved        [Object],
+788 silly resolved        [Object] ],
+788 silly resolved     preferGlobal: true,
+788 silly resolved     scripts:
+788 silly resolved      { pretest: 'jshint --config ./node_modules/yui-lint/jshint.json lib/*js lib/command/*js lib/report/*js lib/store/*js lib/util/*js test/*js test/instrumentation/*js test/cli/*js test/other/*js',
+788 silly resolved        test: 'test/run.js',
+788 silly resolved        posttest: 'node ./lib/cli.js check-coverage --statements 95 --branches 80',
+788 silly resolved        docs: 'npm install yuidocjs && node node_modules/yuidocjs/lib/cli.js .' },
+788 silly resolved     bin: { istanbul: './lib/cli.js' },
+788 silly resolved     repository: { type: 'git', url: 'git://github.com/gotwarlost/istanbul.git' },
+788 silly resolved     dependencies:
+788 silly resolved      { esprima: '1.0.x',
+788 silly resolved        escodegen: '0.0.23',
+788 silly resolved        handlebars: '1.0.x',
+788 silly resolved        mkdirp: '0.3.x',
+788 silly resolved        nopt: '2.1.x',
+788 silly resolved        fileset: '0.1.x',
+788 silly resolved        which: '1.0.x',
+788 silly resolved        async: '0.2.x',
+788 silly resolved        abbrev: '1.0.x',
+788 silly resolved        wordwrap: '0.0.x',
+788 silly resolved        resolve: '0.5.x' },
+788 silly resolved     devDependencies:
+788 silly resolved      { rimraf: '*',
+788 silly resolved        nodeunit: '*',
+788 silly resolved        jshint: '*',
+788 silly resolved        'yui-lint': '*',
+788 silly resolved        requirejs: '2.x' },
+788 silly resolved     readme: 'Istanbul - a JS code coverage tool written in JS\n================================================\n\n[![Build Status](https://secure.travis-ci.org/gotwarlost/istanbul.png)](http://travis-ci.org/gotwarlost/istanbul)\n[![Dependency Status](https://gemnasium.com/gotwarlost/istanbul.png)](https://gemnasium.com/gotwarlost/istanbul)\n\n[![NPM](https://nodei.co/npm/istanbul.png?downloads=true)](https://nodei.co/npm/istanbul/) \n\nFeatures\n--------\n\n* All-javascript instrumentation library that tracks **statement, branch,\nand function coverage** and reverse-engineers **line coverage** with 100% fidelity.\n* **Module loader hooks** to instrument code on the fly\n* **Command line tools** to run node unit tests "with coverage turned on" and no cooperation\nwhatsoever from the test runner\n* **HTML** and **LCOV** reporting.\n* Ability to use as **middleware** when serving JS files that need to be tested on the browser.\n* Can be used on the **command line** as well as a **library**\n* Based on the awesome `esprima` parser and the equally awesome `escodegen` code generator\n* Well-tested on node 0.4.x, 0.6.x, 0.8.x and the browser (instrumentation library only)\n\nInstalling\n----------\n\n    $ npm install -g istanbul\n\nGetting started\n---------------\n\nThe best way to see it in action is to run node unit tests. Say you have a test\nscript `test.js` that runs all tests for your node project without coverage.\n\nSimply:\n\n    $ cd /path/to/your/source/root\n    $ istanbul cover test.js\n\nand this should produce a `coverage.json`, `lcov.info` and `lcov-report/*html` under `./coverage`\n\nSample of code coverage reports produced by this tool (for this tool!):\n\n* [HTML reports](http://gotwarlost.github.com/istanbul/public/coverage/lcov-report/index.html)\n* [Standard LCOV reports](http://gotwarlost.github.com/istanbul/public/coverage/std-lcov/index.html) (using `genhtml` on the lcov trace file)\n\nUse cases\n---------\n\nSupports the following use cases and more\n\n* transparent coverage of nodejs unit tests\n* ability to use in an <code>npm test</code> script for conditional coverage\n* instrumentation of files in batch mode for browser tests (using yeti for example)\n* Server side code coverage for nodejs by embedding it as custom middleware\n\n\nThe command line\n----------------\n\n    $ istanbul help\n\ngives you detailed help on all commands.\n\nUsage: istanbul help <command>\n\nAvailable commands are:\n\n      check-coverage\n              checks overall coverage against thresholds from coverage JSON\n              files. Exits 1 if thresholds are not met, 0 otherwise\n\n\n      cover   transparently adds coverage information to a node command. Saves\n              coverage.json and reports at the end of execution\n\n\n      help    shows help\n\n\n      instrument\n              instruments a file or a directory tree and writes the\n              instrumented code to the desired output location\n\n\n      report  writes reports for coverage JSON objects produced in a previous\n              run\n\n\n      test    cover a node command only when npm_config_coverage is set. Use in\n              an `npm test` script for conditional coverage\n\n\nCommand names can be abbreviated as long as the abbreviation is unambiguous\n\nThe `cover` command\n-------------------\n\n    $ istanbul cover my-test-script.js -- my test args\n    # note the -- between the command name and the arguments to be passed\n\nThe `cover` command can be used to get a coverage object and reports for any arbitrary\nnode script. By default, coverage information is written under `./coverage` - this\ncan be changed using command-line options.\n\nThe `test` command\n-------------------\n\nThe `test` command has almost the same behavior as the `cover` command, except that\nit skips coverage unless the `npm_config_coverage` environment variable is set.\n\nThis helps you set up conditional coverage for tests. In this case you would\nhave a `package.json` that looks as follows.\n\n    {\n        "name": "my-awesome-lib",\n        "version": "1.0",\n        "script": {\n            "test": "istanbul test my-test-file.js"\n        }\n    }\n\nThen:\n\n    $ npm test # will run tests without coverage\n\nAnd:\n\n    $ npm test --coverage # will run tests with coverage\n\n**Note**: This needs `node 0.6` or better to work. `npm` for `node 0.4.x` does\nnot support the `--coverage` flag.\n\nThe `instrument` command\n------------------------\n\nInstruments a single JS file or an entire directory tree and produces an output directory tree with instrumented code. This should not be required for running node unit tests but is useful for tests to be run on the browser (using `yeti` for example).\n\nThe `report` command\n-------------------\n\nWrites reports using `coverage*.json` files as the source of coverage information. Reports are available in the following formats:\n\n* html - produces a bunch of HTML files with annotated source code\n* lcovonly - produces an lcov.info file\n* lcov - produces html + lcov files. This is the default format\n* cobertura - produces a cobertura-coverage.xml file for easy Hudson integration\n* text-summary - produces a compact text summary of coverage, typically to console\n* text - produces a detailed text table with coverage for all files\n* teamcity - produces service messages to report code coverage to TeamCity\n\nAdditional report formats may be plugged in at the library level.\n\nLibrary usage\n-------------\n\nAll the features of istanbul can be accessed as a library using its [public API](http://gotwarlost.github.com/istanbul/public/apidocs/index.html)\n\nChangelog\n---------\n\nChangelog has been moved [here](https://github.com/gotwarlost/istanbul/blob/master/CHANGELOG.md).\n\nLicense\n-------\n\nistanbul is licensed under the [BSD License](http://github.com/gotwarlost/istanbul/raw/master/LICENSE).\n\nThird-party libraries\n---------------------\n\nThe following third-party libraries are used by this module:\n\n* abbrev: https://github.com/isaacs/abbrev-js -  to handle command abbreviations\n* async: https://github.com/caolan/async - for parallel instrumentation of files\n* escodegen: https://github.com/Constellation/escodegen - for JS code generation\n* esprima: https://github.com/ariya/esprima - for JS parsing\n* fileset: https://github.com/mklabs/node-fileset - for loading and matching path expressions\n* handlebars: https://github.com/wycats/handlebars.js/ - for report template expansion\n* mkdirp: https://github.com/substack/node-mkdirp - to create output directories\n* nodeunit: https://github.com/caolan/nodeunit - dev dependency for unit tests\n* nopt: https://github.com/isaacs/nopt - for option parsing\n* resolve: https://github.com/substack/node-resolve - for resolving a post-require hook module name into its main file.\n* rimraf - https://github.com/isaacs/rimraf - dev dependency for unit tests\n* which: https://github.com/isaacs/node-which - to resolve a node command to a file for the `cover` command\n* wordwrap: https://github.com/substack/node-wordwrap - for prettier help\n* prettify: http://code.google.com/p/google-code-prettify/ - for syntax colored HTML reports. Files checked in under `lib/vendor/`\n\nInspired by\n-----------\n\n* YUI test coverage - https://github.com/yui/yuitest - the grand-daddy of JS coverage tools. Istanbul has been specifically designed to offer an alternative to this library with an easy migration path.\n* cover: https://github.com/itay/node-cover - the inspiration for the `cover` command, modeled after the `run` command in that tool. The coverage methodology used by istanbul is quite different, however\n\nShout out to\n------------\n\n   * [mfncooper](https://github.com/mfncooper) - for great brainstorming discussions\n   * [reid](https://github.com/reid), [davglass](https://github.com/davglass), the YUI dudes, for interesting conversations, encouragement, support and gentle pressure to get it done :)\n\nWhy the funky name?\n-------------------\n\nSince all the good ones are taken. Comes from the loose association of ideas across coverage, carpet-area coverage, the country that makes good carpets and so on...\n\n\n',
+788 silly resolved     readmeFilename: 'README.md',
+788 silly resolved     bugs: { url: 'https://github.com/gotwarlost/istanbul/issues' },
+788 silly resolved     homepage: 'https://github.com/gotwarlost/istanbul',
+788 silly resolved     _id: 'istanbul@0.1.46',
+788 silly resolved     dist: { shasum: 'c8e50629abe602610ba40aac9a80882f1368cf40' },
+788 silly resolved     _from: 'istanbul@~0.1.45',
+788 silly resolved     _resolved: 'https://registry.npmjs.org/istanbul/-/istanbul-0.1.46.tgz' } ]
+789 info install dateformat@1.0.7-1.2.3 into d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage
+790 info install ibrik@1.0.1 into d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage
+791 info install istanbul@0.1.46 into d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage
+792 info installOne dateformat@1.0.7-1.2.3
+793 info installOne ibrik@1.0.1
+794 info installOne istanbul@0.1.46
+795 info d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\dateformat unbuild
+796 info d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\ibrik unbuild
+797 info d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\istanbul unbuild
+798 verbose tar unpack d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz
+799 silly lockFile 5f83a32e-coverage-node-modules-dateformat tar://d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\dateformat
+800 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\dateformat d:\Users\jiang.f\AppData\Roaming\npm-cache\5f83a32e-coverage-node-modules-dateformat.lock
+801 silly lockFile 8df23715-teformat-1-0-7-1-2-3-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz
+802 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\8df23715-teformat-1-0-7-1-2-3-package-tgz.lock
+803 verbose tar unpack d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz
+804 silly lockFile 5abda88c-arma-coverage-node-modules-ibrik tar://d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\ibrik
+805 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\ibrik d:\Users\jiang.f\AppData\Roaming\npm-cache\5abda88c-arma-coverage-node-modules-ibrik.lock
+806 silly lockFile 8bd4203c-pm-cache-ibrik-1-0-1-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz
+807 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\8bd4203c-pm-cache-ibrik-1-0-1-package-tgz.lock
+808 verbose tar unpack d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package.tgz
+809 silly lockFile 60051f74-a-coverage-node-modules-istanbul tar://d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\istanbul
+810 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\istanbul d:\Users\jiang.f\AppData\Roaming\npm-cache\60051f74-a-coverage-node-modules-istanbul.lock
+811 silly lockFile 77768dd5-ache-istanbul-0-1-46-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package.tgz
+812 verbose lock tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\istanbul\0.1.46\package.tgz d:\Users\jiang.f\AppData\Roaming\npm-cache\77768dd5-ache-istanbul-0-1-46-package-tgz.lock
+813 silly gunzTarPerm modes [ '755', '644' ]
+814 silly gunzTarPerm modes [ '755', '644' ]
+815 silly gunzTarPerm modes [ '755', '644' ]
+816 silly gunzTarPerm extractEntry package.json
+817 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+818 silly gunzTarPerm extractEntry package.json
+819 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+820 silly gunzTarPerm extractEntry package.json
+821 silly gunzTarPerm modified mode [ 'package.json', 438, 420 ]
+822 silly gunzTarPerm extractEntry LICENSE
+823 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+824 silly gunzTarPerm extractEntry Readme.md
+825 silly gunzTarPerm modified mode [ 'Readme.md', 438, 420 ]
+826 silly gunzTarPerm extractEntry README.md
+827 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+828 silly gunzTarPerm extractEntry LICENSE.BSD
+829 silly gunzTarPerm modified mode [ 'LICENSE.BSD', 438, 420 ]
+830 silly gunzTarPerm extractEntry README.md
+831 silly gunzTarPerm modified mode [ 'README.md', 438, 420 ]
+832 silly gunzTarPerm extractEntry LICENSE
+833 silly gunzTarPerm modified mode [ 'LICENSE', 438, 420 ]
+834 silly gunzTarPerm extractEntry Makefile
+835 silly gunzTarPerm modified mode [ 'Makefile', 438, 420 ]
+836 silly gunzTarPerm extractEntry bin/ibrik
+837 silly gunzTarPerm modified mode [ 'bin/ibrik', 438, 420 ]
+838 silly gunzTarPerm extractEntry lib/dateformat.js
+839 silly gunzTarPerm modified mode [ 'lib/dateformat.js', 438, 420 ]
+840 silly gunzTarPerm extractEntry test/basic.js
+841 silly gunzTarPerm modified mode [ 'test/basic.js', 438, 420 ]
+842 silly gunzTarPerm extractEntry index.js
+843 silly gunzTarPerm modified mode [ 'index.js', 438, 420 ]
+844 silly gunzTarPerm extractEntry CHANGELOG.md
+845 silly gunzTarPerm modified mode [ 'CHANGELOG.md', 438, 420 ]
+846 silly gunzTarPerm extractEntry test/test_dayofweek.js
+847 silly gunzTarPerm modified mode [ 'test/test_dayofweek.js', 438, 420 ]
+848 silly gunzTarPerm extractEntry test/test_weekofyear.js
+849 silly gunzTarPerm modified mode [ 'test/test_weekofyear.js', 438, 420 ]
+850 silly gunzTarPerm extractEntry test/test_weekofyear.sh
+851 silly gunzTarPerm modified mode [ 'test/test_weekofyear.sh', 438, 420 ]
+852 silly gunzTarPerm extractEntry lib/command.js
+853 silly gunzTarPerm modified mode [ 'lib/command.js', 438, 420 ]
+854 silly gunzTarPerm extractEntry lib/cover.js
+855 silly gunzTarPerm modified mode [ 'lib/cover.js', 438, 420 ]
+856 silly gunzTarPerm extractEntry lib/cli.js
+857 silly gunzTarPerm modified mode [ 'lib/cli.js', 438, 420 ]
+858 silly gunzTarPerm extractEntry lib/register-plugins.js
+859 silly gunzTarPerm modified mode [ 'lib/register-plugins.js', 438, 420 ]
+860 silly gunzTarPerm extractEntry lib/hook.js
+861 silly gunzTarPerm modified mode [ 'lib/hook.js', 438, 420 ]
+862 silly gunzTarPerm extractEntry lib/hook.js
+863 silly gunzTarPerm modified mode [ 'lib/hook.js', 438, 420 ]
+864 silly gunzTarPerm extractEntry lib/instrumenter.js
+865 silly gunzTarPerm modified mode [ 'lib/instrumenter.js', 438, 420 ]
+866 silly gunzTarPerm extractEntry lib/ibrik.js
+867 silly gunzTarPerm modified mode [ 'lib/ibrik.js', 438, 420 ]
+868 silly gunzTarPerm extractEntry lib/instrumenter.js
+869 silly gunzTarPerm modified mode [ 'lib/instrumenter.js', 438, 420 ]
+870 silly gunzTarPerm extractEntry lib/collector.js
+871 silly gunzTarPerm modified mode [ 'lib/collector.js', 438, 420 ]
+872 silly gunzTarPerm extractEntry lib/object-utils.js
+873 silly gunzTarPerm modified mode [ 'lib/object-utils.js', 438, 420 ]
+874 silly gunzTarPerm extractEntry lib/report.js
+875 silly gunzTarPerm modified mode [ 'lib/report.js', 438, 420 ]
+876 silly gunzTarPerm extractEntry tools/watch.coffee
+877 silly gunzTarPerm modified mode [ 'tools/watch.coffee', 438, 420 ]
+878 silly gunzTarPerm extractEntry lib/command/check-coverage.js
+879 silly gunzTarPerm modified mode [ 'lib/command/check-coverage.js', 438, 420 ]
+880 silly gunzTarPerm extractEntry lib/command/cover.js
+881 silly gunzTarPerm modified mode [ 'lib/command/cover.js', 438, 420 ]
+882 silly gunzTarPerm extractEntry lib/command/help.js
+883 silly gunzTarPerm modified mode [ 'lib/command/help.js', 438, 420 ]
+884 silly gunzTarPerm extractEntry lib/command/index.js
+885 silly gunzTarPerm modified mode [ 'lib/command/index.js', 438, 420 ]
+886 silly gunzTarPerm extractEntry lib/command/instrument.js
+887 silly gunzTarPerm modified mode [ 'lib/command/instrument.js', 438, 420 ]
+888 silly gunzTarPerm extractEntry lib/command/report.js
+889 silly gunzTarPerm modified mode [ 'lib/command/report.js', 438, 420 ]
+890 silly lockFile 5f83a32e-coverage-node-modules-dateformat tar://d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\dateformat
+891 silly lockFile 5f83a32e-coverage-node-modules-dateformat tar://d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\dateformat
+892 silly lockFile 8df23715-teformat-1-0-7-1-2-3-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz
+893 silly lockFile 8df23715-teformat-1-0-7-1-2-3-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\dateformat\1.0.7-1.2.3\package.tgz
+894 silly gunzTarPerm extractEntry lib/command/test.js
+895 silly gunzTarPerm modified mode [ 'lib/command/test.js', 438, 420 ]
+896 silly gunzTarPerm extractEntry lib/command/common/run-with-cover.js
+897 silly gunzTarPerm modified mode [ 'lib/command/common/run-with-cover.js', 438, 420 ]
+898 info preinstall dateformat@1.0.7-1.2.3
+899 verbose readDependencies using package.json deps
+900 verbose readDependencies using package.json deps
+901 silly resolved []
+902 verbose about to build d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\dateformat
+903 info build d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\dateformat
+904 verbose linkStuff [ true,
+904 verbose linkStuff   'd:\\Users\\jiang.f\\AppData\\Roaming\\npm\\node_modules',
+904 verbose linkStuff   false,
+904 verbose linkStuff   'd:\\Users\\jiang.f\\AppData\\Roaming\\npm\\node_modules\\karma-coverage\\node_modules' ]
+905 info linkStuff dateformat@1.0.7-1.2.3
+906 verbose linkBins dateformat@1.0.7-1.2.3
+907 verbose linkMans dateformat@1.0.7-1.2.3
+908 verbose rebuildBundles dateformat@1.0.7-1.2.3
+909 info install dateformat@1.0.7-1.2.3
+910 info postinstall dateformat@1.0.7-1.2.3
+911 silly gunzTarPerm extractEntry lib/report/cobertura.js
+912 silly gunzTarPerm modified mode [ 'lib/report/cobertura.js', 438, 420 ]
+913 silly gunzTarPerm extractEntry lib/report/index.js
+914 silly gunzTarPerm modified mode [ 'lib/report/index.js', 438, 420 ]
+915 silly gunzTarPerm extractEntry lib/report/json.js
+916 silly gunzTarPerm modified mode [ 'lib/report/json.js', 438, 420 ]
+917 silly gunzTarPerm extractEntry lib/report/lcov.js
+918 silly gunzTarPerm modified mode [ 'lib/report/lcov.js', 438, 420 ]
+919 silly lockFile 5abda88c-arma-coverage-node-modules-ibrik tar://d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\ibrik
+920 silly lockFile 5abda88c-arma-coverage-node-modules-ibrik tar://d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\ibrik
+921 silly lockFile 8bd4203c-pm-cache-ibrik-1-0-1-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz
+922 silly lockFile 8bd4203c-pm-cache-ibrik-1-0-1-package-tgz tar://d:\Users\jiang.f\AppData\Roaming\npm-cache\ibrik\1.0.1\package.tgz
+923 silly gunzTarPerm extractEntry lib/report/html.js
+924 silly gunzTarPerm modified mode [ 'lib/report/html.js', 438, 420 ]
+925 silly gunzTarPerm extractEntry lib/report/none.js
+926 silly gunzTarPerm modified mode [ 'lib/report/none.js', 438, 420 ]
+927 info preinstall ibrik@1.0.1
+928 verbose readDependencies using package.json deps
+929 verbose readDependencies using package.json deps
+930 silly gunzTarPerm extractEntry lib/report/teamcity.js
+931 silly gunzTarPerm modified mode [ 'lib/report/teamcity.js', 438, 420 ]
+932 silly gunzTarPerm extractEntry lib/report/text-summary.js
+933 silly gunzTarPerm modified mode [ 'lib/report/text-summary.js', 438, 420 ]
+934 verbose cache add [ 'coffee-script-redux@git+https://github.com/michaelficarra/CoffeeScriptRedux.git#9895cd1641fdf3a2424e662ab7583726bb0e35b3',
+934 verbose cache add   null ]
+935 verbose cache add name=undefined spec="coffee-script-redux@git+https://github.com/michaelficarra/CoffeeScriptRedux.git#9895cd1641fdf3a2424e662ab7583726bb0e35b3" args=["coffee-script-redux@git+https://github.com/michaelficarra/CoffeeScriptRedux.git#9895cd1641fdf3a2424e662ab7583726bb0e35b3",null]
+936 verbose parsed url { protocol: null,
+936 verbose parsed url   slashes: null,
+936 verbose parsed url   auth: null,
+936 verbose parsed url   host: null,
+936 verbose parsed url   port: null,
+936 verbose parsed url   hostname: null,
+936 verbose parsed url   hash: '#9895cd1641fdf3a2424e662ab7583726bb0e35b3',
+936 verbose parsed url   search: null,
+936 verbose parsed url   query: null,
+936 verbose parsed url   pathname: 'coffee-script-redux@git+https://github.com/michaelficarra/CoffeeScriptRedux.git',
+936 verbose parsed url   path: 'coffee-script-redux@git+https://github.com/michaelficarra/CoffeeScriptRedux.git',
+936 verbose parsed url   href: 'coffee-script-redux@git+https://github.com/michaelficarra/CoffeeScriptRedux.git#9895cd1641fdf3a2424e662ab7583726bb0e35b3' }
+937 verbose cache add [ 'optimist@*', null ]
+938 verbose cache add name=undefined spec="optimist@*" args=["optimist@*",null]
+939 verbose parsed url { protocol: null,
+939 verbose parsed url   slashes: null,
+939 verbose parsed url   auth: null,
+939 verbose parsed url   host: null,
+939 verbose parsed url   port: null,
+939 verbose parsed url   hostname: null,
+939 verbose parsed url   hash: null,
+939 verbose parsed url   search: null,
+939 verbose parsed url   query: null,
+939 verbose parsed url   pathname: 'optimist@*',
+939 verbose parsed url   path: 'optimist@*',
+939 verbose parsed url   href: 'optimist@*' }
+940 verbose cache add name="optimist" spec="*" args=["optimist","*"]
+941 verbose parsed url { protocol: null,
+941 verbose parsed url   slashes: null,
+941 verbose parsed url   auth: null,
+941 verbose parsed url   host: null,
+941 verbose parsed url   port: null,
+941 verbose parsed url   hostname: null,
+941 verbose parsed url   hash: null,
+941 verbose parsed url   search: null,
+941 verbose parsed url   query: null,
+941 verbose parsed url   pathname: '*',
+941 verbose parsed url   path: '*',
+941 verbose parsed url   href: '*' }
+942 verbose addNamed [ 'optimist', '*' ]
+943 verbose addNamed [ null, '*' ]
+944 silly lockFile 942cd351-optimist optimist@*
+945 verbose lock optimist@* d:\Users\jiang.f\AppData\Roaming\npm-cache\942cd351-optimist.lock
+946 verbose cache add [ 'escodegen@*', null ]
+947 verbose cache add name=undefined spec="escodegen@*" args=["escodegen@*",null]
+948 verbose parsed url { protocol: null,
+948 verbose parsed url   slashes: null,
+948 verbose parsed url   auth: null,
+948 verbose parsed url   host: null,
+948 verbose parsed url   port: null,
+948 verbose parsed url   hostname: null,
+948 verbose parsed url   hash: null,
+948 verbose parsed url   search: null,
+948 verbose parsed url   query: null,
+948 verbose parsed url   pathname: 'escodegen@*',
+948 verbose parsed url   path: 'escodegen@*',
+948 verbose parsed url   href: 'escodegen@*' }
+949 verbose cache add name="escodegen" spec="*" args=["escodegen","*"]
+950 verbose parsed url { protocol: null,
+950 verbose parsed url   slashes: null,
+950 verbose parsed url   auth: null,
+950 verbose parsed url   host: null,
+950 verbose parsed url   port: null,
+950 verbose parsed url   hostname: null,
+950 verbose parsed url   hash: null,
+950 verbose parsed url   search: null,
+950 verbose parsed url   query: null,
+950 verbose parsed url   pathname: '*',
+950 verbose parsed url   path: '*',
+950 verbose parsed url   href: '*' }
+951 verbose addNamed [ 'escodegen', '*' ]
+952 verbose addNamed [ null, '*' ]
+953 silly lockFile 597aae0b-escodegen escodegen@*
+954 verbose lock escodegen@* d:\Users\jiang.f\AppData\Roaming\npm-cache\597aae0b-escodegen.lock
+955 verbose cache add [ 'mkdirp@*', null ]
+956 verbose cache add name=undefined spec="mkdirp@*" args=["mkdirp@*",null]
+957 verbose parsed url { protocol: null,
+957 verbose parsed url   slashes: null,
+957 verbose parsed url   auth: null,
+957 verbose parsed url   host: null,
+957 verbose parsed url   port: null,
+957 verbose parsed url   hostname: null,
+957 verbose parsed url   hash: null,
+957 verbose parsed url   search: null,
+957 verbose parsed url   query: null,
+957 verbose parsed url   pathname: 'mkdirp@*',
+957 verbose parsed url   path: 'mkdirp@*',
+957 verbose parsed url   href: 'mkdirp@*' }
+958 verbose cache add name="mkdirp" spec="*" args=["mkdirp","*"]
+959 verbose parsed url { protocol: null,
+959 verbose parsed url   slashes: null,
+959 verbose parsed url   auth: null,
+959 verbose parsed url   host: null,
+959 verbose parsed url   port: null,
+959 verbose parsed url   hostname: null,
+959 verbose parsed url   hash: null,
+959 verbose parsed url   search: null,
+959 verbose parsed url   query: null,
+959 verbose parsed url   pathname: '*',
+959 verbose parsed url   path: '*',
+959 verbose parsed url   href: '*' }
+960 verbose addNamed [ 'mkdirp', '*' ]
+961 verbose addNamed [ null, '*' ]
+962 silly lockFile 49c57f5b-mkdirp mkdirp@*
+963 verbose lock mkdirp@* d:\Users\jiang.f\AppData\Roaming\npm-cache\49c57f5b-mkdirp.lock
+964 verbose cache add [ 'which@*', null ]
+965 verbose cache add name=undefined spec="which@*" args=["which@*",null]
+966 verbose parsed url { protocol: null,
+966 verbose parsed url   slashes: null,
+966 verbose parsed url   auth: null,
+966 verbose parsed url   host: null,
+966 verbose parsed url   port: null,
+966 verbose parsed url   hostname: null,
+966 verbose parsed url   hash: null,
+966 verbose parsed url   search: null,
+966 verbose parsed url   query: null,
+966 verbose parsed url   pathname: 'which@*',
+966 verbose parsed url   path: 'which@*',
+966 verbose parsed url   href: 'which@*' }
+967 verbose cache add name="which" spec="*" args=["which","*"]
+968 verbose parsed url { protocol: null,
+968 verbose parsed url   slashes: null,
+968 verbose parsed url   auth: null,
+968 verbose parsed url   host: null,
+968 verbose parsed url   port: null,
+968 verbose parsed url   hostname: null,
+968 verbose parsed url   hash: null,
+968 verbose parsed url   search: null,
+968 verbose parsed url   query: null,
+968 verbose parsed url   pathname: '*',
+968 verbose parsed url   path: '*',
+968 verbose parsed url   href: '*' }
+969 verbose addNamed [ 'which', '*' ]
+970 verbose addNamed [ null, '*' ]
+971 silly lockFile a275e88c-which which@*
+972 verbose lock which@* d:\Users\jiang.f\AppData\Roaming\npm-cache\a275e88c-which.lock
+973 verbose cache add [ 'estraverse@*', null ]
+974 verbose cache add name=undefined spec="estraverse@*" args=["estraverse@*",null]
+975 verbose parsed url { protocol: null,
+975 verbose parsed url   slashes: null,
+975 verbose parsed url   auth: null,
+975 verbose parsed url   host: null,
+975 verbose parsed url   port: null,
+975 verbose parsed url   hostname: null,
+975 verbose parsed url   hash: null,
+975 verbose parsed url   search: null,
+975 verbose parsed url   query: null,
+975 verbose parsed url   pathname: 'estraverse@*',
+975 verbose parsed url   path: 'estraverse@*',
+975 verbose parsed url   href: 'estraverse@*' }
+976 verbose cache add name="estraverse" spec="*" args=["estraverse","*"]
+977 verbose parsed url { protocol: null,
+977 verbose parsed url   slashes: null,
+977 verbose parsed url   auth: null,
+977 verbose parsed url   host: null,
+977 verbose parsed url   port: null,
+977 verbose parsed url   hostname: null,
+977 verbose parsed url   hash: null,
+977 verbose parsed url   search: null,
+977 verbose parsed url   query: null,
+977 verbose parsed url   pathname: '*',
+977 verbose parsed url   path: '*',
+977 verbose parsed url   href: '*' }
+978 verbose addNamed [ 'estraverse', '*' ]
+979 verbose addNamed [ null, '*' ]
+980 silly lockFile 771f3482-estraverse estraverse@*
+981 verbose lock estraverse@* d:\Users\jiang.f\AppData\Roaming\npm-cache\771f3482-estraverse.lock
+982 verbose cache add name="coffee-script-redux" spec="git+https://github.com/michaelficarra/CoffeeScriptRedux.git#9895cd1641fdf3a2424e662ab7583726bb0e35b3" args=["coffee-script-redux","git+https://github.com/michaelficarra/CoffeeScriptRedux.git#9895cd1641fdf3a2424e662ab7583726bb0e35b3"]
+983 verbose parsed url { protocol: 'git+https:',
+983 verbose parsed url   slashes: true,
+983 verbose parsed url   auth: null,
+983 verbose parsed url   host: 'github.com',
+983 verbose parsed url   port: null,
+983 verbose parsed url   hostname: 'github.com',
+983 verbose parsed url   hash: '#9895cd1641fdf3a2424e662ab7583726bb0e35b3',
+983 verbose parsed url   search: null,
+983 verbose parsed url   query: null,
+983 verbose parsed url   pathname: '/michaelficarra/CoffeeScriptRedux.git',
+983 verbose parsed url   path: '/michaelficarra/CoffeeScriptRedux.git',
+983 verbose parsed url   href: 'git+https://github.com/michaelficarra/CoffeeScriptRedux.git#9895cd1641fdf3a2424e662ab7583726bb0e35b3' }
+984 silly lockFile 0413540b-aelficarra-CoffeeScriptRedux-git https://github.com/michaelficarra/CoffeeScriptRedux.git
+985 verbose lock https://github.com/michaelficarra/CoffeeScriptRedux.git d:\Users\jiang.f\AppData\Roaming\npm-cache\0413540b-aelficarra-CoffeeScriptRedux-git.lock
+986 silly addNameRange { name: 'optimist', range: '*', hasData: false }
+987 silly addNameRange { name: 'escodegen', range: '*', hasData: false }
+988 silly addNameRange { name: 'mkdirp', range: '*', hasData: false }
+989 silly addNameRange { name: 'estraverse', range: '*', hasData: false }
+990 silly addNameRange { name: 'which', range: '*', hasData: false }
+991 verbose url raw escodegen
+992 verbose url resolving [ 'https://registry.npmjs.org/', './escodegen' ]
+993 verbose url resolved https://registry.npmjs.org/escodegen
+994 info trying registry request attempt 1 at 11:41:50
+995 http GET https://registry.npmjs.org/escodegen
+996 verbose url raw estraverse
+997 verbose url resolving [ 'https://registry.npmjs.org/', './estraverse' ]
+998 verbose url resolved https://registry.npmjs.org/estraverse
+999 info trying registry request attempt 1 at 11:41:50
+1000 http GET https://registry.npmjs.org/estraverse
+1001 verbose addRemoteGit [ 'https://github.com/michaelficarra/CoffeeScriptRedux.git',
+1001 verbose addRemoteGit   '9895cd1641fdf3a2424e662ab7583726bb0e35b3' ]
+1002 verbose url raw optimist
+1003 verbose url resolving [ 'https://registry.npmjs.org/', './optimist' ]
+1004 verbose url resolved https://registry.npmjs.org/optimist
+1005 info trying registry request attempt 1 at 11:41:50
+1006 verbose etag "8BO85BEC60MMBAVWXWMFX7PZQ"
+1007 http GET https://registry.npmjs.org/optimist
+1008 verbose url raw mkdirp
+1009 verbose url resolving [ 'https://registry.npmjs.org/', './mkdirp' ]
+1010 verbose url resolved https://registry.npmjs.org/mkdirp
+1011 info trying registry request attempt 1 at 11:41:50
+1012 verbose etag "BCGRNVY5Y0HPXJNO7IQQLO9YA"
+1013 http GET https://registry.npmjs.org/mkdirp
+1014 verbose url raw which
+1015 verbose url resolving [ 'https://registry.npmjs.org/', './which' ]
+1016 verbose url resolved https://registry.npmjs.org/which
+1017 info trying registry request attempt 1 at 11:41:50
+1018 verbose etag "59QEFDHJV75PSWC6PDQ8CYUP4"
+1019 http GET https://registry.npmjs.org/which
+1020 silly gunzTarPerm extractEntry lib/report/text.js
+1021 silly gunzTarPerm modified mode [ 'lib/report/text.js', 438, 420 ]
+1022 silly gunzTarPerm extractEntry lib/report/lcovonly.js
+1023 silly gunzTarPerm modified mode [ 'lib/report/lcovonly.js', 438, 420 ]
+1024 silly gunzTarPerm extractEntry lib/report/templates/foot.txt
+1025 silly gunzTarPerm modified mode [ 'lib/report/templates/foot.txt', 438, 420 ]
+1026 silly gunzTarPerm extractEntry lib/report/templates/head.txt
+1027 silly gunzTarPerm modified mode [ 'lib/report/templates/head.txt', 438, 420 ]
+1028 silly gunzTarPerm extractEntry lib/store/fslookup.js
+1029 silly gunzTarPerm modified mode [ 'lib/store/fslookup.js', 438, 420 ]
+1030 silly gunzTarPerm extractEntry lib/store/index.js
+1031 silly gunzTarPerm modified mode [ 'lib/store/index.js', 438, 420 ]
+1032 silly lockFile 0413540b-aelficarra-CoffeeScriptRedux-git https://github.com/michaelficarra/CoffeeScriptRedux.git
+1033 silly lockFile 0413540b-aelficarra-CoffeeScriptRedux-git https://github.com/michaelficarra/CoffeeScriptRedux.git
+1034 verbose about to build d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\ibrik
+1035 info d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\ibrik unbuild
+1036 info preuninstall ibrik@1.0.1
+1037 info uninstall ibrik@1.0.1
+1038 verbose false,d:\Users\jiang.f\AppData\Roaming\npm\node_modules,d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules unbuild ibrik@1.0.1
+1039 verbose d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\.bin,[object Object] binRoot
+1040 silly gunzTarPerm extractEntry lib/store/memory.js
+1041 silly gunzTarPerm modified mode [ 'lib/store/memory.js', 438, 420 ]
+1042 silly gunzTarPerm extractEntry lib/store/tmp.js
+1043 silly gunzTarPerm modified mode [ 'lib/store/tmp.js', 438, 420 ]
+1044 info postuninstall ibrik@1.0.1
+1045 verbose about to build d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage
+1046 info d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage unbuild
+1047 info preuninstall karma-coverage@0.2.0
+1048 info uninstall karma-coverage@0.2.0
+1049 verbose true,d:\Users\jiang.f\AppData\Roaming\npm\node_modules,d:\Users\jiang.f\AppData\Roaming\npm\node_modules unbuild karma-coverage@0.2.0
+1050 info postuninstall karma-coverage@0.2.0
+1051 silly gunzTarPerm extractEntry lib/util/factory.js
+1052 silly gunzTarPerm modified mode [ 'lib/util/factory.js', 438, 420 ]
+1053 silly gunzTarPerm extractEntry lib/util/file-writer.js
+1054 silly gunzTarPerm modified mode [ 'lib/util/file-writer.js', 438, 420 ]
+1055 silly gunzTarPerm extractEntry lib/util/flow-control.js
+1056 silly gunzTarPerm modified mode [ 'lib/util/flow-control.js', 438, 420 ]
+1057 silly gunzTarPerm extractEntry lib/util/help-formatter.js
+1058 silly gunzTarPerm modified mode [ 'lib/util/help-formatter.js', 438, 420 ]
+1059 silly gunzTarPerm extractEntry lib/util/file-matcher.js
+1060 silly gunzTarPerm modified mode [ 'lib/util/file-matcher.js', 438, 420 ]
+1061 silly gunzTarPerm extractEntry lib/util/insertion-text.js
+1062 silly gunzTarPerm modified mode [ 'lib/util/insertion-text.js', 438, 420 ]
+1063 silly gunzTarPerm extractEntry lib/util/meta.js
+1064 silly gunzTarPerm modified mode [ 'lib/util/meta.js', 438, 420 ]
+1065 silly gunzTarPerm extractEntry lib/util/tree-summarizer.js
+1066 silly gunzTarPerm modified mode [ 'lib/util/tree-summarizer.js', 438, 420 ]
+1067 silly gunzTarPerm extractEntry lib/util/writer.js
+1068 silly gunzTarPerm modified mode [ 'lib/util/writer.js', 438, 420 ]
+1069 silly gunzTarPerm extractEntry lib/util/yui-load-hook.js
+1070 silly gunzTarPerm modified mode [ 'lib/util/yui-load-hook.js', 438, 420 ]
+1071 silly gunzTarPerm extractEntry lib/util/input-error.js
+1072 silly gunzTarPerm modified mode [ 'lib/util/input-error.js', 438, 420 ]
+1073 silly gunzTarPerm extractEntry lib/vendor/prettify.js
+1074 silly gunzTarPerm modified mode [ 'lib/vendor/prettify.js', 438, 420 ]
+1075 silly gunzTarPerm extractEntry lib/vendor/prettify.css
+1076 silly gunzTarPerm modified mode [ 'lib/vendor/prettify.css', 438, 420 ]
+1077 silly gunzTarPerm extractEntry test/cli-helper.js
+1078 silly gunzTarPerm modified mode [ 'test/cli-helper.js', 438, 420 ]
+1079 silly gunzTarPerm extractEntry test/common.js
+1080 silly gunzTarPerm modified mode [ 'test/common.js', 438, 420 ]
+1081 silly gunzTarPerm extractEntry test/helper.js
+1082 silly gunzTarPerm modified mode [ 'test/helper.js', 438, 420 ]
+1083 silly gunzTarPerm extractEntry test/loader.js
+1084 silly gunzTarPerm modified mode [ 'test/loader.js', 438, 420 ]
+1085 silly gunzTarPerm extractEntry test/run-again.js
+1086 silly gunzTarPerm modified mode [ 'test/run-again.js', 438, 420 ]
+1087 silly gunzTarPerm extractEntry test/run.js
+1088 silly gunzTarPerm modified mode [ 'test/run.js', 438, 420 ]
+1089 silly gunzTarPerm extractEntry test/browser/test-browser-instrumentation.js
+1090 silly gunzTarPerm modified mode [ 'test/browser/test-browser-instrumentation.js', 438, 420 ]
+1091 silly gunzTarPerm extractEntry test/browser/support/phantom-test.client.js
+1092 silly gunzTarPerm modified mode [ 'test/browser/support/phantom-test.client.js', 438, 420 ]
+1093 silly gunzTarPerm extractEntry test/browser/support/server.js
+1094 silly gunzTarPerm modified mode [ 'test/browser/support/server.js', 438, 420 ]
+1095 silly gunzTarPerm extractEntry test/browser/support/index.html
+1096 silly gunzTarPerm modified mode [ 'test/browser/support/index.html', 438, 420 ]
+1097 silly gunzTarPerm extractEntry test/cli/package.json
+1098 silly gunzTarPerm modified mode [ 'test/cli/package.json', 438, 420 ]
+1099 silly gunzTarPerm extractEntry test/cli/test-cobertura-report.js
+1100 silly gunzTarPerm modified mode [ 'test/cli/test-cobertura-report.js', 438, 420 ]
+1101 silly gunzTarPerm extractEntry test/cli/test-cover-command.js
+1102 silly gunzTarPerm modified mode [ 'test/cli/test-cover-command.js', 438, 420 ]
+1103 silly gunzTarPerm extractEntry test/cli/test-html-report.js
+1104 silly gunzTarPerm modified mode [ 'test/cli/test-html-report.js', 438, 420 ]
+1105 silly gunzTarPerm extractEntry test/cli/test-check-coverage-command.js
+1106 silly gunzTarPerm modified mode [ 'test/cli/test-check-coverage-command.js', 438, 420 ]
+1107 silly gunzTarPerm extractEntry test/cli/test-teamcity-report.js
+1108 silly gunzTarPerm modified mode [ 'test/cli/test-teamcity-report.js', 438, 420 ]
+1109 silly gunzTarPerm extractEntry test/cli/test-lcov-report.js
+1110 silly gunzTarPerm modified mode [ 'test/cli/test-lcov-report.js', 438, 420 ]
+1111 silly gunzTarPerm extractEntry test/cli/test-lcovonly-report.js
+1112 silly gunzTarPerm modified mode [ 'test/cli/test-lcovonly-report.js', 438, 420 ]
+1113 silly gunzTarPerm extractEntry test/cli/test-lots-of-files.js
+1114 silly gunzTarPerm modified mode [ 'test/cli/test-lots-of-files.js', 438, 420 ]
+1115 silly gunzTarPerm extractEntry test/cli/test-none-report.js
+1116 silly gunzTarPerm modified mode [ 'test/cli/test-none-report.js', 438, 420 ]
+1117 silly gunzTarPerm extractEntry test/cli/test-base-cli.js
+1118 silly gunzTarPerm modified mode [ 'test/cli/test-base-cli.js', 438, 420 ]
+1119 silly gunzTarPerm extractEntry test/cli/test-report-command.js
+1120 silly gunzTarPerm modified mode [ 'test/cli/test-report-command.js', 438, 420 ]
+1121 silly gunzTarPerm extractEntry test/cli/test-instrument-command.js
+1122 silly gunzTarPerm modified mode [ 'test/cli/test-instrument-command.js', 438, 420 ]
+1123 silly gunzTarPerm extractEntry test/cli/test-test-command.js
+1124 silly gunzTarPerm modified mode [ 'test/cli/test-test-command.js', 438, 420 ]
+1125 silly gunzTarPerm extractEntry test/cli/test-json-report.js
+1126 silly gunzTarPerm modified mode [ 'test/cli/test-json-report.js', 438, 420 ]
+1127 silly gunzTarPerm extractEntry test/cli/sample-project/amd/ipsum.js
+1128 silly gunzTarPerm modified mode [ 'test/cli/sample-project/amd/ipsum.js', 438, 420 ]
+1129 silly gunzTarPerm extractEntry test/cli/sample-project/amd/lorem.js
+1130 silly gunzTarPerm modified mode [ 'test/cli/sample-project/amd/lorem.js', 438, 420 ]
+1131 silly gunzTarPerm extractEntry test/cli/sample-project/lib/bar.js
+1132 silly gunzTarPerm modified mode [ 'test/cli/sample-project/lib/bar.js', 438, 420 ]
+1133 silly gunzTarPerm extractEntry test/cli/sample-project/lib/foo.js
+1134 silly gunzTarPerm modified mode [ 'test/cli/sample-project/lib/foo.js', 438, 420 ]
+1135 silly gunzTarPerm extractEntry test/cli/sample-project/lib/util/bad.js
+1136 silly gunzTarPerm modified mode [ 'test/cli/sample-project/lib/util/bad.js', 438, 420 ]
+1137 silly gunzTarPerm extractEntry test/cli/sample-project/lib/util/generate-names.js
+1138 silly gunzTarPerm modified mode [ 'test/cli/sample-project/lib/util/generate-names.js',
+1138 silly gunzTarPerm   438,
+1138 silly gunzTarPerm   420 ]
+1139 silly gunzTarPerm extractEntry test/cli/sample-project/test/amd-run.js
+1140 silly gunzTarPerm modified mode [ 'test/cli/sample-project/test/amd-run.js', 438, 420 ]
+1141 silly gunzTarPerm extractEntry test/cli/sample-project/test/global-leak.js
+1142 silly gunzTarPerm modified mode [ 'test/cli/sample-project/test/global-leak.js', 438, 420 ]
+1143 silly gunzTarPerm extractEntry test/cli/sample-project/test/run.js
+1144 silly gunzTarPerm modified mode [ 'test/cli/sample-project/test/run.js', 438, 420 ]
+1145 silly gunzTarPerm extractEntry test/cli/sample-project/vendor/dummy_vendor_lib.js
+1146 silly gunzTarPerm modified mode [ 'test/cli/sample-project/vendor/dummy_vendor_lib.js',
+1146 silly gunzTarPerm   438,
+1146 silly gunzTarPerm   420 ]
+1147 silly gunzTarPerm extractEntry test/cli/sample-project/node_modules/dependency/index.js
+1148 silly gunzTarPerm modified mode [ 'test/cli/sample-project/node_modules/dependency/index.js',
+1148 silly gunzTarPerm   438,
+1148 silly gunzTarPerm   420 ]
+1149 silly gunzTarPerm extractEntry test/cli/sample-project/node_modules/post-require/package.json
+1150 silly gunzTarPerm modified mode [ 'test/cli/sample-project/node_modules/post-require/package.json',
+1150 silly gunzTarPerm   438,
+1150 silly gunzTarPerm   420 ]
+1151 silly gunzTarPerm extractEntry test/cli/sample-project/node_modules/post-require/hook.js
+1152 silly gunzTarPerm modified mode [ 'test/cli/sample-project/node_modules/post-require/hook.js',
+1152 silly gunzTarPerm   438,
+1152 silly gunzTarPerm   420 ]
+1153 silly gunzTarPerm extractEntry test/instrumentation/test-do.js
+1154 silly gunzTarPerm modified mode [ 'test/instrumentation/test-do.js', 438, 420 ]
+1155 silly gunzTarPerm extractEntry test/instrumentation/test-for.js
+1156 silly gunzTarPerm modified mode [ 'test/instrumentation/test-for.js', 438, 420 ]
+1157 silly gunzTarPerm extractEntry test/instrumentation/test-forin.js
+1158 silly gunzTarPerm modified mode [ 'test/instrumentation/test-forin.js', 438, 420 ]
+1159 silly gunzTarPerm extractEntry test/instrumentation/test-functions.js
+1160 silly gunzTarPerm modified mode [ 'test/instrumentation/test-functions.js', 438, 420 ]
+1161 silly gunzTarPerm extractEntry test/instrumentation/test-expressions.js
+1162 silly gunzTarPerm modified mode [ 'test/instrumentation/test-expressions.js', 438, 420 ]
+1163 silly gunzTarPerm extractEntry test/instrumentation/test-misc.js
+1164 silly gunzTarPerm modified mode [ 'test/instrumentation/test-misc.js', 438, 420 ]
+1165 silly gunzTarPerm extractEntry test/instrumentation/test-statement.js
+1166 silly gunzTarPerm modified mode [ 'test/instrumentation/test-statement.js', 438, 420 ]
+1167 silly gunzTarPerm extractEntry test/instrumentation/test-strict.js
+1168 silly gunzTarPerm modified mode [ 'test/instrumentation/test-strict.js', 438, 420 ]
+1169 silly gunzTarPerm extractEntry test/instrumentation/test-switch.js
+1170 silly gunzTarPerm modified mode [ 'test/instrumentation/test-switch.js', 438, 420 ]
+1171 silly gunzTarPerm extractEntry test/instrumentation/test-while.js
+1172 silly gunzTarPerm modified mode [ 'test/instrumentation/test-while.js', 438, 420 ]
+1173 silly gunzTarPerm extractEntry test/instrumentation/test-if.js
+1174 silly gunzTarPerm modified mode [ 'test/instrumentation/test-if.js', 438, 420 ]
+1175 silly gunzTarPerm extractEntry test/other/test-summarizer.js
+1176 silly gunzTarPerm modified mode [ 'test/other/test-summarizer.js', 438, 420 ]
+1177 silly gunzTarPerm extractEntry test/other/test-command-xface.js
+1178 silly gunzTarPerm modified mode [ 'test/other/test-command-xface.js', 438, 420 ]
+1179 silly gunzTarPerm extractEntry test/other/test-file-writer.js
+1180 silly gunzTarPerm modified mode [ 'test/other/test-file-writer.js', 438, 420 ]
+1181 silly gunzTarPerm extractEntry test/other/test-help-formatter.js
+1182 silly gunzTarPerm modified mode [ 'test/other/test-help-formatter.js', 438, 420 ]
+1183 silly gunzTarPerm extractEntry test/other/test-collector.js
+1184 silly gunzTarPerm modified mode [ 'test/other/test-collector.js', 438, 420 ]
+1185 silly gunzTarPerm extractEntry test/other/test-store.js
+1186 silly gunzTarPerm modified mode [ 'test/other/test-store.js', 438, 420 ]
+1187 silly gunzTarPerm extractEntry test/other/test-input-error.js
+1188 silly gunzTarPerm modified mode [ 'test/other/test-input-error.js', 438, 420 ]
+1189 silly gunzTarPerm extractEntry test/other/test-insertion-text.js
+1190 silly gunzTarPerm modified mode [ 'test/other/test-insertion-text.js', 438, 420 ]
+1191 silly gunzTarPerm extractEntry test/other/test-matcher.js
+1192 silly gunzTarPerm modified mode [ 'test/other/test-matcher.js', 438, 420 ]
+1193 silly gunzTarPerm extractEntry test/other/test-object-utils.js
+1194 silly gunzTarPerm modified mode [ 'test/other/test-object-utils.js', 438, 420 ]
+1195 silly gunzTarPerm extractEntry test/other/test-hook.js
+1196 silly gunzTarPerm modified mode [ 'test/other/test-hook.js', 438, 420 ]
+1197 silly gunzTarPerm extractEntry test/other/test-index-xface.js
+1198 silly gunzTarPerm modified mode [ 'test/other/test-index-xface.js', 438, 420 ]
+1199 silly gunzTarPerm extractEntry test/other/data-complete-copy/baz.js
+1200 silly gunzTarPerm modified mode [ 'test/other/data-complete-copy/baz.js', 438, 420 ]
+1201 silly gunzTarPerm extractEntry test/other/data-complete-copy/foo.js
+1202 silly gunzTarPerm modified mode [ 'test/other/data-complete-copy/foo.js', 438, 420 ]
+1203 silly gunzTarPerm extractEntry test/other/data-complete-copy/fixture.xml
+1204 silly gunzTarPerm modified mode [ 'test/other/data-complete-copy/fixture.xml', 438, 420 ]
+1205 silly gunzTarPerm extractEntry test/other/data-complete-copy/myfile1
+1206 silly gunzTarPerm modified mode [ 'test/other/data-complete-copy/myfile1', 438, 420 ]
+1207 silly gunzTarPerm extractEntry test/other/data-complete-copy/myfile2
+1208 silly gunzTarPerm modified mode [ 'test/other/data-complete-copy/myfile2', 438, 420 ]
+1209 silly gunzTarPerm extractEntry test/other/data-complete-copy/subdir/x.css
+1210 silly gunzTarPerm modified mode [ 'test/other/data-complete-copy/subdir/x.css', 438, 420 ]
+1211 silly gunzTarPerm extractEntry test/other/data/baz.js
+1212 silly gunzTarPerm modified mode [ 'test/other/data/baz.js', 438, 420 ]
+1213 silly gunzTarPerm extractEntry test/other/data/foo.js
+1214 silly gunzTarPerm modified mode [ 'test/other/data/foo.js', 438, 420 ]
+1215 silly gunzTarPerm extractEntry test/other/data/matcher/top.js
+1216 silly gunzTarPerm modified mode [ 'test/other/data/matcher/top.js', 438, 420 ]
+1217 silly gunzTarPerm extractEntry test/other/data/matcher/general/general.js
+1218 silly gunzTarPerm modified mode [ 'test/other/data/matcher/general/general.js', 438, 420 ]
+1219 silly gunzTarPerm extractEntry test/other/data/matcher/general/node_modules/mod-file.js
+1220 silly gunzTarPerm modified mode [ 'test/other/data/matcher/general/node_modules/mod-file.js',
+1220 silly gunzTarPerm   438,
+1220 silly gunzTarPerm   420 ]
+1221 silly gunzTarPerm extractEntry test/other/data/matcher/lib/lib-top.js
+1222 silly gunzTarPerm modified mode [ 'test/other/data/matcher/lib/lib-top.js', 438, 420 ]
+1223 silly gunzTarPerm extractEntry test/other/data/matcher/node_modules/mod-file.js
+1224 silly gunzTarPerm modified mode [ 'test/other/data/matcher/node_modules/mod-file.js', 438, 420 ]
+1225 silly gunzTarPerm extractEntry test/other/data/matcher/node_modules/dep/mod-file.js
+1226 silly gunzTarPerm modified mode [ 'test/other/data/matcher/node_modules/dep/mod-file.js',
+1226 silly gunzTarPerm   438,
+1226 silly gunzTarPerm   420 ]
+1227 silly gunzTarPerm extractEntry yui-coverage-comparison.md
+1228 silly gunzTarPerm modified mode [ 'yui-coverage-comparison.md', 438, 420 ]
+1229 error Error: ENOENT, lstat 'd:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\istanbul\test\cli\test-json-report.js'
+1230 error If you need help, you may report this *entire* log,
+1230 error including the npm and node versions, at:
+1230 error     <http://github.com/npm/npm/issues>
+1231 error System Windows_NT 6.1.7601
+1232 error command "C:\\Program Files\\nodejs\\\\node.exe" "C:\\Program Files\\nodejs\\node_modules\\npm\\bin\\npm-cli.js" "install" "-g" "karma-coverage"
+1233 error cwd d:\www\git\javascript\karma\karmatest
+1234 error node -v v0.10.26
+1235 error npm -v 1.4.3
+1236 error path d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\istanbul\test\cli\test-json-report.js
+1237 error fstream_path d:\Users\jiang.f\AppData\Roaming\npm\node_modules\karma-coverage\node_modules\istanbul\test\cli\test-json-report.js
+1238 error fstream_type File
+1239 error fstream_class FileWriter
+1240 error code ENOENT
+1241 error errno 34
+1242 error fstream_stack C:\Program Files\nodejs\node_modules\npm\node_modules\fstream\lib\writer.js:284:26
+1242 error fstream_stack Object.oncomplete (fs.js:107:15)
+1243 verbose exit [ 34, true ]

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>width express demo</title>
+  <script src="script/jquery.js"></script>
+  <script src="script/handlebars-1.0.0.beta.6.js"></script>
+</head>
+<body>
+<div id="list">
+
+</div>
+
+
+<script id="people-template" type="text/x-handlebars-template">
+  {{#people}}
+  <div class="person">
+    <p>{{title}}
+      {{#with author}}
+      By {{first_name}} {{last_name}}</p>
+    {{/with}}
+  </div>
+  {{/people}}
+</script>
+
+<script type="text/javascript">
+  $(document).ready(function() {
+
+    // compile our template
+    var template = Handlebars.compile($("#people-template").html());
+
+    var data = {
+      people: [
+        { title: "first people: ", author: {first_name: "Alan", last_name: "Johnson"}  },
+        { title: "second people: ", author: {first_name: "Jack", last_name: "een"}  },
+        { title: "third people: ", author: {first_name: "Tom", last_name: "Peter"}  },
+        { title: "fourth people: ", author: {first_name: "Asn", last_name: "Smith"}  }
+      ]
+    };
+
+    $('#list').html(template(data));
+  });
+</script>
+</body>
+</html>
