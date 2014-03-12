@@ -31,10 +31,10 @@ define (require, exports, module) ->
       if countTime > 0
         countTime = countTime - 1000
         tempTime = 
-          d: Math.floor( countTime / (1000 * 60 * 60 * 24) ),
-          h: self._fullTime(Math.floor( countTime / (1000 * 60 * 60) % 24 )),
-          m: self._fullTime(Math.floor( countTime / (1000 * 60) % 60 )),
-          s: self._fullTime(Math.floor( countTime / 1000 % 60 )),
+          d: Math.floor( countTime / (1000 * 60 * 60 * 24) )
+          h: self._fullTime Math.floor( countTime / (1000 * 60 * 60) % 24 )
+          m: self._fullTime Math.floor( countTime / (1000 * 60) % 60 )
+          s: self._fullTime Math.floor( countTime / 1000 % 60 )
         $('#demo').html(tempTime.d + ':' + tempTime.h + ':' + tempTime.m + ':' + tempTime.s)
         return
       else if countTime <= 0

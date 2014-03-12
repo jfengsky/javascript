@@ -43,7 +43,7 @@ define(function(require, exports, module) {
           m: self._fullTime(Math.floor(countTime / (1000 * 60) % 60)),
           s: self._fullTime(Math.floor(countTime / 1000 % 60))
         };
-        $('#demo').html(tempTime.d + ':' + tempTime.h + ':' + tempTime.m + ':' + tempTime.s);
+        $('#demo').html(tempTime.d + '天' + tempTime.h + '小时' + tempTime.m + '分钟' + tempTime.s + '秒');
       } else if (countTime <= 0) {
         clearInterval(timeInterval);
         args.callback();
