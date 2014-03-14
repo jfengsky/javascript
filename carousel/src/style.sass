@@ -1,0 +1,26 @@
+$item-height: 200px
+
+body, ul, li
+  margin: 0
+  padding: 0
+ul, li
+  list-style: none
+.carsousel
+  width: 640px
+  height: $item-height
+  margin: 20px auto
+  border: 1px solid #ccc
+  position: relative
+  .carsousel-content
+    overflow: hidden
+    margin: auto
+  .carousel-inner
+    position: absolute
+    left: 0
+    top: 0
+  .item
+    width: 120px
+    height: $item-height - 40
+    background-color: #eee
+    margin: 10px
+    float: left

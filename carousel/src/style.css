@@ -1,0 +1,26 @@
+body, ul, li {
+  margin: 0;
+  padding: 0; }
+
+ul, li {
+  list-style: none; }
+
+.carsousel {
+  width: 640px;
+  height: 200px;
+  margin: 20px auto;
+  border: 1px solid #cccccc;
+  position: relative; }
+  .carsousel .carsousel-content {
+    overflow: hidden;
+    margin: auto; }
+  .carsousel .carousel-inner {
+    position: absolute;
+    left: 0;
+    top: 0; }
+  .carsousel .item {
+    width: 120px;
+    height: 160px;
+    background-color: #eeeeee;
+    margin: 10px;
+    float: left; }
