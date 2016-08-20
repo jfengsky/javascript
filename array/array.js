@@ -11,3 +11,13 @@ let filterArray = arr1.filter( item => {
 })
 
 console.log(filterArray)
+
+let everyArray = arr1.every( item => {
+    return item < 5
+})
+console.log(everyArray)
+
+let someArray = arr1.some( item => {
+    return item < 5
+})
+console.log(someArray)
