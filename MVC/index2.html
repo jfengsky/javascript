@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+    <script src="http://cdn.staticfile.org/jquery/2.2.1/jquery.min.js"></script>
+</head>
+<body>
+
+<select id="list" size="10" style="width: 10rem"></select><br/>
+<button id="plusBtn">  +  </button>
+<button id="minusBtn">  -  </button>
+
+<script src="mvc3.js"></script>
+
+<script>
+    $(function () {
+        var model = new Mode(['PHP', 'JavaScript']),
+                view = new View(model, {
+                    'list' : $('#list'),
+                    'addButton' : $('#plusBtn'),
+                    'delButton' : $('#minusBtn')
+                }),
+                controller = new Controller(model, view);
+        view.show();
+    });
+</script>
+</body>
+</html>
