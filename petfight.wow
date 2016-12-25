@@ -1,0 +1,15 @@
+if [ self(#1).active ]
+    change(next) [ enemy.round=2 ]
+    use(诱饵)
+endif
+change(next) [ self(#2).active ]
+if [ self(#3).active ]
+    use(#3)
+    use(#1)
+endif
+if [ self(#3).dead ]
+    change(#1)
+endif
+if [ self(#1).active ]
+    use(#1)
+endif
