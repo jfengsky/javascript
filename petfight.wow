@@ -1,3 +1,4 @@
+### 四风练1脚本，第一个必须有诱饵，第二个为1级，第三个为可回血野兽
 if [ self(#1).active ]
     change(next) [ enemy.round=2 ]
     use(诱饵)
@@ -11,5 +12,20 @@ if [ self(#3).dead ]
     change(#1)
 endif
 if [ self(#1).active ]
+    use(#1)
+endif
+
+
+### 四风练>12脚本，第一个为小宠物，2，3为可回血野兽
+if [ self(#1).active ]
+    change(next) [ enemy.round=2 ]
+    use(#1)
+endif
+if [ self(#2).active ]
+    use(#3)
+    use(#1)
+endif
+if [ self(#3).active ]
+    use(#3)
     use(#1)
 endif
