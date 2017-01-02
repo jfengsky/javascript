@@ -43,3 +43,605 @@ if [ self(#3).active ]
     use(#3)
     use(#1)
 endif
+
+
+
+--熊猫人雷霆之灵
+--#1高山野兔 1乱舞2躲闪3钻地
+--#2暗月飞艇 1飞弹2自爆3诱饵
+--#3小宠物
+if [ enemy(熊猫人地灵).active ]
+  use(躲闪) [ enemy.round=2 ]
+  use(钻地) [ enemy.round=6 ]
+  use(乱舞)
+endif
+if [enemy(泥团).active]
+  use(躲闪) [ enemy.round=1 ]
+  use(钻地) [ enemy.round=5 ]
+  use(乱舞)
+  use(飞弹)
+endif
+if [self(高山野兔).dead]
+  change(暗月飞艇)
+endif
+if [enemy(钻地鼠达纳克).hp < 600]
+  use(自爆)
+endif
+if [enemy(钻地鼠达纳克).active]
+  use(诱饵) [ enemy.round=2 ]
+  use(飞弹)
+endif
+
+--多斯里加
+--#1维纳斯 或其它有阳光技能
+--#2赤红孢子 或其它有自爆技能
+--#3明亮孢子 或其它有自爆技能
+if [self(#1).active]
+  use(#3) [ self.round=1 ]
+  use(太阳光) [ self.round=2 ]
+  change(next)
+endif
+if [self.dead]
+  change(next)
+endif
+if [self(#2).active]
+  use(#2) [ self.round=1 ]
+  use(#1) [ self.round=2 ]
+  use(自爆)
+endif
+if [self(#3).active]
+  use(#2) [ self.round=1 ]
+  use(#1) [ self.round=2 ]
+  use(自爆)
+endif
+
+--勇敢的尹勇(飞行鸡，小动物兔子，野兽山羊)
+--#1翡翠始祖龙宝宝(翡翠之咬,翡翠灵气)
+--#2展览馆管理员(震慑,离子炮)
+--#3小宠
+if [enemy(皮拳).active]
+  use(翡翠灵气) [ self.round=2 ]
+  use(翡翠之咬)
+endif
+if [enemy(兔兔).active]
+  use(翡翠灵气) [ enemy.round=2 ]
+  use(翡翠之咬)
+endif
+if [enemy(咩咩).active]
+  change(#3) [ !self(#3).played ]
+  change(展览馆管理员)
+  use(震慑)
+  use(离子炮)
+endif
+
+--咖菲
+if [self(#1).active]
+  use(太阳光) [ self.round=1 ]
+  change(next)
+endif
+if [self.dead]
+  change(next)
+endif
+if [self(#2).active]
+  use(#1) [ self.round=1 ]
+  use(自爆)
+endif
+if [self(#3).active]
+  use(#1) [ self.round=1 ]
+  use(自爆)
+endif
+
+--熊猫人烈焰之灵
+--#1灵魂蟹(猛咬,湍流旋涡,甲壳护盾)
+--#2克洛玛尼斯(撕咬,嚎叫,能量涌动)
+--#3小宠 > 600学
+--后面需要手动，还没想好怎么写
+if [enemy(赤红幼龙).active]
+  use(甲壳护盾) [ self.round=1 ]
+  use(湍流旋涡) [ self.round=2 ]
+  use(猛咬)
+endif
+if [enemy(熊猫人火灵).active]
+  use(湍流旋涡) [ enemy.round=1 ]
+  use(猛咬)
+endif
+if [enemy(萤萤).active]
+  change(#3) [ !self(#3).played ]
+  change(克洛玛尼斯)
+  use(嚎叫)
+  use(能量涌动)
+endif
+
+
+-- 狩猎特使
+--#1高山野兔
+--#2小宠物
+--#3野兔
+if [self(#1).active]
+  use(躲闪) [ self.round=1 ]
+  use(乱舞)
+endif
+
+
+--加戈拉
+--#1步行炸弹(震击,雷区,自爆)
+--#2钢铁星弹(旋紧发条,强力球,自爆)
+--#3小宠
+if [enemy(沃夫斯).active]
+  use(雷区) [ self.round=1 ]
+  use(震击)
+endif
+if [enemy(范拉).active]
+  use(自爆)
+endif
+if [enemy(范拉).dead]
+  change(#3)
+endif
+if [enemy(沃夫加).active]
+  use(自爆) [ enemy.round=3 ]
+  use(旋紧发条)
+endif
+
+--可怕的塔尔
+--#1洛丹伦迷途者(暗影鞭笞,生命虹吸,厄运诅咒)
+--#2高等圣契(暗影震击,魔法增效,厄运诅咒)
+--#3小宠
+--纳格兰的训练师 11轮打法 带1级小宠
+--瓦格里(暗影震击+厄运诅咒+邪恶飞升) 化石幼兽(亡灵普攻+骨头风暴)
+--瓦格里1回合诅咒 2回合普攻 3回合飞升
+--化石幼兽 4回合被晕待命 5回合骨头风暴 之后一直普攻到死 
+--最后结果是化石幼兽和敌方同归于尽 小宠不用上场
+if [self(洛丹伦迷途者).active]
+  use(厄运诅咒) [ self.round=1 ]
+  use(生命虹吸) [ self.round=2 ]
+  use(暗影鞭笞)
+  use(厄运诅咒) [ self.round=5 ]
+endif
+if [self(高等圣契).active]
+  use(厄运诅咒) [ self.round=1 ]
+  use(暗影震击) [ self.round=2 ]
+  use(魔法增效) [ self.round=3 ]
+  use(暗影震击)
+endif
+if [self(洛丹伦迷途者).dead]
+  change(#2)
+endif
+
+--探索者祖什
+--#1灵魂蟹(猛咬,湍流旋涡,甲壳护盾)
+--#2黄色飞蛾(空袭,茧缚之击,飞蛾之尘)
+--#3小宠
+if [enemy(金刚钻).active]
+  use(#2) [ self.round=1 ]
+  use(#1)
+endif
+if [enemy(莫乐斯).active]
+  use(#1) [ enemy.round=1 ]
+  use(#2) [ enemy.round=2 ]
+  use(#1) [ enemy.round=3 ]
+  use(#1) [ enemy.round=4 ]
+  change(#2)
+  use(#1) [ enemy.round=6 ]
+endif
+if [enemy(掠影者).active]
+  use(#3) [ enemy.round=1 ]
+  change(#3) [ enemy.round=2 ]
+  change(#2) [ enemy.round=3 ]
+  use(#2) [ enemy.round=4 ]
+  use(#1) [ enemy.round=5 ]
+endif
+if [enemy(#1).dead]
+  change(#2)
+endif
+
+--云游者啼乌 血刺
+--#1暗月飞艇
+--#2暗月飞艇
+--#3暗月飞艇
+if [self(#1).hpp < 50]
+  use(#2)
+endif
+if [self(#2).hpp < 50]
+  use(#2)
+endif
+if [self(#1).active]
+  use(#1)
+endif
+if [self(#2).active]
+  use(#1)
+endif
+if [self(#3).active]
+  use(#1)
+endif
+if [self(#1).dead]
+  change(next)
+endif
+if [self(#2).dead]
+  change(next)
+endif
+
+--诺诺
+--#1小布(自我复制,强化护甲,金币雨)
+--#2伊奇(野蛮之爪,黑爪,群殴)
+--#3暗月飞艇(飞弹,自爆,诱饵)
+if [self(#1).active]
+  use(强化护甲) [ self.round=1 ]
+  use(金币雨) [ self.round=2 ]
+  use(自我复制)
+  use(金币雨)
+endif
+if [self(#2).active]
+  use(黑爪) [ self.round=1 ]
+  use(群殴) [ self.round=2 ]
+  use(野蛮之爪) [ self.round=2 ]
+endif
+if [self(#1).dead]
+  change(next)
+endif
+if [self(#2).dead]
+  change(next)
+endif
+
+--天选者亚济
+--#1灵魂蟹(猛咬+湍流旋涡+甲壳护盾)
+--#2暗月飞艇(飞弹+诱饵+自爆)
+--#3小宠
+if [self(#1).dead]
+  change(next)
+endif
+if [self(#2).dead]
+  change(next)
+endif
+if [enemy(#1).active]
+  use(甲壳护盾) [ enemy.round=1 ]
+  use(湍流旋涡) [ enemy.round=2 ]
+  use(猛咬)
+endif
+if [enemy(#2).active]
+  use(湍流旋涡) [ enemy.round=1 ]
+  use(猛咬)
+endif
+if [enemy(#3).hp < 618]
+  use(自爆)
+endif
+if [self(#3).active]
+  use(湍流旋涡)
+  use(飞弹)
+endif
+
+--废土行者苏游
+--#1虚空精灵龙 325速 (奥术冲击+生命交换+月火术)
+--#2暗月飞艇(飞弹+诱饵+自爆)
+--#3小宠600+血
+if [enemy(碎石蟹).active]
+  use(月火术) [ enemy.round=1 ]
+  use(奥术冲击)
+endif
+if [enemy(损毁者).hp < 618]
+  use(自爆)
+endif
+if [enemy(磨杵).active]
+  use(生命交换) [ enemy.round=1 ]
+  use(月火术) [ enemy.round=2 ]
+  use(奥术冲击)
+  use(飞弹)
+endif
+if [enemy(损毁者).active]
+  use(生命交换)
+  use(奥术冲击)
+endif
+if [self(#1).dead]
+  change(next)
+endif
+if [self(#2).dead]
+  change(next)
+endif
+
+
+--熊猫人流水之灵
+--#1皇家雏鹰(切削之风,飓风,离地升空)
+--#2熊猫人水灵(水流喷射,湍流旋涡,潜水)
+--#3小宠 600+血
+if [enemy(马利).active]
+  use(离地升空) [ enemy.round=3 ]
+  use(切削之风)
+endif
+if [enemy(蹑蹑).active]
+  use(切削之风)
+endif
+if [enemy(熊猫人水灵).active]
+  change(#3) [ enemy.round=1 ]
+  change(#2) [ enemy.round=2 ]
+  use(离地升空) [ enemy.round=4 ]
+  use(切削之风)
+  use(水流喷射)
+endif
+if [self(#1).dead]
+  change(next)
+endif
+
+--莫鲁克
+--#1暗月飞艇 (飞弹,诱饵,自爆)
+--#2永恒雏龙 (扫尾,愈体之焰,先发优势)
+--#3小宠
+if [enemy(雕木者).active]
+  use(诱饵) [ enemy.round=2 ]
+  use(飞弹)
+endif
+if [enemy(光之行者).active]
+  change(#2) [ enemy.round=1 ]
+  use(先发优势)
+  use(愈体之焰)
+  use(扫尾)
+endif
+if [enemy(针背龟).active]
+  use(先发优势) [ enemy.round=1 ]
+  use(扫尾)
+endif
+if [self(永恒雏龙).dead]
+  change(暗月飞艇)
+endif
+if [enemy(针背龟).hp < 618]
+  use(自爆)
+endif
+if [self(暗月飞艇).active]
+  use(飞弹)
+endif
+
+--农夫倪石
+--#1锦绣阔步者(水流喷射,净化之雨,抽水)
+--#2暗月飞艇(飞弹,诱饵,自爆)
+--#3小宠
+if [enemy(塞壬).active]
+  use(诱饵) [ enemy.round=1 ]
+  change(#2) [ enemy.round=2 ]
+  use(抽水) [ enemy.round=3 ]
+  use(净化之雨) [ enemy.round=4 ]
+  use(水流喷射) [ enemy.round=5 ]
+  use(抽水) [ enemy.round=6 ]
+endif
+if [enemy(崩牙者).active]
+  use(水流喷射) [ enemy.round=1 ]
+  use(抽水) [ enemy.round=2 ]
+  use(净化之雨) [ enemy.round=3 ]
+  use(抽水) [ enemy.round=4 ]
+endif
+if [enemy(魔丝勒斯的子嗣).active]
+  use(水流喷射)
+endif
+
+--圣地的俞娜
+--#1翡翠始祖龙宝宝(翡翠之咬,翡翠灵气,原始之击)
+--#2黄色飞蛾(空袭,茧缚之击,飞蛾之尘)
+--#3小宠
+if [enemy(塑风者).active]
+  use(翡翠灵气) [self.round = 1]
+  use(翡翠之咬)
+endif
+if [enemy(方戈).active]
+  use(原始之击) [enemy.round = 2]
+  use(翡翠之咬)
+endif
+if [enemy(铁壁龟).active]
+  use(翡翠之咬)
+  use(飞蛾之尘)
+endif
+if [self(#1).dead]
+  change(#3)
+endif
+
+--熊猫人微风之灵
+--#1虚空精灵龙341攻的(奥术冲击+生命交换+月火术)
+--#2熊猫人水灵(水流喷射,潜水,湍流旋涡)
+--#3小宠
+if [enemy(灰翅蛾).active]
+  use(月火术) [self.round = 1]
+  use(奥术冲击)
+endif
+if [enemy(哨尾).active]
+  use(生命交换) [enemy.round = 1]
+  use(奥术冲击)
+endif
+if [enemy(熊猫人风灵).active]
+  change(#3) [enemy.round = 1]
+  change(#2) [enemy.round = 2]
+  use(湍流旋涡)
+  use(潜水)
+endif
+
+--瑞迪尔
+--#1自爆宠物
+--#2自爆宠物
+--#3小宠物
+--熊第一攻击会回血，所以有些第一位的宠物需要多攻击一次
+if [self(#1).active]
+  use(自爆) [self.round = 3]
+  use(#1)
+endif
+if [self(#2).active]
+  use(自爆)
+endif
+if [self(#1).dead]
+  change(next)
+endif
+if [self(#2).dead]
+  change(next)
+endif
+
+-- 下面是多攻击一次的
+if [self(#1).active]
+  use(自爆) [self.round = 4]
+  use(#1)
+endif
+if [self(#2).active]
+  use(自爆)
+endif
+if [self(#1).dead]
+  change(next)
+endif
+if [self(#2).dead]
+  change(next)
+endif
+
+--灾火
+--#1幼年瓦格里(厄运诅咒,邪恶飞升)
+--#2被感染的松鼠 (奔踏,狂乱之击,邪爆)
+--#3翡翠始祖龙宝宝 (翡翠之咬,上古赐福,翡翠梦境)
+if [self(#1).active]
+  use(厄运诅咒)
+  use(邪恶飞升)
+endif
+if [self(#2).active]
+  use(狂乱之击) [self.round = 1]
+  use(奔踏)
+  use(邪爆)
+endif
+if [self(#3).active]
+  use(上古赐福)
+  use(翡翠梦境)
+  use(翡翠之咬)
+endif
+if [self(#1).dead]
+  change(next)
+endif
+if [self(#2).dead]
+  change(next)
+endif
+
+
+--斯格里克斯
+--#1幼年瓦格里(厄运诅咒,邪恶飞升)
+--#2被感染的松鼠 (奔踏,狂乱之击,邪爆)
+--#3翡翠始祖龙宝宝 (翡翠之咬,上古赐福,翡翠梦境)
+if [self(#1).active]
+  use(厄运诅咒) [self.round = 1]
+  use(暗影震击) [self.round = 2]
+  use(暗影震击) [self.round = 3]
+  use(邪恶飞升)
+endif
+if [self(#2).active]
+  use(狂乱之击) [self.round = 1]
+  use(奔踏)
+  use(邪爆)
+endif
+if [self(#3).active]
+  use(上古赐福)
+  use(翡翠梦境)
+  use(翡翠之咬)
+endif
+if [self(#1).dead]
+  change(next)
+endif
+if [self(#2).dead]
+  change(next)
+endif
+
+--暗月马戏团杰里米
+--#1恐爪鸟(空袭，躲闪，自然守护)
+--#2展览馆管理员：(震击，震慑，离子炮)
+--#3小宠
+if [enemy(#2).active]
+  use(躲闪) [enemy.round = 1]
+  use(自然守护) [enemy.round = 3]
+  use(躲闪) [enemy.round = 6]
+  use(空袭)
+endif
+if [enemy(#3).active]
+  change(#3) [enemy.round = 1]
+  change(#2) [enemy.round = 2]
+  use(震慑) [enemy.round = 3]
+  use(离子炮) [enemy.round = 4]
+endif
+if [self(#1).active]
+  use(自然守护) [self.round = 1]
+  use(躲闪) [self.round = 3]
+  use(空袭)
+endif
+
+--暗月马戏团 克里斯托弗·冯·费瑟尔
+--#1赞达拉撕踝者(狩猎小队，原始叫，黑爪)
+--#2展览馆管理员：(猛击，雷区，自爆)
+--#3小宠
+if [enemy(#2).active]
+  use(#2) [enemy.round = 1]
+  use(#3) [enemy.round = 2]
+  change(#2) [enemy.round = 3]
+  use(雷区) [enemy.round = 4]
+  use(#1)
+endif
+if [enemy(#3).active]
+  use(#1) [enemy.round = 1]
+  use(自爆) [enemy.round = 2]
+endif
+if [self(#1).active]
+  use(#2) [self.round = 1]
+  use(#3) [self.round = 2]
+  use(#1) [self.round = 3]
+endif
+
+
+
+
+
+
+__ 综合 __
+
+云游者啼乌:68562:1238:422:218:321:1211:921:364:919:1180:921:919:917:
+农夫倪石:66734:339:777:282:334:383:118:230:297:1934:118:572:934:
+加戈拉:87122:85:116:634:282:1387:390:640:282:0:0:0:0:
+勇敢的尹勇:66738:1167:525:597:598:1227:116:646:209:0:0:0:0:
+可怕的塔尔:87110:1238:422:218:321:266:648:214:649:1889:110:357:1559:
+咖菲:68563:855:394:404:402:844:115:779:282:844:115:779:282:
+圣地的俞娜:66730:1167:525:597:612:140:504:506:508:0:0:0:0:
+多斯里加:68564:1320:1002:392:985:339:777:282:334:339:777:282:334:
+天选者亚济:66741:463:356:513:310:339:777:282:334:1532:1370:919:581:
+幸运的小艺:68561:1532:1370:919:581:1211:921:364:919:1180:921:919:917:
+库拉·雷蹄:91361:1532:1370:919:581:534:420:190:170:389:384:392:390:
+废土行者苏游:66739:557:421:277:595:339:777:282:334:0:0:0:0:
+探索者祖什:66918:463:356:513:310:140:504:506:508:0:0:0:0:
+灰蹄:68560:339:777:282:334:339:777:647:334:339:777:282:334:
+烈焰碎片:105093:746:509:123:310:1665:249:934:513:0:0:0:0:
+熊猫人微风之灵:68464:557:421:277:595:868:118:564:513:1907:1370:1545:936:
+熊猫人流水之灵:68462:534:420:190:170:868:118:564:513:1403:504:521:334:
+熊猫人烈焰之灵:68463:463:356:513:310:1152:110:362:593:0:0:0:0:
+熊猫人雷霆之灵:68465:441:360:312:159:339:777:282:334:0:0:0:0:
+狩猎特使:105512:441:360:312:159:1320:983:989:985:730:360:312:163:
+罗伯特·克雷格:98270:85:455:634:754:1387:459:640:282:116:202:206:209:
+罗克:98572:339:515:282:334:339:515:282:334:0:0:0:0:
+莫鲁克:66733:339:777:282:334:1161:122:168:405:0:0:0:0:
+血刺:68558:339:777:282:334:339:777:282:334:339:777:647:334:
+诺诺:68559:1320:1002:392:985:1532:1370:919:581:339:777:282:334:
+贪吃的卡瓦:68555:339:777:282:334:339:777:282:334:339:777:647:334:
+迷醉宝珠:106476:1238:422:218:321:266:648:214:649:1628:422:218:772:
+阿什雷:87124:85:455:634:282:1180:921:919:917:0:0:0:0:
+飞掠者溪雅:68566:339:777:282:334:339:777:282:334:339:777:282:334:
+
+__ 四风 __
+
+2:0:0:0:0:0:239:110:364:538:343:429:492:538:
+3:0:0:0:0:0:491:429:492:538:40:429:492:538:
+4:0:0:0:0:0:301:429:492:538:474:429:492:538:
+5:0:0:0:0:0:459:429:492:538:224:429:492:538:
+6:0:0:0:0:0:43:429:492:538:440:535:492:538:
+7:0:0:0:0:0:41:429:492:538:44:429:492:538:
+
+__ 四风1级 __
+
+1:0:339:777:282:334:0:0:0:0:301:429:492:538:
+l2:0:339:777:282:334:0:0:0:0:239:110:357:538:
+l3:0:339:777:282:334:0:0:0:0:239:110:364:538:
+l4:0:1412:777:533:334:0:0:0:0:1692:429:492:538:
+l5:0:844:115:779:334:0:0:0:0:343:429:492:538:
+l6:0:844:115:779:334:0:0:0:0:459:429:492:538:
+l7:0:1467:754:636:334:0:0:0:0:440:429:492:538:
+
+__ 低瓦斯弹 __
+
+x1:105386:339:777:282:334:1228:178:282:407:0:0:0:0:
+x2:0:339:777:282:334:1540:743:315:282:0:0:0:0:
+x3:0:339:777:282:334:1540:743:315:282:0:0:0:0:
+x4:0:85:116:634:282:1536:420:1015:282:0:0:0:0:
+x5:0:85:116:634:282:1536:743:315:282:0:0:0:0:
+x6:0:1387:390:640:282:1536:420:315:282:0:0:0:0:
+x7:0:1387:459:640:282:1537:359:1015:282:0:0:0:0:
+x8:0:85:116:634:282:844:115:779:282:0:0:0:0:
